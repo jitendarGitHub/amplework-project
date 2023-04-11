@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, InputGroup, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 const Page404 = () => {
   return (

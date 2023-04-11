@@ -12,7 +12,7 @@ const loading = (
   </div>
 );
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Suspense fallback={loading}>
@@ -37,6 +37,6 @@ function App() {
       </Suspense>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
