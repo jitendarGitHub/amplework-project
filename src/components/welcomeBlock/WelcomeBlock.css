@@ -3,6 +3,35 @@
 
 }
  .main{
- padding-bottom: 10rem; 
-
+ padding-bottom: 10rem;  
+ }
+ .welcome-title{
+    font-family: sans-serif;
+    color: rgb(211, 190, 31);
+    letter-spacing: 3px;
+    color: #f5a403 !important;
+    line-height: 1.4;
+    font-weight: bolder;
+    font-size: 16px;
+ }
+ .welcome-description{
+    font-family:poppins,sans-serif;
+    text-shadow: 4px 4px 13px rgba(0,0,0,.2);
+    line-height: 1.4;  
+ }
+ .schedule-btn{ 
+    background-color: #f5a403 !important;
+ }
+ .header-item{
+     font-size: 16px;
+     font-family: sans-serif;
+ }
+ .inquire-btn{
+    border: 2px solid #f5a403;
+    border-radius: 30px;
+    margin-left: 20px;
+    letter-spacing: 1.5px;
+    color: #f5a403;
+    font-family: Poppins,sans-serif;
+  font-weight: 700;
  }

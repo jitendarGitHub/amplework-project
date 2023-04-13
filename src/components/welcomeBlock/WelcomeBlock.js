@@ -1,6 +1,6 @@
 import Header from "../header/Header.js";
-import Amplelogo from "../../assets/AmpleLogo.png";
-import ScheduleBtn from "../button/SchduleBtn.js";
+import Amplelogo from "../../assets/amplworkLogo.png";
+import { ScheduleBtn } from "../button/Buttons.js";
 import "../welcomeBlock/WelcomeBlock.css";
 // import Banner from "../../assets/banner.jpg";
 
@@ -18,8 +18,10 @@ const WelcomeBlock = (props) => {
       >
         <Header image={Amplelogo} />
         <div className="container welcome text-center justify-content-center ">
-          <h6 className="text-warning">{props.title}</h6>
-          <h3 className="text-white fw-bold">{props.description}</h3>
+          <h5 className="welcome-title  fw-bold">{props.title}</h5>
+          <h1 className="welcome-description text-white fw-bold">
+            {props.description}
+          </h1>
           <ScheduleBtn />
         </div>
       </div>

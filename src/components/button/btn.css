@@ -1,0 +1,16 @@
+.explore-1{  
+    border: 2px solid azure;
+}
+.explore-1:hover{
+    color: black;
+    background-color:azure ;
+}
+
+.explore-2{  
+    border: 2px solid  hsl(43, 84%, 48%);
+    background-color: transparent;
+}
+.explore-2:hover{
+    background-color:hsl(43, 84%, 48%);;
+    color: black;
+}

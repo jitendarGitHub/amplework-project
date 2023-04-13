@@ -1,7 +1,6 @@
 import { WelcomeBlock } from "../../components/Index";
-import ScheduleBtn from "../../components/button/SchduleBtn";
+import { Footer } from "../../components/Index";
 import Maintenance from "../../assets/banner.jpg";
-
 const Home = () => {
   return (
     <>
@@ -10,6 +9,7 @@ const Home = () => {
         title="APPLICATION MAINTENANCE AND SUPPORT"
         description="Top class application maintenance and support services for error-free, high performing applications"
       />
+      <Footer />
     </>
   );
 };
