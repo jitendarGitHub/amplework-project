@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import "../../components/button/btn.css";
+import "./btn.css";
 
 //for footer cart
 export const ExploreMore1 = () => {

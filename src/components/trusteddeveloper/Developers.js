@@ -1,5 +1,5 @@
 import { Button, Card, CardGroup, Container } from "react-bootstrap";
-import "../trusteddeveloper/developer.css";
+import "./developer.css";
 import bgImage from "../../assets/developerBG.png";
 import Namboodiri from "../../assets/NAMBOODIRI.png";
 

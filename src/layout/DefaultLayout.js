@@ -1,7 +1,8 @@
 import React from "react";
-import { WelcomeBlock, Footer } from "../components/Index";
 import AppContent from "../components/AppContent";
 import Maintenance from "../assets/banner.jpg";
+import WelcomeBlock from "../components/welcomeBlock/WelcomeBlock";
+import Footer from "../components/footer/Footer";
 
 const DefaultLayout = () => {
   return (

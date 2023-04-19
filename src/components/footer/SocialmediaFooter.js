@@ -1,4 +1,4 @@
-import "../footer/footer.css";
+import "./footer.css";
 
 import { FiFacebook } from "@react-icons/all-files/fi/FiFacebook";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";

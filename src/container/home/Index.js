@@ -1,18 +1,7 @@
-import {
-  Activity,
-  ApplicationPerformance,
-  ApplicationShap,
-  BussinessOpration,
-  DiverseLevel,
-  Experience,
-  Facinating,
-  Maintenance,
-  Question,
-  Developer,
-  WelcomeBlock,
-} from "../../components/Index";
-import { Footer } from "../../components/Index";
 import maintenance from "../../assets/banner.jpg";
+import Footer from "../../components/footer/Footer";
+import WelcomeBlock from "../../components/welcomeBlock/WelcomeBlock";
+import PageContent from "../views/pagecontent/PageContent";
 // import { CardGroup, Container } from "react-bootstrap";
 const Home = () => {
   return (
@@ -22,16 +11,8 @@ const Home = () => {
         title="APPLICATION MAINTENANCE AND SUPPORT"
         description="Top class application maintenance and support services for error-free, high performing applications"
       />
-      {/* <Maintenance /> */}
-      {/* <Experience /> */}
-      <Activity />
-      <ApplicationShap />
-      <Facinating />
-      <DiverseLevel />
-      <BussinessOpration />
-      <Question />
-      <Developer />
-      <ApplicationPerformance />
+      <PageContent />
+
       <Footer />
     </>
   );

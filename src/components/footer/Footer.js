@@ -1,5 +1,5 @@
 //css
-import "../footer/footer.css";
+import "./footer.css";
 import { ExploreMore1, ExploreMore2 } from "../button/Buttons";
 
 //cart assets
@@ -20,7 +20,7 @@ import register from "../../assets/d-b-register.png";
 import cloud from "../../assets/google-cloud-partner.png";
 
 import { CardGroup, Container } from "react-bootstrap";
-import FooterCard from "../../components/footercard/FooterCard";
+import FooterCard from "../footercard/FooterCard";
 import SocialmediaFooter from "./SocialmediaFooter";
 
 const Footer = () => {

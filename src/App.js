@@ -1,10 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React, { Suspense } from "react";
 // import { routes } from "./routes/Index";
-import Page404 from "./container/pages/Page404";
-import Page500 from "./container/pages/Page500";
+import Page404 from "./container/views/Page404";
+import Page500 from "./container/views/Page500";
 import { Home } from "./container/Index";
 import DefaultLayout from "../src/layout/DefaultLayout";
 import { routes } from "./routes/Index";
@@ -33,10 +32,10 @@ const App = () => {
               )
             );
           })} */}
-          <Route exact path="/404" name="Page 404" element={<Page404 />} />
-          <Route exact path="/500" name="Page 500" element={<Page500 />} />
+          {/* <Route exact path="/404" name="Page 404" element={<Page404 />} /> */}
+          {/* <Route exact path="/500" name="Page 500" element={<Page500 />} /> */}
           <Route path="*" name="Home" element={<Home />} />
-          <Route path="*" name="Home" element={<DefaultLayout />} />
+          {/* <Route path="*" name="Home" element={<DefaultLayout />} /> */}
         </Routes>
       </Suspense>
     </BrowserRouter>

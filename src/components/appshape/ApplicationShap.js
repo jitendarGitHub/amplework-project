@@ -1,10 +1,10 @@
-import "../appshape/appshap.css";
+// import "../appshape/appshap.css";
 
 import { Card, CardGroup, Container } from "react-bootstrap";
 import { GiArcheryTarget } from "@react-icons/all-files/gi/GiArcheryTarget";
 // import { GrTarget } from "@react-icons/all-files/gr/GrTarget";
 import { FiTarget } from "@react-icons/all-files/fi/FiTarget";
-import Shapcard from "./ShapCard";
+import Shapcard from "../ShapCard";
 
 const ApplicationShap = () => {
   return (
@@ -55,34 +55,6 @@ const ApplicationShap = () => {
             </div>
           </div>
         </Container>
-        {/* <Container className="">
-          <CardGroup className="">
-            <Shapcard
-              image={GiArcheryTarget()}
-              title="Fixed"
-              para="Our in-house support matrix and best-in-industry prices will
-                resultant in cost reduction by 30% to 40%."
-              bgcolor="rgb(6 21 114)"
-              color="rgb(245 164 3)"
-            />
-            <Shapcard
-              image={FiTarget()}
-              title="issue"
-              para="Slow and glitch software updates with no-real benefits for users?"
-              footer="Amplework’s Solution"
-              bgcolor="rgb(6 21 114)"
-              color="rgb(245 164 3)"
-            />
-            <Shapcard
-              image={FiTarget()}
-              title="issue"
-              para="Need profound resources for program visibility?"
-              footer="Amplework’s Solution"
-              bgcolor="rgb(6 21 114)"
-              color="rgb(245 164 3)"
-            />
-          </CardGroup>
-        </Container> */}
       </div>
     </>
   );

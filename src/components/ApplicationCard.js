@@ -1,6 +1,5 @@
 import { Card, CardImg, Row } from "react-bootstrap";
 
-import "../application/application.css";
 const ApplicationCard = (props) => {
   const { bgcolor, icon, title, description } = props;
   return (

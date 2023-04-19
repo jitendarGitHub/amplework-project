@@ -1,6 +1,6 @@
 import { Button, CardGroup, Container } from "react-bootstrap";
-import "../application/application.css";
-import ApplicationCard from "./ApplicationCard";
+// import "../application/application.css";
+import ApplicationCard from "../ApplicationCard";
 
 import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 import { BsClipboardData } from "@react-icons/all-files/bs/BsClipboardData";

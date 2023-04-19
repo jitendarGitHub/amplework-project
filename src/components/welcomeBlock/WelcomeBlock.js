@@ -1,7 +1,7 @@
 import Header from "../header/Header.js";
 import Amplelogo from "../../assets/amplworkLogo.png";
 import { ScheduleBtn } from "../button/Buttons.js";
-import "../welcomeBlock/WelcomeBlock.css";
+import "./WelcomeBlock.css";
 // import Banner from "../../assets/banner.jpg";
 
 const WelcomeBlock = (props) => {
