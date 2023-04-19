@@ -187,3 +187,48 @@
         font-family: sans-serif;
         font-size: 26px;
         }
+
+        /*Trusted Develooper*/
+
+        .namboodiri-desc{
+            font-size: 16px;
+            word-spacing: 1px; 
+        }
+        .namboodiri-title{
+            font-size: 21px;
+            font-family: sans-serif;
+        }
+        .namboodiri-position{
+            opacity: 0.5;
+        }
+
+        /*777*/
+
+      .testerimg{ 
+        width: 15rem;
+        border-radius: 80px 0px 90px 0px;
+      }
+      .booting{
+        box-shadow:  rgb(255, 255, 255) 20px 20px 0px -3px, rgb(200, 201, 186) 20px 20px;
+      }
+      /*------*/
+      .portfollioPara{
+        font-size: 16px; 
+        word-spacing: 2px ;
+        letter-spacing: 1px;
+        line-height: 2rem;
+      }
+      
+
+
+      /*sweatcoin*/
+
+      .firstborder{ 
+width: 150px;
+text-align: center;
+margin-top: 10px;
+      }
+.rightborder{
+    border-right: 4px solid white; 
+}
+       

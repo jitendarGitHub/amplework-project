@@ -1,6 +1,6 @@
 import { Card } from "react-bootstrap";
 
-const Business = (props) => {
+const BussinessTimeCard = (props) => {
   return (
     <>
       <Card className="mt-2 bussiness-card">
@@ -14,4 +14,4 @@ const Business = (props) => {
     </>
   );
 };
-export default Business;
+export default BussinessTimeCard;
