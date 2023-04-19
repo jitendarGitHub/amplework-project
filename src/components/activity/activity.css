@@ -1,0 +1,25 @@
+.shadow-top-right {
+    /* box-shadow: 10px -6px 0px -2px #888; */
+	/* -webkit-box-shadow: 8px 8px 10px  #de9d9d;
+	-moz-box-shadow: 8px -8px 10px -6px #cc3939;
+	box-shadow: 8px -8px 10px -6px #b26f6f; */
+    width: 50px;
+    height: 50px;
+ 
+}
+.size{
+    font-size: 16px;
+    font-family: sans-serif; 
+}
+.icon{
+    font-size: 1.8rem;
+}
+.title{ 
+    width: 120px;
+}
+.activity-heading{
+    font-family: sans-serif; 
+}
+.activity-desc{
+    font-size: 14px; 
+}

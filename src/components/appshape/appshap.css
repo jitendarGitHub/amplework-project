@@ -1,0 +1,29 @@
+.card{
+    padding: 15px;
+    border-style: dashed;   
+}
+.card:hover{
+    border-color: rgb(6 21 114);
+}
+.shap-heading{
+    font-family: sans-serif; 
+}
+.shap-para{
+    font-family: sans-serif;
+    font-size: 14px;
+    opacity: 0.5;
+   
+}
+.icon:hover{
+    color: aliceblue;
+}
+.card-content:hover{
+    background-color:  rgb(6 21 114);
+    color: aliceblue;
+    
+}
+.card-title:hover{
+    color: rgb(245 164 3); 
+}
+.ample-footers{ 
+}
