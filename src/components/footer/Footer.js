@@ -20,7 +20,7 @@ import register from "../../assets/d-b-register.png";
 import cloud from "../../assets/google-cloud-partner.png";
 
 import { CardGroup, Container } from "react-bootstrap";
-import FooterCard from "../footercard/FooterCard";
+import FooterCard from "../FooterCard";
 import SocialmediaFooter from "./SocialmediaFooter";
 
 const Footer = () => {

@@ -1,6 +1,14 @@
 .page-content section{
-    padding: 90px 0px;
+    padding: 70px 0px;
 }
+
+
+*{
+    margin: 0px ;
+    padding: 0px;
+} 
+
+
 /*activity*/
 .shadow-top-right {
     /* box-shadow: 10px -6px 0px -2px #888; */
@@ -189,7 +197,7 @@
         }
 
         /*Trusted Develooper*/
-
+ 
         .namboodiri-desc{
             font-size: 16px;
             word-spacing: 1px; 
@@ -201,6 +209,7 @@
         .namboodiri-position{
             opacity: 0.5;
         }
+        
 
         /*777*/
 
@@ -208,6 +217,16 @@
         width: 15rem;
         border-radius: 80px 0px 90px 0px;
       }
+
+      @media screen and (max-width: 480px) {
+        .testerimg{
+       width: 20rem;
+        }
+        .foundersImg{
+            width: 170px;
+        }
+      }
+
       .booting{
         box-shadow:  rgb(255, 255, 255) 20px 20px 0px -3px, rgb(200, 201, 186) 20px 20px;
       }
@@ -231,4 +250,54 @@ margin-top: 10px;
 .rightborder{
     border-right: 4px solid white; 
 }
-       
+    /*-----------*/
+    
+ 
+.projectHeading{
+    font-family: "Impact",sans-serif;
+    font-size: 32px;
+}
+.projectPara{
+    font-weight: bold;
+        font-family: "Poppins",sans-serif;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        margin-bottom: 10px!important;
+}
+.topExecutive{
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+        font-size: 18px!important; 
+        line-height: 1.4!important;
+        margin-top: 2rem !important;
+}
+.QuickStart{
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    padding-top: 1rem !important;
+    font-size: 18px!important;
+
+
+}
+.inputBorder{
+    background-color: transparent;
+     border-top: 0px;
+     border-left: 0px;
+     border-right: 0px;
+     border-bottom: 2px solid rgb(246, 236, 220);
+}
+
+/*Footer card*/
+
+.first-duration {
+    height: 70px;
+    width: 80px;
+    background-color: #0326c2;
+    padding: 8px 15px 10px 10px;
+    border-radius: 10px;
+}
+ 

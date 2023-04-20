@@ -1,7 +1,7 @@
 const BugActivity = (props) => {
   return (
     <>
-      <div className="first d-flex mt-4 col-sm-6">
+      <div className="first mt-4">
         <div className="d-flex gap-3 ">
           <div
             className=" shadow-top-right rounded"
@@ -13,7 +13,7 @@ const BugActivity = (props) => {
           >
             <p className="icon  mx-2  ">{props.icon}</p>
           </div>
-          <p className="size title  ">{props.title}</p>
+          <p className="  ">{props.title}</p>
         </div>
       </div>
     </>

@@ -1,5 +1,5 @@
 import { Card, CardGroup, Container } from "react-bootstrap";
-import "./FooterCard.css";
+// import "./FooterCard.css";
 const FooterCard = (props) => {
   const {
     PartTime,
@@ -50,21 +50,21 @@ const FooterCard = (props) => {
           {props.description}{" "}
         </Card.Text>
         <Card.Text>
-          <div className="d-flex h-50  gap-4 container mt-5">
-            <div className="text-self-center">
+          <div className="d-flex container mt-5 justify-content-around">
+            <div className="col-sm-3">
               <div className="first-duration align-self-center">
                 <img src={PartTime} className="img-fluid" />
               </div>
               <p className="part-time mt-3">{DurationContent1}</p>
             </div>
-            <div className="text-center">
-              <div className=" first-duration align-self-center align-self-center">
+            <div className="col-sm-3">
+              <div className=" first-duration align-self-center ">
                 <img src={Hourglass} alt="" className="img-fluid" />
               </div>
               <p className="full-time mt-3 ">{DurationContent2}</p>
             </div>
-            <div className="text-center">
-              <div className="first-duration align-self-center">
+            <div className="col-sm-3">
+              <div className="first-duration align-self-center ">
                 <img src={Calendar} alt="" className="img-fluid" />
               </div>
               <p className="hourly mt-3">{DurationContent3}</p>
