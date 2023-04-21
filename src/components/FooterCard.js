@@ -50,20 +50,20 @@ const FooterCard = (props) => {
           {props.description}{" "}
         </Card.Text>
         <Card.Text>
-          <div className="d-flex container mt-5 justify-content-around">
-            <div className="col-sm-3">
+          <div className="d-flex container mt-5 justify-content-around ">
+            <div className="col-sm-3 ">
               <div className="first-duration align-self-center">
                 <img src={PartTime} className="img-fluid" />
               </div>
               <p className="part-time mt-3">{DurationContent1}</p>
             </div>
-            <div className="col-sm-3">
+            <div className="col-sm-3 mx-3">
               <div className=" first-duration align-self-center ">
                 <img src={Hourglass} alt="" className="img-fluid" />
               </div>
               <p className="full-time mt-3 ">{DurationContent2}</p>
             </div>
-            <div className="col-sm-3">
+            <div className="col-sm-3 ">
               <div className="first-duration align-self-center ">
                 <img src={Calendar} alt="" className="img-fluid" />
               </div>

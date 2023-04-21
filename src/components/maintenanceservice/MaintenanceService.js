@@ -1,6 +1,6 @@
 import { Card, CardGroup, Container } from "react-bootstrap";
 import "../maintenanceservice/maintenance.css";
-import { FaUserCog } from "@react-icons/all-files/fa/FaUserCircle";
+// import { FaUserCog } from "@react-icons/all-files/fa/FaUserCircle";
 const Maintenance = () => {
   return (
     <>

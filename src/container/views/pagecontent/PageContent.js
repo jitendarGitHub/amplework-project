@@ -11,6 +11,7 @@ import {
   Button,
   Card,
   CardGroup,
+  Carousel,
   Col,
   Container,
   Form,
@@ -18,6 +19,9 @@ import {
   Row,
   Table,
 } from "react-bootstrap";
+
+import AppMaintenance from "../../../assets/AppMaintenance.png";
+
 import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 import { BsClipboardData } from "@react-icons/all-files/bs/BsClipboardData";
 import { GiArcheryTarget } from "@react-icons/all-files/gi/GiArcheryTarget";
@@ -69,114 +73,209 @@ import { IoMdAddCircle } from "@react-icons/all-files/io/IoMdAddCircle";
 import Captcha from "../../../assets/captcha.jpg";
 
 import { FiLayers } from "@react-icons/all-files/fi/FiLayers";
-import { GrUserSettings } from "@react-icons/all-files/gr/GrUserSettings";
+import { FaUsers } from "@react-icons/all-files/fa/FaUsers";
 import { VscGraph } from "@react-icons/all-files/vsc/VscGraph";
 import { SiTimescale } from "@react-icons/all-files/si/SiTimescale";
 import SantoshSir from "../../../assets/santoshSir.png";
 import prakashSir from "../../../assets/prakashSir.png";
 import novaMam from "../../../assets/novaMam.png";
+import Experience from "../../../components/experience/Experience";
+
+import Experience1 from "../../../assets/experience1.png";
+import Experience2 from "../../../assets/experience2.png";
+import Experience3 from "../../../assets/experience3.png";
+import Experience4 from "../../../assets/experience4.png";
+import Experience5 from "../../../assets/experience5.png";
+import Experience6 from "../../../assets/experience6.png";
+import Experience7 from "../../../assets/experience7.png";
+import Experience8 from "../../../assets/experience8.png";
 
 const PageContent = () => {
   return (
     <>
       <div className="page-content">
-        <section className="bg-white container">
-          <div className="p-2 row">
-            <div className="col-sm-12 col-lg-6 ">
-              <h3 className="activity-heading col-sm-9">
-                Amplework's Targeted Activities For Application Maintenance
-                Support Services
-              </h3>
-              <p className="activity-desc col-sm-10 ">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s,
-              </p>
-              <ul>
-                <li>Amplework offers hire</li>
-                <li>dedicated full-stack</li>
-                <li>developers who posses</li>
-              </ul>
-            </div>
-            <div className="col-sm-12 col-md-6 ">
-              <div className="row justify-content-around">
-                <div className="col-sm-12 col-lg-6">
-                  <BugActivity
-                    backgroundColor="rgb(244 131 98)"
-                    icon={<MdHighQuality />}
-                    color="white"
-                    title="Quality checks"
-                    shadow="10px -6px 0px -2px rgb(227, 216, 212) "
-                  />
+        <section className=" bg-light">
+          <div className="container">
+            <div className="row justify-content-between justify-content-lg-end columnreverse">
+              <div className="col-sm-12 col-lg-5 pt-md-2  pl-md-5 align-self-center">
+                <div className="position-relative right">
+                  <div className="">
+                    <img
+                      src="https://www.amplework.com/wp-content/uploads/2023/04/clicks.png"
+                      width={"90%"}
+                    />
+                  </div>
                 </div>
-                <div className="col-sm-12 col-lg-6">
-                  <BugActivity
-                    backgroundColor="rgb(158 109 175)"
-                    icon={<MdSettingsRemote />}
-                    color="white"
-                    title="Remote Product Maintenance"
-                    shadow="10px -6px 0px -2px rgb(205, 185, 211)"
-                  />
-                </div>
-                <div className="col-lg-6 col-sm-12">
-                  <BugActivity
-                    backgroundColor="rgb(78 189 142)"
-                    icon={<VscVersions />}
-                    color="white"
-                    title="Version Enhancement"
-                    shadow="10px -6px 0px -2px rgb(173, 207, 193)"
-                  />
-                </div>
-                <div className="col-sm-12 col-lg-6">
-                  <BugActivity
-                    backgroundColor="rgb(247 164 87)"
-                    icon={<BsFillAlarmFill />}
-                    color="white"
-                    title="Load Testing"
-                    shadow="10px -6px 0px -2px rgb(236, 192, 152)"
-                  />
-                </div>
-                <div className="col-sm-12 col-lg-6">
-                  <BugActivity
-                    backgroundColor="rgb(89 148 245)"
-                    icon={<BiBug />}
-                    color="white"
-                    title="Tech TroubleShooting"
-                    shadow="10px -6px 0px -2px rgb(157, 178, 212)"
-                  />
-                </div>
-                <div className="col-sm-12 col-lg-6">
-                  <BugActivity
-                    backgroundColor="rgb(55 189 234)"
-                    icon={<GrDocumentPerformance />}
-                    color="white"
-                    title="Performance Oversight"
-                    shadow="10px -6px 0px -2px rgb(178, 216, 229)"
-                  />
-                </div>
-                <div className="col-sm-12 col-lg-6">
-                  <BugActivity
-                    backgroundColor="rgb(152 178 245)"
-                    icon={<BiSupport />}
-                    color="white"
-                    title="User Focused support"
-                    shadow="10px -6px 0px -2px rgb(204, 208, 218)"
-                  />
-                </div>
-                <div className="col-sm-12 col-lg-6">
-                  <BugActivity
-                    backgroundColor="rgb(89 148 245)"
-                    icon={<BiBug />}
-                    color="white"
-                    title="Tech TroubleShooting"
-                    shadow="10px -6px 0px -2px rgb(157, 178, 212)"
-                  />
-                </div>
+              </div>
+              <div className="col-sm-12 col-lg-7">
+                <h6 className="supporter-title text-primary fw-bold">
+                  AMPLEWORK SOFTWARE
+                </h6>
+                <h3 className="supporter-heading">
+                  Your dedicated Supporter for App Maintenance Service
+                </h3>
+                <p className="supporter-para mt-4">
+                  App maintenance is a critical aspect because it effectively
+                  keeps the application functioning in an optimized manner so
+                  that it can fulfill your audient requirement. At Amplework ,
+                  we can support you in almost everthing from bug fixed to
+                  security potches. Our prowess developers ensure that the
+                  application should stay secure and up-to-date
+                </p>
+                <p className="supporter-para">
+                  App maintenance is a critical aspect because it effectively
+                  keeps the application functioning in an optimized manner so
+                  that it can fulfill your audient requirement. At Amplework ,
+                  we can support you in almost everthing from bug fixed to
+                  security potches.
+                </p>
               </div>
             </div>
           </div>
         </section>
+        <section className="" style={{ backgroundColor: "rgb(22 45 66)" }}>
+          <div className="container">
+            {" "}
+            <div className=" text-center text-light experience">
+              <div className=" ">
+                <h3 className="experience-heading">
+                  Experience Unparalleled Excellence with Our Comprehensive
+                  <br />
+                  Application Support and Maintenance
+                </h3>
 
+                <p className="experience-para mt-4">
+                  Our advanced mobile application maintenance and support
+                  provide a comprehensive approach to managing
+                  <br /> and maintaining your applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="container  p-2 pb-5 maintenance-Section">
+          <div className="  maintenance">
+            <div className="box">
+              <div className="icon text-center align-self-center fs-1 ">
+                <img src={Experience1} className="fa" alt="" />
+              </div>
+
+              <div className="content">
+                <h5 className="text-dark fw-bold">
+                  Proactive Monitoring & Maintenance
+                </h5>
+                <p className="text-dark">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="box">
+              <div className="icon text-center align-self-center fs-1 ">
+                <img src={Experience2} className="fa" alt="" />
+              </div>
+              <div className="content">
+                <h5 className="text-dark fw-bold">Web App Maintenance</h5>
+                <p className="text-dark">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="box">
+              <div className="icon text-center align-self-center fs-1 ">
+                <img src={Experience3} className="fa" alt="" />
+              </div>
+              <div className="content ">
+                {" "}
+                <h5 className="text-dark fw-bold">
+                  Incident Management and Resolution
+                </h5>
+                <p className="text-dark">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="box">
+              <div className="icon text-center align-self-center fs-1 ">
+                <img src={Experience4} className="fa" alt="" />
+              </div>
+              <div className="content">
+                {" "}
+                <h5 className="text-dark fw-bold">Performance Optimization</h5>
+                <p className="text-dark">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="box">
+              <div className="icon text-center align-self-center fs-1 ">
+                <img src={Experience5} className="fa" alt="" />
+              </div>
+              <div className="content">
+                {" "}
+                <h5 className="text-dark fw-bold">
+                  Application Security and Compliance
+                </h5>
+                <p className="text-dark">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="box">
+              <div className="icon text-center align-self-center fs-1 ">
+                <img src={Experience6} className="fa" alt="" />
+              </div>
+              <div className="content">
+                <h5 className="text-dark fw-bold">
+                  Regular Updates & Upgrades
+                </h5>
+                <p className="text-dark">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="box">
+              <div className="icon text-center align-self-center fs-1 ">
+                <img src={Experience7} className="fa" alt="" />
+              </div>
+              <div class="content">
+                {" "}
+                <h5 className="text-dark fw-bold">Application Integration</h5>
+                <p className="text-dark">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="box">
+              <div className="icon text-center align-self-center fs-1 ">
+                <img src={Experience8} className="fa" alt="" />
+              </div>
+              <div className="content">
+                {" "}
+                <h3 className="text-dark fw-bold">Customized Support Plans</h3>
+                <p className="text-dark ">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum est le faux texte standard de l'imprimerie depuis les
+                  années 1500
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="bg-light">
           <div className="container ">
             <div className="application text-center align-item-center  ">
@@ -213,6 +312,231 @@ const PageContent = () => {
                 />
               </CardGroup>
               <Button className="free-quote mt-4">GET A FREE QUOTE</Button>
+            </div>
+          </div>
+        </section>
+
+        <section className=" container">
+          <div className="row px-4 container">
+            <div className="col-sm-12 col-lg-6 ">
+              <h3 className="activity-heading col-sm-9">
+                Amplework's Targeted Activities For Application Maintenance
+                Support Services
+              </h3>
+              <p className="activity-desc col-sm-10 ">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
+              </p>
+              <ul>
+                <li>Amplework offers hire</li>
+                <li>dedicated full-stack</li>
+                <li>developers who posses</li>
+              </ul>
+            </div>
+            <div className="row col-sm-12 col-md-6 ">
+              <div className="col-sm-12 col-lg-6">
+                <BugActivity
+                  backgroundColor="rgb(244 131 98)"
+                  icon={<MdHighQuality />}
+                  color="white"
+                  title="Quality checks"
+                  shadow="10px -6px 0px -2px rgb(227, 216, 212) "
+                />
+              </div>
+              <div className="col-sm-12 col-lg-6">
+                <BugActivity
+                  backgroundColor="rgb(158 109 175)"
+                  icon={<MdSettingsRemote />}
+                  color="white"
+                  title="Remote Product Maintenance"
+                  shadow="10px -6px 0px -2px rgb(205, 185, 211)"
+                />
+              </div>
+              <div className="col-lg-6 col-sm-12">
+                <BugActivity
+                  backgroundColor="rgb(78 189 142)"
+                  icon={<VscVersions />}
+                  color="white"
+                  title="Version Enhancement"
+                  shadow="10px -6px 0px -2px rgb(173, 207, 193)"
+                />
+              </div>
+              <div className="col-sm-12 col-lg-6">
+                <BugActivity
+                  backgroundColor="rgb(247 164 87)"
+                  icon={<BsFillAlarmFill />}
+                  color="white"
+                  title="Load Testing"
+                  shadow="10px -6px 0px -2px rgb(236, 192, 152)"
+                />
+              </div>
+              <div className="col-sm-12 col-lg-6">
+                <BugActivity
+                  backgroundColor="rgb(89 148 245)"
+                  icon={<BiBug />}
+                  color="white"
+                  title="Tech TroubleShooting"
+                  shadow="10px -6px 0px -2px rgb(157, 178, 212)"
+                />
+              </div>
+              <div className="col-sm-12 col-lg-6">
+                <BugActivity
+                  backgroundColor="rgb(55 189 234)"
+                  icon={<GrDocumentPerformance />}
+                  color="white"
+                  title="Performance Oversight"
+                  shadow="10px -6px 0px -2px rgb(178, 216, 229)"
+                />
+              </div>
+              <div className="col-sm-12 col-lg-6">
+                <BugActivity
+                  backgroundColor="rgb(152 178 245)"
+                  icon={<BiSupport />}
+                  color="white"
+                  title="User Focused support"
+                  shadow="10px -6px 0px -2px rgb(204, 208, 218)"
+                />
+              </div>
+              <div className="col-sm-12 col-lg-6">
+                <BugActivity
+                  backgroundColor="rgb(89 148 245)"
+                  icon={<BiBug />}
+                  color="white"
+                  title="Tech TroubleShooting"
+                  shadow="10px -6px 0px -2px rgb(157, 178, 212)"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="container pb-5 text-center">
+          <h5
+            className=""
+            style={{
+              color: "rgb(245 164 3)",
+              fontFamily:
+                "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+              fontSize: "14px",
+            }}
+          >
+            Keep Your Applications Always Shine
+          </h5>
+          <h3>Types of Apps We Maintain At Amplework Software</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's
+            <br /> standard dummy text ever since the 1500s,
+          </p>
+          <div className="maintain p-1 mt-5">
+            <div className="maintain-box">
+              <div className="maintain-icon text-center align-self-center fs-1 ">
+                <img src={Experience1} className="fa-icon" alt="" />
+              </div>
+
+              <div className="contents">
+                <h5 className="fw-bold text-white ">Web Apps</h5>
+                <p className=" ">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="maintain-box">
+              <div className="maintain-icon text-center align-self-center fs-1 ">
+                <img src={Experience2} className="fa-icon" alt="" />
+              </div>
+              <div className="contents">
+                <h5 className="text-white fw-bold">Cloud Apps & SaaS</h5>
+                <p className=" ">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="maintain-box">
+              <div className="maintain-icon text-center align-self-center fs-1 ">
+                <img src={Experience3} className="fa-icon" alt="" />
+              </div>
+              <div className="contents ">
+                <h5 className=" text-white  fw-bold">Enterprise Apps</h5>
+                <p className=" ">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="maintain-box">
+              <div className="maintain-icon text-center align-self-center fs-1 ">
+                <img src={Experience4} className="fa-icon" alt="" />
+              </div>
+              <div className="contents">
+                {" "}
+                <h5 className=" text-white  fw-bold">AR/VR Apps</h5>
+                <p className=" ">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="maintain-box">
+              <div className="maintain-icon text-center align-self-center fs-1 ">
+                <img src={Experience5} className="fa-icon" alt="" />
+              </div>
+              <div className="contents">
+                {" "}
+                <h5 className=" text-white  fw-bold">Database Apps</h5>
+                <p className=" ">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="maintain-box">
+              <div className="maintain-icon text-center align-self-center fs-1 ">
+                <img src={Experience6} className="fa-icon" alt="" />
+              </div>
+              <div className="contents">
+                <h5 className=" text-white  fw-bold">AI/ML Apps</h5>
+                <p className=" ">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="maintain-box">
+              <div className="maintain-icon text-center align-self-center ">
+                <img src={Experience7} className="fa-icon" alt="" />
+              </div>
+              <div class="contents">
+                <h5 className=" text-white  fw-bold">Gaming Apps</h5>
+                <p className=" ">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum
+                </p>
+              </div>
+            </div>
+            <div className="maintain-box">
+              <div className="maintain-icon text-center align-self-center ">
+                <img src={Experience8} className="fa-icon" alt="" />
+              </div>
+              <div className="contents">
+                <h3 className="text-white fw-bold">Hybrid Apps</h3>
+                <p className="">
+                  Le Lorem Ipsum est simplement du faux texte employé dans la
+                  composition et la mise en page avant impression. Le Lorem
+                  Ipsum est le faux texte standard de l'imprimerie depuis les
+                  années 1500
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -263,7 +587,6 @@ const PageContent = () => {
             </div>
           </div>
         </section>
-
         <section className=" bg-light">
           <div className="container text-center  ">
             <h3>
@@ -326,10 +649,9 @@ const PageContent = () => {
             </div>
           </div>
         </section>
-
-        <section className="container">
-          <div className="diverse row  justify-content-around">
-            <div className="col-sm-12 col-lg-6 diverse-first">
+        <section className="container ">
+          <div className="diverse row container justify-content-between">
+            <div className="col-sm-12 col-lg-6 diverse-first ">
               <h3 className="diverse-heading col-sm-9">
                 Diverse Levels Of Support Offered By Our Prowess Experts
               </h3>
@@ -341,7 +663,8 @@ const PageContent = () => {
                 to get valuable insights about operations.
               </p>
             </div>
-            <div className="col-sm-12 col-lg-6 d-lg-flex gap-3">
+
+            <div className="col-sm-12 col-lg-6 d-lg-flex gap-3 ">
               <div className="first">
                 <Card className="mt-3 card-img border-3 text-light text-start ">
                   <Card.Body>
@@ -409,7 +732,6 @@ const PageContent = () => {
             </div>
           </div>
         </section>
-
         <section className=" bussiness">
           <div className="  text-center container">
             <h3 className="bussiness-heading">
@@ -441,14 +763,13 @@ const PageContent = () => {
             </div>
           </div>
         </section>
-
         <section>
           <div className=" container">
             <h3 className="bussiness-heading">
               Are you searching for a dedicated technology partner, not
               <br /> just a service provider?
             </h3>
-            <div className="row ">
+            <div className="row columnreverse">
               <div className="col-sm-12 col-lg-6 text-start align-self-center">
                 <p>
                   Our clients generated more than $50 million in revenues by
@@ -498,7 +819,6 @@ const PageContent = () => {
             </div>
           </div>
         </section>
-
         <section className="">
           <div
             className="question text-center bg-warning pb-1"
@@ -593,7 +913,6 @@ const PageContent = () => {
             </Container>
           </div>
         </section>
-
         <section className="">
           <div className="developer container ">
             <Card
@@ -660,64 +979,120 @@ const PageContent = () => {
             </div>
           </div>
         </section>
-
         <section className="bg-light text-center">
           <div className="container ">
             <ClientAppreciation />
           </div>
         </section>
 
-        <section className="bg-light">
+        <section>
           <h3 className="text-center ">Portfolio of Our Accomplishments</h3>
-          <div
-            className="portfollio text-center text-light"
-            style={{ backgroundImage: `url(${SwetcoinBg})` }}
-          >
-            <div className="container">
-              <div className="swercoin row text-start justify-content-center">
-                <div className="col-sm-12 col-lg-6 align-self-center">
-                  <h3 className="fw-bold mx-5">Sweatcoin</h3>
-                  <p className="portfollioPara mt-3">
-                    A new breed of step counter and activity tracker that
-                    converts your steps into a currency you can spend on
-                    gadgets, sports and fitness kit, services and experiences.
-                    You can exchange them with friends and family.
-                  </p>
-                  <p className="fs-6 fw-bold mt-4">
-                    Available On &nbsp;&nbsp; {<FaGooglePlay />}&nbsp;&nbsp;{" "}
-                    {<SiAppstore />}
-                  </p>
-                  <div className="uses d-flex ">
-                    <div className="rightborder firstborder text-start">
-                      <p>50M+</p>
-                      <span>Downloads</span>
+          <Carousel>
+            <Carousel.Item>
+              <div
+                className="portfollio text-center text-light"
+                style={{ backgroundImage: `url(${SwetcoinBg})` }}
+              >
+                <div className="container">
+                  <div className="swercoin row text-start justify-content-center">
+                    <div className="col-sm-12 col-lg-6 align-self-center">
+                      <h3 className="fw-bold">Sweatcoin</h3>
+                      <p className="portfollioPara mt-3">
+                        A new breed of step counter and activity tracker that
+                        converts your steps into a currency you can spend on
+                        gadgets, sports and fitness kit, services and
+                        experiences. You can exchange them with friends and
+                        family.
+                      </p>
+                      <p className="fs-6 fw-bold mt-4">
+                        Available On &nbsp;&nbsp; {<FaGooglePlay />}&nbsp;&nbsp;{" "}
+                        {<SiAppstore />}
+                      </p>
+                      <div className="uses d-flex ">
+                        <div className="rightborder firstborder text-start">
+                          <p>50M+</p>
+                          <span>Downloads</span>
+                        </div>
+                        <div className="rightborder firstborder">
+                          <p>4.6/5</p>
+                          <span>Rating</span>
+                        </div>
+                        <div className="firstborder ">
+                          <p>$20M</p>
+                          <span>Funding</span>
+                        </div>
+                      </div>
+                      <div className="reward fs-6 mt-5">
+                        <p>Rewards | Wallet | Tracker | eCommerce | Fintech</p>
+                      </div>
                     </div>
-                    <div className="rightborder firstborder">
-                      <p>4.6/5</p>
-                      <span>Rating</span>
-                    </div>
-                    <div className="firstborder ">
-                      <p>$20M</p>
-                      <span>Funding</span>
+                    <div className="col-sm-12 col-lg-6  p-4 align-self-center">
+                      <img
+                        class="sweatCoin-img entered lazyloaded"
+                        src="https://www.amplework.com/wp-content/uploads/2023/02/sweat_coin-screen.png"
+                        width={"100%"}
+                        alt="sweatCoin_screen"
+                        data-lazy-src="https://www.amplework.com/wp-content/uploads/2023/02/sweat_coin-screen.png"
+                        data-ll-status="loaded"
+                      />
                     </div>
                   </div>
-                  <div className="reward fs-6 mt-5">
-                    <p>Rewards | Wallet | Tracker | eCommerce | Fintech</p>
-                  </div>
-                </div>
-                <div className="col-sm-12 col-lg-6  p-4 align-self-center">
-                  <img
-                    class="sweatCoin-img entered lazyloaded"
-                    src="https://www.amplework.com/wp-content/uploads/2023/02/sweat_coin-screen.png"
-                    width={"100%"}
-                    alt="sweatCoin_screen"
-                    data-lazy-src="https://www.amplework.com/wp-content/uploads/2023/02/sweat_coin-screen.png"
-                    data-ll-status="loaded"
-                  />
                 </div>
               </div>
-            </div>
-          </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div
+                className="portfollio text-center text-light"
+                style={{ backgroundImage: `url(${SwetcoinBg})` }}
+              >
+                <div className="container">
+                  <div className="swercoin row text-start justify-content-center">
+                    <div className="col-sm-12 col-lg-6 align-self-center">
+                      <h3 className="fw-bold">Sweatcoin</h3>
+                      <p className="portfollioPara mt-3">
+                        A new breed of step counter and activity tracker that
+                        converts your steps into a currency you can spend on
+                        gadgets, sports and fitness kit, services and
+                        experiences. You can exchange them with friends and
+                        family.
+                      </p>
+                      <p className="fs-6 fw-bold mt-4">
+                        Available On &nbsp;&nbsp; {<FaGooglePlay />}&nbsp;&nbsp;{" "}
+                        {<SiAppstore />}
+                      </p>
+                      <div className="uses d-flex ">
+                        <div className="rightborder firstborder text-start">
+                          <p>50M+</p>
+                          <span>Downloads</span>
+                        </div>
+                        <div className="rightborder firstborder">
+                          <p>4.6/5</p>
+                          <span>Rating</span>
+                        </div>
+                        <div className="firstborder ">
+                          <p>$20M</p>
+                          <span>Funding</span>
+                        </div>
+                      </div>
+                      <div className="reward fs-6 mt-5">
+                        <p>Rewards | Wallet | Tracker | eCommerce | Fintech</p>
+                      </div>
+                    </div>
+                    <div className="col-sm-12 col-lg-6  p-4 align-self-center">
+                      <img
+                        class="sweatCoin-img entered lazyloaded"
+                        src="https://www.amplework.com/wp-content/uploads/2023/02/sweat_coin-screen.png"
+                        width={"100%"}
+                        alt="sweatCoin_screen"
+                        data-lazy-src="https://www.amplework.com/wp-content/uploads/2023/02/sweat_coin-screen.png"
+                        data-ll-status="loaded"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Carousel.Item>
+          </Carousel>
         </section>
 
         <section className=" bg-white">
@@ -751,16 +1126,17 @@ const PageContent = () => {
             </div>
           </div>
         </section>
-
-        <section className="bg-light">
+        <section
+          style={{ backgroundColor: "rgb(243 246 255)" }}
+          className="p-0"
+        >
           <div className="container">
-            <div className="row justify-content-between">
-              <div className="col-sm-12 col-lg-5 col-md-12 p-1">
-                <h3 className="fw-bold">
+            <div className="row justify-content-around">
+              <div className="col-sm-12 col-lg-6   p-3 align-self-center">
+                <h3 className="container fw-bold" style={{ fontSize: "19px" }}>
                   Prepare yourself for a quick Response
                 </h3>
-
-                <Form>
+                <Form className="container pt-5">
                   <Row className="mb-3">
                     <Form.Group as={Col} md="6" className="">
                       <InputGroup className="mb-3">
@@ -872,85 +1248,112 @@ const PageContent = () => {
                       </InputGroup>
                     </Form.Group>
                     <Form.Group as={Col} md="12">
-                      <Form.Control as="textarea" rows={4} className="" />
+                      <Form.Control as="textarea" rows={2} className="" />
                     </Form.Group>
 
-                    <div className="addFile d-lg-flex justify-content-between py-2 p-2">
-                      <div className="text-primary align-self-center ">
-                        <span> {<IoMdAddCircle />}</span>
-                        <span className="px-2 fw-bold">ADD FILE</span>
-                      </div>
-                      <div className="align-self-center  ">
-                        <input type="checkbox" className="" />
-                        <span className="px-1">
-                          Yes, Send me a mutual NDA (Non-Disclosure Agreement)
-                        </span>
+                    <div className="container mt-3">
+                      <div className="addFile d-md-flex mt-2 justify-content-between">
+                        <div className="text-primary align-self-center col-sm-3">
+                          <span> {<IoMdAddCircle />}</span>
+                          <span className="px-2 fw-bold">ADD FILE</span>
+                        </div>
+                        <div className="align-self-center py-2  col-md-9 text-md-end">
+                          <input type="checkbox" className="" />
+                          <span className="px-2">
+                            Yes, Send me a mutual NDA
+                          </span>
+                        </div>
                       </div>
                     </div>
 
-                    <div className="row bg-light mt-2">
-                      <div className="first d-flex  col-sm-6 -12 p-3 align-self-center">
-                        <div className="align-self-center ">
-                          <input type="checkbox" />
-                          &nbsp;&nbsp;
-                          <span>I`m not a robot</span>
+                    <div className="container">
+                      <div className="row mt-3">
+                        <div className="first d-flex bg-white col-md-7 justify-content-between align-self-center">
+                          <div className="align-self-center col-lg-8 ">
+                            <input type="checkbox" className="" />
+                            &nbsp;&nbsp;
+                            <span className="fs-5">I`m not a robot</span>
+                          </div>
+                          <div className="col-lg-2">
+                            <img src={Captcha} width={"50px"} />
+                          </div>
                         </div>
-                        <div className="">
-                          <img src={Captcha} width={"40px"} />
+                        <div className="col-md-5 align-self-center text-lg-end text-md-end ">
+                          <Button
+                            type="submit"
+                            className=" border-0 p-2 mt-2"
+                            style={{ backgroundColor: "rgb(245 164 3)" }}
+                          >
+                            Send Your Inquiry
+                          </Button>
                         </div>
-                      </div>
-                      <div className="col-sm-6 align-self-center">
-                        <Button type="submit" className="bg-warning border-0">
-                          Send Your Inquiry
-                        </Button>
                       </div>
                     </div>
                   </Row>
                 </Form>
               </div>
               <div
-                className="col-sm-12 col-lg-6 col-md-12 text-white p-4"
+                className="col-sm-12 col-lg-5  p-3 text-white "
                 style={{ backgroundColor: "rgb(6 19 100)" }}
               >
                 <h3 className="QuickStart">Quick Stats</h3>
-                <div className="d-flex justify-content-between">
-                  <div className="">
-                    <div className="">
+                <div className="d-flex">
+                  <div className="col-lg-7 col-7">
+                    <div className="d-flex align-items-baseline">
                       <h1 className="text-warning fw-bold projectHeading">
                         170+
-                        <span className=" text-light mx-2">{<FiLayers />}</span>
                       </h1>
-                      <p className="projectPara">Successful Projects</p>
+                      <div className="img">
+                        <span className="text-light fs-1">{<FiLayers />}</span>
+                      </div>
                     </div>
-                    <div className="py-4">
-                      <h1 className="text-warning  fw-bold projectHeading">
-                        $200M+
-                        <span className=" text-light mx-2">{<VscGraph />}</span>
-                      </h1>
-                      <p className="projectPara">Our clients overall revenue</p>
-                    </div>
+                    <p className="projectPara">Successful Projects</p>
                   </div>
-                  <div className=" ">
-                    <div className="">
-                      <h1 className="text-warning fw-bold projectHeading">
-                        92%
-                        <span className=" text-light mx-2">
-                          {<GrUserSettings />}
-                        </span>
-                      </h1>
-                      <p className="projectPara">Client retention</p>
+                  <div className="col-sm-5 ">
+                    <div className="d-flex align-items-baseline">
+                      <div className="d-flex align-items-baseline">
+                        <h1 className="text-warning fw-bold projectHeading">
+                          92%
+                        </h1>
+                        <div className="img">
+                          <span className=" text-light fs-1">
+                            {<FaUsers />}
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                    <div className="py-4">
-                      <h1 className="text-warning fw-bold projectHeading">
-                        1M+
-                        <span className=" text-light mx-2">
-                          {<SiTimescale />}
-                        </span>
-                      </h1>
-                      <p className="projectPara"> Work hours</p>
-                    </div>
+                    <p className="projectPara">Client retention</p>
                   </div>
                 </div>
+                <div className="d-flex ">
+                  <div className="col-lg-7 col-7">
+                    <div className="d-flex align-items-baseline">
+                      <h1 className="text-warning fw-bold projectHeading">
+                        $200M+
+                      </h1>
+                      <div className="img">
+                        <span className="fs-1 text-light ">{<VscGraph />}</span>
+                      </div>
+                    </div>
+                    <p className="projectPara">Our clients overall revenue</p>
+                  </div>
+                  <div className="col-sm-5">
+                    <div className="d-flex align-items-baseline">
+                      <div className="d-flex align-items-baseline">
+                        <h1 className="text-warning fw-bold projectHeading">
+                          1M+
+                        </h1>
+                        <div className="img">
+                          <span className="fs-1 text-light ">
+                            {<SiTimescale />}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="projectPara">Work hours</p>
+                  </div>
+                </div>
+
                 <h3 className="topExecutive">Top Executives</h3>
                 <Table responsive="lg" className="table table-borderless">
                   <tbody className="text-center text-white">
@@ -960,7 +1363,7 @@ const PageContent = () => {
                           src={SantoshSir}
                           className="foundersImg "
                           alt=""
-                          width={"120px"}
+                          width={"105px"}
                         />
                         <p>Santosh Singh</p>
                         <p>CEO</p>
@@ -970,7 +1373,7 @@ const PageContent = () => {
                           src={prakashSir}
                           className="foundersImg "
                           alt=""
-                          width={"120px"}
+                          width={"105px"}
                         />
                         <p>Prakash Saini</p>
                         <p>CEO</p>
@@ -980,7 +1383,7 @@ const PageContent = () => {
                           src={novaMam}
                           className="foundersImg "
                           alt=""
-                          width={"120px"}
+                          width={"105px"}
                         />
                         <p>Supernova C.</p>
                         <p>CXO</p>
