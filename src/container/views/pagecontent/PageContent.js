@@ -20,36 +20,62 @@ import {
   Table,
 } from "react-bootstrap";
 
-import AppMaintenance from "../../../assets/AppMaintenance.png";
-
 import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 import { BsClipboardData } from "@react-icons/all-files/bs/BsClipboardData";
 import { GiArcheryTarget } from "@react-icons/all-files/gi/GiArcheryTarget";
 import { FiTarget } from "@react-icons/all-files/fi/FiTarget";
 
-import facinating1 from "../../../assets/facinating1.png";
-import facinating2 from "../../../assets/facinating2.png";
-import facinating3 from "../../../assets/facinating3.png";
-import facinating4 from "../../../assets/facinating4.png";
-import facinating5 from "../../../assets/facinating5.png";
-import facinating6 from "../../../assets/facinating6.png";
+import {
+  enterprise1,
+  enterprise2,
+  enterprise3,
+  enterprise4,
+  enterpeise5,
+  enterprise6,
+  enterprise7,
+  enterprise8,
+  enterpriseBg,
+  digitalApp,
+  digitalApp2,
+  digitalApp3,
+  facinating1,
+  facinating2,
+  facinating3,
+  facinating4,
+  facinating5,
+  Apps1,
+  Apps2,
+  Apps3,
+  Apps4,
+  Apps5,
+  Apps6,
+  Apps7,
+  Apps8,
+  captcha,
+  SantoshSir,
+  PrakashSir,
+  NovaMam,
+  QUestionBG,
+  Bussiness,
+  DeveloperBG,
+  BugActivity1,
+  BugActivity2,
+  BugActivity3,
+  BugActivity4,
+  BugActivity5,
+  BugActivity6,
+  BugActivity7,
+  BugActivity8,
+  DiverseCardBg,
+  HourlyPlan,
+  Target,
+} from "../../../assets";
 
 import BugActivity from "../../../components/BugActivity";
 import ApplicationCard from "../../../components/ApplicationCard";
 import Shapcard from "../../../components/ShapCard";
 import FacinatingCard from "../../../components/FacinatingCard";
 
-import bgimg from "../../../assets/Group 13516.png";
-import Business from "../../../components/BussinessTimeCard";
-import Bussiness from "../../../assets/bussiness.png";
-
-import bgImage from "../../../assets/questionBG.png";
-
-import Namboodiri from "../../../assets/NAMBOODIRI.png";
-
-import TryBg from "../../../assets/developerBG.png";
-import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
-import QuestionAccordion from "../../../components/QuestionAccordion";
 import BussinessTimeCard from "../../../components/BussinessTimeCard";
 import Cards from "../../../components/DeveloperInfo";
 import ClientAppreciation from "../../../components/ClientAppreciations";
@@ -57,10 +83,6 @@ import ClientAppreciation from "../../../components/ClientAppreciations";
 import { FaGooglePlay } from "@react-icons/all-files/fa/FaGooglePlay";
 import { SiAppstore } from "@react-icons/all-files/si/SiAppstore";
 import SwetcoinBg from "../../../assets/sweatCoin_bg.png";
-
-import digitalApp from "../../../assets/digitalApp.png";
-import digitalApp2 from "../../../assets/digitalApp2.png";
-import digitalApp3 from "../../../assets/digitalApp3.png";
 
 import { HiOutlineUser } from "@react-icons/all-files/hi/HiOutlineUser";
 import { HiOutlineMail } from "@react-icons/all-files/hi/HiOutlineMail";
@@ -70,26 +92,10 @@ import { BiMessageAltDetail } from "@react-icons/all-files/bi/BiMessageAltDetail
 import { BiDollar } from "@react-icons/all-files/bi/BiDollar";
 import { IoMdAddCircle } from "@react-icons/all-files/io/IoMdAddCircle";
 
-import Captcha from "../../../assets/captcha.jpg";
-
 import { FiLayers } from "@react-icons/all-files/fi/FiLayers";
 import { FaUsers } from "@react-icons/all-files/fa/FaUsers";
 import { VscGraph } from "@react-icons/all-files/vsc/VscGraph";
 import { SiTimescale } from "@react-icons/all-files/si/SiTimescale";
-import SantoshSir from "../../../assets/santoshSir.png";
-import prakashSir from "../../../assets/prakashSir.png";
-import novaMam from "../../../assets/novaMam.png";
-import Experience from "../../../components/experience/Experience";
-
-import Experience1 from "../../../assets/experience1.png";
-import Experience2 from "../../../assets/experience2.png";
-import Experience3 from "../../../assets/experience3.png";
-import Experience4 from "../../../assets/experience4.png";
-import Experience5 from "../../../assets/experience5.png";
-import Experience6 from "../../../assets/experience6.png";
-import Experience7 from "../../../assets/experience7.png";
-import Experience8 from "../../../assets/experience8.png";
-
 const PageContent = () => {
   return (
     <>
@@ -153,130 +159,136 @@ const PageContent = () => {
             </div>
           </div>
         </section>
-        <section className="container  p-2 pb-5 maintenance-Section">
-          <div className="  maintenance">
-            <div className="box">
-              <div className="icon text-center align-self-center fs-1 ">
-                <img src={Experience1} className="fa" alt="" />
-              </div>
+        <section className="bg-light  p-2 pb-5">
+          <div className="container maintenance-Section">
+            <div className=" maintenance">
+              <div className="box">
+                <div className="icon text-center align-self-center fs-1 ">
+                  <img src={enterprise1} className="fa" alt="" />
+                </div>
 
-              <div className="content">
-                <h5 className="text-dark fw-bold">
-                  Proactive Monitoring & Maintenance
-                </h5>
-                <p className="text-dark">
-                  Le Lorem Ipsum est simplement du faux texte employé dans la
-                  composition et la mise en page avant impression. Le Lorem
-                  Ipsum
-                </p>
+                <div className="content">
+                  <h5 className="text-dark fw-bold">
+                    Proactive Monitoring & Maintenance
+                  </h5>
+                  <p className="text-dark">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la
+                    composition et la mise en page avant impression. Le Lorem
+                    Ipsum
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="box">
-              <div className="icon text-center align-self-center fs-1 ">
-                <img src={Experience2} className="fa" alt="" />
+              <div className="box">
+                <div className="icon text-center align-self-center fs-1 ">
+                  <img src={enterprise2} className="fa" alt="" />
+                </div>
+                <div className="content">
+                  <h5 className="text-dark fw-bold">Web App Maintenance</h5>
+                  <p className="text-dark">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la
+                    composition et la mise en page avant impression. Le Lorem
+                    Ipsum
+                  </p>
+                </div>
               </div>
-              <div className="content">
-                <h5 className="text-dark fw-bold">Web App Maintenance</h5>
-                <p className="text-dark">
-                  Le Lorem Ipsum est simplement du faux texte employé dans la
-                  composition et la mise en page avant impression. Le Lorem
-                  Ipsum
-                </p>
+              <div className="box">
+                <div className="icon text-center align-self-center fs-1 ">
+                  <img src={enterprise3} className="fa" alt="" />
+                </div>
+                <div className="content ">
+                  {" "}
+                  <h5 className="text-dark fw-bold">
+                    Incident Management and Resolution
+                  </h5>
+                  <p className="text-dark">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la
+                    composition et la mise en page avant impression. Le Lorem
+                    Ipsum
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="box">
-              <div className="icon text-center align-self-center fs-1 ">
-                <img src={Experience3} className="fa" alt="" />
+              <div className="box">
+                <div className="icon text-center align-self-center fs-1 ">
+                  <img src={enterprise4} className="fa" alt="" />
+                </div>
+                <div className="content">
+                  {" "}
+                  <h5 className="text-dark fw-bold">
+                    Performance Optimization
+                  </h5>
+                  <p className="text-dark">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la
+                    composition et la mise en page avant impression. Le Lorem
+                    Ipsum
+                  </p>
+                </div>
               </div>
-              <div className="content ">
-                {" "}
-                <h5 className="text-dark fw-bold">
-                  Incident Management and Resolution
-                </h5>
-                <p className="text-dark">
-                  Le Lorem Ipsum est simplement du faux texte employé dans la
-                  composition et la mise en page avant impression. Le Lorem
-                  Ipsum
-                </p>
+              <div className="box">
+                <div className="icon text-center align-self-center fs-1 ">
+                  <img src={enterpeise5} className="fa" alt="" />
+                </div>
+                <div className="content">
+                  {" "}
+                  <h5 className="text-dark fw-bold">
+                    Application Security and Compliance
+                  </h5>
+                  <p className="text-dark">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la
+                    composition et la mise en page avant impression. Le Lorem
+                    Ipsum
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="box">
-              <div className="icon text-center align-self-center fs-1 ">
-                <img src={Experience4} className="fa" alt="" />
+              <div className="box">
+                <div className="icon text-center align-self-center fs-1 ">
+                  <img src={enterprise6} className="fa" alt="" />
+                </div>
+                <div className="content">
+                  <h5 className="text-dark fw-bold">
+                    Regular Updates & Upgrades
+                  </h5>
+                  <p className="text-dark">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la
+                    composition et la mise en page avant impression. Le Lorem
+                    Ipsum
+                  </p>
+                </div>
               </div>
-              <div className="content">
-                {" "}
-                <h5 className="text-dark fw-bold">Performance Optimization</h5>
-                <p className="text-dark">
-                  Le Lorem Ipsum est simplement du faux texte employé dans la
-                  composition et la mise en page avant impression. Le Lorem
-                  Ipsum
-                </p>
+              <div className="box">
+                <div className="icon text-center align-self-center fs-1 ">
+                  <img src={enterprise7} className="fa" alt="" />
+                </div>
+                <div class="content">
+                  {" "}
+                  <h5 className="text-dark fw-bold">Application Integration</h5>
+                  <p className="text-dark">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la
+                    composition et la mise en page avant impression. Le Lorem
+                    Ipsum
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="box">
-              <div className="icon text-center align-self-center fs-1 ">
-                <img src={Experience5} className="fa" alt="" />
-              </div>
-              <div className="content">
-                {" "}
-                <h5 className="text-dark fw-bold">
-                  Application Security and Compliance
-                </h5>
-                <p className="text-dark">
-                  Le Lorem Ipsum est simplement du faux texte employé dans la
-                  composition et la mise en page avant impression. Le Lorem
-                  Ipsum
-                </p>
-              </div>
-            </div>
-            <div className="box">
-              <div className="icon text-center align-self-center fs-1 ">
-                <img src={Experience6} className="fa" alt="" />
-              </div>
-              <div className="content">
-                <h5 className="text-dark fw-bold">
-                  Regular Updates & Upgrades
-                </h5>
-                <p className="text-dark">
-                  Le Lorem Ipsum est simplement du faux texte employé dans la
-                  composition et la mise en page avant impression. Le Lorem
-                  Ipsum
-                </p>
-              </div>
-            </div>
-            <div className="box">
-              <div className="icon text-center align-self-center fs-1 ">
-                <img src={Experience7} className="fa" alt="" />
-              </div>
-              <div class="content">
-                {" "}
-                <h5 className="text-dark fw-bold">Application Integration</h5>
-                <p className="text-dark">
-                  Le Lorem Ipsum est simplement du faux texte employé dans la
-                  composition et la mise en page avant impression. Le Lorem
-                  Ipsum
-                </p>
-              </div>
-            </div>
-            <div className="box">
-              <div className="icon text-center align-self-center fs-1 ">
-                <img src={Experience8} className="fa" alt="" />
-              </div>
-              <div className="content">
-                {" "}
-                <h3 className="text-dark fw-bold">Customized Support Plans</h3>
-                <p className="text-dark ">
-                  Le Lorem Ipsum est simplement du faux texte employé dans la
-                  composition et la mise en page avant impression. Le Lorem
-                  Ipsum est le faux texte standard de l'imprimerie depuis les
-                  années 1500
-                </p>
+              <div className="box">
+                <div className="icon text-center align-self-center fs-1 ">
+                  <img src={enterprise8} className="fa" alt="" />
+                </div>
+                <div className="content">
+                  {" "}
+                  <h3 className="text-dark fw-bold">
+                    Customized Support Plans
+                  </h3>
+                  <p className="text-dark ">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la
+                    composition et la mise en page avant impression. Le Lorem
+                    Ipsum est le faux texte standard de l'imprimerie depuis les
+                    années 1500
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="bg-light">
+        <section className="">
           <div className="container ">
             <div className="application text-center align-item-center  ">
               <h3 className="">
@@ -316,100 +328,106 @@ const PageContent = () => {
           </div>
         </section>
 
-        <section className=" container">
-          <div className="row px-4 container">
-            <div className="col-sm-12 col-lg-6 ">
-              <h3 className="activity-heading col-sm-9">
-                Amplework's Targeted Activities For Application Maintenance
-                Support Services
-              </h3>
-              <p className="activity-desc col-sm-10 ">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s,
-              </p>
-              <ul>
-                <li>Amplework offers hire</li>
-                <li>dedicated full-stack</li>
-                <li>developers who posses</li>
-              </ul>
-            </div>
-            <div className="row col-sm-12 col-md-6 ">
+        {/* section Bug Activity */}
+
+        <section className=" bg-light ">
+          <div className=" container  px-4 container">
+            <div className="row">
               <div className="col-sm-12 col-lg-6">
-                <BugActivity
-                  backgroundColor="rgb(244 131 98)"
-                  icon={<MdHighQuality />}
-                  color="white"
-                  title="Quality checks"
-                  shadow="10px -6px 0px -2px rgb(227, 216, 212) "
-                />
+                <h3 className="activity-heading col-sm-9">
+                  Amplework's Targeted Activities For Application Maintenance
+                  Support Services
+                </h3>
+                <p className="activity-desc col-sm-10 ">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s,
+                </p>
+                <ul className="p-2 mx-1   ">
+                  <li>Amplework offers hire</li>
+                  <li>dedicated full-stack</li>
+                  <li>developers who posses</li>
+                </ul>
               </div>
-              <div className="col-sm-12 col-lg-6">
-                <BugActivity
-                  backgroundColor="rgb(158 109 175)"
-                  icon={<MdSettingsRemote />}
-                  color="white"
-                  title="Remote Product Maintenance"
-                  shadow="10px -6px 0px -2px rgb(205, 185, 211)"
-                />
-              </div>
-              <div className="col-lg-6 col-sm-12">
-                <BugActivity
-                  backgroundColor="rgb(78 189 142)"
-                  icon={<VscVersions />}
-                  color="white"
-                  title="Version Enhancement"
-                  shadow="10px -6px 0px -2px rgb(173, 207, 193)"
-                />
-              </div>
-              <div className="col-sm-12 col-lg-6">
-                <BugActivity
-                  backgroundColor="rgb(247 164 87)"
-                  icon={<BsFillAlarmFill />}
-                  color="white"
-                  title="Load Testing"
-                  shadow="10px -6px 0px -2px rgb(236, 192, 152)"
-                />
-              </div>
-              <div className="col-sm-12 col-lg-6">
-                <BugActivity
-                  backgroundColor="rgb(89 148 245)"
-                  icon={<BiBug />}
-                  color="white"
-                  title="Tech TroubleShooting"
-                  shadow="10px -6px 0px -2px rgb(157, 178, 212)"
-                />
-              </div>
-              <div className="col-sm-12 col-lg-6">
-                <BugActivity
-                  backgroundColor="rgb(55 189 234)"
-                  icon={<GrDocumentPerformance />}
-                  color="white"
-                  title="Performance Oversight"
-                  shadow="10px -6px 0px -2px rgb(178, 216, 229)"
-                />
-              </div>
-              <div className="col-sm-12 col-lg-6">
-                <BugActivity
-                  backgroundColor="rgb(152 178 245)"
-                  icon={<BiSupport />}
-                  color="white"
-                  title="User Focused support"
-                  shadow="10px -6px 0px -2px rgb(204, 208, 218)"
-                />
-              </div>
-              <div className="col-sm-12 col-lg-6">
-                <BugActivity
-                  backgroundColor="rgb(89 148 245)"
-                  icon={<BiBug />}
-                  color="white"
-                  title="Tech TroubleShooting"
-                  shadow="10px -6px 0px -2px rgb(157, 178, 212)"
-                />
+              <div className="row col-sm-12 col-md-6 ">
+                <div className="col-sm-12 col-lg-6">
+                  <BugActivity
+                    backgroundColor="rgb(240 100 102)"
+                    icon={BugActivity1}
+                    color="white"
+                    title="Bug Busting & Debugging"
+                    shadow="10px -6px 0px -2px rgb( 255 225 225) "
+                  />
+                </div>
+                <div className="col-sm-12 col-lg-6">
+                  <BugActivity
+                    backgroundColor="rgb(244 131 98)"
+                    icon={BugActivity2}
+                    color="white"
+                    title="Quality Checks"
+                    shadow="10px -6px 0px -2px rgb( 255 231 225)"
+                  />
+                </div>
+                <div className="col-lg-6 col-sm-12">
+                  <BugActivity
+                    backgroundColor="rgb(158 109 175)"
+                    icon={BugActivity3}
+                    color="white"
+                    title="Quality Checks"
+                    shadow="10px -6px 0px -2px rgb(238 208 248)"
+                  />
+                </div>
+                <div className="col-sm-12 col-lg-6">
+                  <BugActivity
+                    backgroundColor="rgb(78 189 142)"
+                    icon={BugActivity4}
+                    color="white"
+                    title="Version Enhancements"
+                    shadow="10px -6px 0px -2px rgb(210 246 231)"
+                  />
+                </div>
+                <div className="col-sm-12 col-lg-6">
+                  <BugActivity
+                    backgroundColor="rgb(247 164 87)"
+                    icon={BugActivity5}
+                    color="white"
+                    title="Load Testing"
+                    shadow="10px -6px 0px -2px rgb(255 229 204)"
+                  />
+                </div>
+                <div className="col-sm-12 col-lg-6">
+                  <BugActivity
+                    backgroundColor="rgb( 89 148 245)"
+                    icon={BugActivity6}
+                    color="white"
+                    title="Tech Troubleshooting"
+                    shadow="10px -6px 0px -2px rgb( 180 208 255)"
+                  />
+                </div>
+                <div className="col-sm-12 col-lg-6">
+                  <BugActivity
+                    backgroundColor="rgb(55 189 234)"
+                    icon={BugActivity7}
+                    color="white"
+                    title="Performance Oversight"
+                    shadow="10px -6px 0px -2px rgb( 201 242 255)"
+                  />
+                </div>
+                <div className="col-sm-12 col-lg-6">
+                  <BugActivity
+                    backgroundColor="rgb(85 119 204)"
+                    icon={BugActivity8}
+                    color="white"
+                    title="User-Focused Support"
+                    shadow="10px -6px 0px -2px rgb(152 178 245)"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </section>
+
+        {/* section */}
 
         <section className="container pb-5 text-center">
           <h5
@@ -432,7 +450,8 @@ const PageContent = () => {
           <div className="maintain p-1 mt-5">
             <div className="maintain-box">
               <div className="maintain-icon text-center align-self-center fs-1 ">
-                <img src={Experience1} className="fa-icon" alt="" />
+                <img src={Apps1} className="fa-icon" alt="" />
+                <h5 className="mt-4 fw-bold">Web App</h5>
               </div>
 
               <div className="contents">
@@ -446,7 +465,8 @@ const PageContent = () => {
             </div>
             <div className="maintain-box">
               <div className="maintain-icon text-center align-self-center fs-1 ">
-                <img src={Experience2} className="fa-icon" alt="" />
+                <img src={Apps2} className="fa-icon" alt="" />
+                <h5 className="mt-4 fw-bold">Cloud Apps & SaaS</h5>
               </div>
               <div className="contents">
                 <h5 className="text-white fw-bold">Cloud Apps & SaaS</h5>
@@ -459,7 +479,8 @@ const PageContent = () => {
             </div>
             <div className="maintain-box">
               <div className="maintain-icon text-center align-self-center fs-1 ">
-                <img src={Experience3} className="fa-icon" alt="" />
+                <img src={Apps3} className="fa-icon" alt="" />
+                <h5 className="mt-4 fw-bold">Enterprise App</h5>
               </div>
               <div className="contents ">
                 <h5 className=" text-white  fw-bold">Enterprise Apps</h5>
@@ -472,7 +493,8 @@ const PageContent = () => {
             </div>
             <div className="maintain-box">
               <div className="maintain-icon text-center align-self-center fs-1 ">
-                <img src={Experience4} className="fa-icon" alt="" />
+                <img src={Apps4} className="fa-icon" alt="" />
+                <h5 className="mt-4 fw-bold">AR/VR Apps</h5>
               </div>
               <div className="contents">
                 {" "}
@@ -486,7 +508,8 @@ const PageContent = () => {
             </div>
             <div className="maintain-box">
               <div className="maintain-icon text-center align-self-center fs-1 ">
-                <img src={Experience5} className="fa-icon" alt="" />
+                <img src={Apps5} className="fa-icon" alt="" />
+                <h5 className="mt-4 fw-bold">Database Apps</h5>
               </div>
               <div className="contents">
                 {" "}
@@ -500,7 +523,8 @@ const PageContent = () => {
             </div>
             <div className="maintain-box">
               <div className="maintain-icon text-center align-self-center fs-1 ">
-                <img src={Experience6} className="fa-icon" alt="" />
+                <img src={Apps6} className="fa-icon" alt="" />
+                <h5 className="mt-4 fw-bold">AI/ML Apps</h5>
               </div>
               <div className="contents">
                 <h5 className=" text-white  fw-bold">AI/ML Apps</h5>
@@ -513,7 +537,8 @@ const PageContent = () => {
             </div>
             <div className="maintain-box">
               <div className="maintain-icon text-center align-self-center ">
-                <img src={Experience7} className="fa-icon" alt="" />
+                <img src={Apps7} className="fa-icon" alt="" />
+                <h5 className="mt-4 fw-bold">Gaming Apps</h5>
               </div>
               <div class="contents">
                 <h5 className=" text-white  fw-bold">Gaming Apps</h5>
@@ -526,7 +551,8 @@ const PageContent = () => {
             </div>
             <div className="maintain-box">
               <div className="maintain-icon text-center align-self-center ">
-                <img src={Experience8} className="fa-icon" alt="" />
+                <img src={Apps8} className="fa-icon" alt="" />
+                <h5 className="mt-4 fw-bold">Hybrid Apps</h5>
               </div>
               <div className="contents">
                 <h3 className="text-white fw-bold">Hybrid Apps</h3>
@@ -541,8 +567,10 @@ const PageContent = () => {
           </div>
         </section>
 
-        <section>
-          <div className="bg-white app-shap text-center container">
+        {/* -----------------section-------------- */}
+
+        <section style={{ backgroundColor: "rgb(250 250 250)" }}>
+          <div className=" app-shap text-center container">
             <h3 className="shap-heading">
               Let's get your app in shape - contact us now and let the
               <br /> maintenance magic begin
@@ -556,7 +584,7 @@ const PageContent = () => {
             <div className="row justify-content-center ">
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <Shapcard
-                  image={GiArcheryTarget()}
+                  image={Target}
                   title="Fixed"
                   para="Slow and glitch software updates with no-real benefits for users?"
                   bgcolor="rgb(6 21 114)"
@@ -566,7 +594,7 @@ const PageContent = () => {
               </div>
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <Shapcard
-                  image={FiTarget()}
+                  image={Target}
                   title="issue"
                   para="Slow and glitch software updates with no-real benefits for users?"
                   footer="Amplework’s Solution"
@@ -576,7 +604,7 @@ const PageContent = () => {
               </div>
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <Shapcard
-                  image={FiTarget()}
+                  image={Target}
                   title="issue"
                   para="Slow and glitch software updates with no-real benefits for users?"
                   footer="Amplework’s Solution"
@@ -587,7 +615,8 @@ const PageContent = () => {
             </div>
           </div>
         </section>
-        <section className=" bg-light">
+        {/* ------------------ */}
+        <section style={{ backgroundColor: "rgb(245 245 245)" }}>
           <div className="container text-center  ">
             <h3>
               Fascinating Benefits of Application Maintenance and Support
@@ -649,85 +678,123 @@ const PageContent = () => {
             </div>
           </div>
         </section>
-        <section className="container ">
-          <div className="diverse row container justify-content-between">
-            <div className="col-sm-12 col-lg-6 diverse-first ">
-              <h3 className="diverse-heading col-sm-9">
-                Diverse Levels Of Support Offered By Our Prowess Experts
-              </h3>
-              <p className="diverse-para ">
-                We offer support for application maintenance at a diverse level
-                of operations to help our clients in accomplishing their
-                specific goals. If you are confused that which level of support
-                service will be beneficial for you then you can connect with us
-                to get valuable insights about operations.
-              </p>
-            </div>
-
-            <div className="col-sm-12 col-lg-6 d-lg-flex gap-3 ">
-              <div className="first">
-                <Card className="mt-3 card-img border-3 text-light text-start ">
-                  <Card.Body>
-                    <span style={{ fontSize: "14px" }}>Level 1</span>
-                    <br />
-                    <span style={{ fontSize: "14px" }}>
-                      Covers Basic App Services
-                    </span>
-                    <br />
-                    <li>Consists of technical information. </li>
-                    <li>Basic system maintenance.</li>
-                    <li>Basic bug fixes.</li>
-                    <li>Troubleshooting</li>
-                    <li>Basic security maintenance.</li>
-                  </Card.Body>
-                </Card>
-                <Card className="mt-3 card-img2  border-3 text-light text-start">
-                  <Card.Body>
-                    <span style={{ fontSize: "14px" }}>Level 1</span>
-                    <br />
-                    <span style={{ fontSize: "14px" }}>
-                      Covers Basic App Services
-                    </span>
-                    <br />
-                    <li>Consists of technical information. </li>
-                    <li>Basic system maintenance.</li>
-                    <li>Basic bug fixes.</li>
-                    <li>Troubleshooting</li>
-                    <li>Basic security maintenance.</li>
-                  </Card.Body>
-                </Card>
+        {/* ------------------ */}
+        <section className="  ">
+          <div className="container">
+            <div className="diverse row">
+              <div className="col-sm-12 col-lg-6 diverse-first ">
+                <h3 className="diverse-heading col-sm-9">
+                  Diverse Levels Of Support Offered By Our Prowess Experts
+                </h3>
+                <p className="diverse-para ">
+                  We offer support for application maintenance at a diverse
+                  level of operations to help our clients in accomplishing their
+                  specific goals. If you are confused that which level of
+                  support service will be beneficial for you then you can
+                  connect with us to get valuable insights about operations.
+                </p>
               </div>
-              <div className="second mt-4">
-                <Card className="mt-3 card-img1 border-3 text-light text-start">
-                  <Card.Body>
-                    <span style={{ fontSize: "14px" }}>Level 1</span>
-                    <br />
-                    <span style={{ fontSize: "14px" }}>
-                      Covers Basic App Services
-                    </span>
-                    <br />
-                    <li>Consists of technical information. </li>
-                    <li>Basic system maintenance.</li>
-                    <li>Basic bug fixes.</li>
-                    <li>Troubleshooting</li>
-                    <li>Basic security maintenance.</li>
-                  </Card.Body>
-                </Card>
-                <Card className="mt-3 card-img3 border-3 text-light text-start">
-                  <Card.Body>
-                    <span style={{ fontSize: "14px" }}>Level 1</span>
-                    <br />
-                    <span style={{ fontSize: "14px" }}>
-                      Covers Basic App Services
-                    </span>
-                    <br />
-                    <li>Consists of technical information. </li>
-                    <li>Basic system maintenance.</li>
-                    <li>Basic bug fixes.</li>
-                    <li>Troubleshooting</li>
-                    <li>Basic security maintenance.</li>
-                  </Card.Body>
-                </Card>
+              <div className="col-sm-12 col-lg-6 d-lg-flex gap-3">
+                <div className="first">
+                  <Card
+                    className="mt-3 card-img border-3 text-light text-start "
+                    style={{
+                      backgroundImage: `url(${DiverseCardBg})`,
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                    }}
+                  >
+                    <Card.Body>
+                      <span style={{ fontSize: "14px" }}>Level 1</span>
+                      <br />
+                      <span className="fw-bold" style={{ fontSize: "12px" }}>
+                        Covers Basic App Services
+                      </span>
+                      <br />
+                      <ul className="p-1 mx-2 lh-lg">
+                        <li>Consists of technical information. </li>
+                        <li>Basic system maintenance.</li>
+                        <li>Basic bug fixes.</li>
+                        <li>Troubleshooting</li>
+                        <li>Basic security maintenance.</li>
+                      </ul>
+                    </Card.Body>
+                  </Card>
+                  <Card
+                    className="mt-3 card-img2  border-3 text-light text-start"
+                    style={{
+                      backgroundImage: `url(${DiverseCardBg})`,
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                    }}
+                  >
+                    <Card.Body>
+                      <span style={{ fontSize: "14px" }}>Level 2</span>
+                      <br />
+                      <span className="fw-bold" style={{ fontSize: "12px" }}>
+                        Comprehensive Maintenance
+                      </span>
+                      <br />
+                      <ul className="p-1 mx-2 lh-lg">
+                        <li> Configuration Management. </li>
+                        <li>Basic Documentation. </li>
+                        <li>Basic Testing. </li>
+                        <li>Problem Management. </li>
+                        <li>Advance Bug Fixes.</li>
+                      </ul>
+                    </Card.Body>
+                  </Card>
+                </div>
+                <div className="second mt-4">
+                  <Card
+                    className="mt-3 card-img1 border-3 text-light text-start"
+                    style={{
+                      backgroundImage: `url(${DiverseCardBg})`,
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                    }}
+                  >
+                    <Card.Body>
+                      <span style={{ fontSize: "14px" }}>Level 3</span>
+                      <br />
+                      <span className="fw-bold" style={{ fontSize: "12px" }}>
+                        Advanced Support Services
+                      </span>
+                      <br />
+                      <ul className="p-1 mx-2 lh-lg">
+                        <li>Performance Tuning.</li>
+                        <li>Advanced Testing.</li>
+                        <li> Advanced Documentation.</li>
+                        <li>Release Management.</li>
+                        <li> Advanced Bug Fixes.</li>
+                      </ul>
+                    </Card.Body>
+                  </Card>
+                  <Card
+                    className="mt-3 card-img3 border-3 text-light text-start"
+                    style={{
+                      backgroundImage: `url(${DiverseCardBg})`,
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                    }}
+                  >
+                    <Card.Body>
+                      <span style={{ fontSize: "14px" }}>Level 4</span>
+                      <br />
+                      <span className="fw-bold" style={{ fontSize: "12px" }}>
+                        Specialized Support Services
+                      </span>
+                      <br />
+                      <ul className="p-1 mx-2 lh-lg">
+                        <li> Root Cause Analysis. </li>
+                        <li>Database Administration. </li>
+                        <li>Architecture Design. </li>
+                        <li>Secure Operations. </li>
+                        <li>Personalized Solutions.</li>
+                      </ul>
+                    </Card.Body>
+                  </Card>
+                </div>
               </div>
             </div>
           </div>
@@ -763,8 +830,11 @@ const PageContent = () => {
             </div>
           </div>
         </section>
-        <section>
-          <div className=" container">
+
+        {/* ----------- */}
+
+        <section style={{ backgroundColor: "rgb(248 249 250)" }}>
+          <div className=" container text-center">
             <h3 className="bussiness-heading">
               Are you searching for a dedicated technology partner, not
               <br /> just a service provider?
@@ -778,39 +848,24 @@ const PageContent = () => {
                   support clients in generating higher revenue for operations.
                 </p>
                 <p>
-                  <i
-                    className="fa fa-check-circle-o mx-3"
-                    style={{ color: "blue", opacity: "0.4" }}
-                  />
-                  Personalized business services.
+                  <img src={HourlyPlan} alt="" width={"10px"} />
+                  &nbsp;&nbsp; Personalized business services.
                 </p>
                 <p>
-                  <i
-                    className="fa fa-check-circle-o mx-3"
-                    style={{ color: "blue", opacity: "0.4" }}
-                  />
-                  Advanced practices for DevOps.
+                  <img src={HourlyPlan} alt="" width={"10px"} />
+                  &nbsp;&nbsp; Advanced practices for DevOps.
                 </p>
                 <p>
-                  <i
-                    className="fa fa-check-circle-o mx-3"
-                    style={{ color: "blue", opacity: "0.4" }}
-                  />
-                  Proficiency in AI/ML/Blockchain Solutions.
+                  <img src={HourlyPlan} alt="" width={"10px"} />
+                  &nbsp;&nbsp; Proficiency in AI/ML/Blockchain Solutions.
                 </p>
                 <p>
-                  <i
-                    className="fa fa-check-circle-o mx-3"
-                    style={{ color: "blue", opacity: "0.4" }}
-                  />
-                  Exclusive support for digital transformation.
+                  <img src={HourlyPlan} alt="" width={"10px"} />
+                  &nbsp;&nbsp; Exclusive support for digital transformation.
                 </p>
                 <p>
-                  <i
-                    className="fa fa-check-circle-o mx-3"
-                    style={{ color: "blue", opacity: "0.4" }}
-                  />
-                  Large scale & complex app building.
+                  <img src={HourlyPlan} alt="" width={"10px"} />
+                  &nbsp;&nbsp; Large scale & complex app building.
                 </p>
               </div>
               <div className="col-sm-12 col-lg-6">
@@ -819,116 +874,152 @@ const PageContent = () => {
             </div>
           </div>
         </section>
+
+        {/* Question Answering section */}
+
         <section className="">
           <div
-            className="question text-center bg-warning pb-1"
+            className="question text-center p-5"
             style={{
-              backgroundImage: `url(${bgImage})`,
+              backgroundImage: `url(${QUestionBG})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
           >
-            <h3 className="fw-bold">Frequently Asked Questions</h3>
-            <Container className="pb-4 py-5">
-              <div className=" row ">
-                <div className=" col-sm-12 col-lg-6 mt-3">
-                  <QuestionAccordion
-                    question=" How skilled are your dedicated developers?"
-                    answer="At Amplework, we feature a team of highly skilled and
+            <h4 className="fw-bold">Frequently Asked Questions</h4>
+            <Container className="pb-4 py-0">
+              <Accordion>
+                <div className="row">
+                  <div className="col-lg-6 p-2 text-start">
+                    <Accordion.Item eventKey="0" className="question-box">
+                      <Accordion.Header className="fs-1">
+                        <h4>How skilled are your dedicated developers?</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        At Amplework, we feature a team of highly skilled and
+                        experienced dedicatsed developers having several years
+                        of expertise in the field of mobile app development
+                        solutions.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </div>
+                  <div className="col-lg-6 p-2 text-start">
+                    <Accordion.Item eventKey="1" className="question-box">
+                      <Accordion.Header>
+                        <h4>How skilled are your dedicated developers?</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        At Amplework, we feature a team of highly skilled and
                         experienced dedicated developers having several years of
                         expertise in the field of mobile app development
-                        solutions."
-                  />
-                </div>
-                <div className=" col-sm-12 col-lg-6 mt-3">
-                  <QuestionAccordion
-                    question=" How skilled are your dedicated developers?"
-                    answer="At Amplework, we feature a team of highly skilled and
+                        solutions.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </div>
+                  <div className="col-lg-6 p-2 text-start">
+                    <Accordion.Item eventKey="2" className="question-box">
+                      <Accordion.Header>
+                        <h4>How skilled are your dedicated developers?</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        At Amplework, we feature a team of highly skilled and
                         experienced dedicated developers having several years of
                         expertise in the field of mobile app development
-                        solutions."
-                  />
-                </div>
-              </div>
-              <div className=" row ">
-                <div className=" col-sm-12 col-lg-6 mt-3">
-                  <QuestionAccordion
-                    question=" How skilled are your dedicated developers?"
-                    answer="At Amplework, we feature a team of highly skilled and
+                        solutions.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </div>
+                  <div className="col-lg-6 p-2 text-start">
+                    <Accordion.Item eventKey="3" className="question-box">
+                      <Accordion.Header>
+                        <h4>How skilled are your dedicated developers?</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        At Amplework, we feature a team of highly skilled and
                         experienced dedicated developers having several years of
                         expertise in the field of mobile app development
-                        solutions."
-                  />
-                </div>
-                <div className=" col-sm-12 col-lg-6 mt-3">
-                  <QuestionAccordion
-                    question=" How skilled are your dedicated developers?"
-                    answer="At Amplework, we feature a team of highly skilled and
+                        solutions.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </div>
+                  <div className="col-lg-6 p-2 text-start">
+                    <Accordion.Item eventKey="4" className="question-box">
+                      <Accordion.Header>
+                        <h4>How skilled are your dedicated developers?</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        At Amplework, we feature a team of highly skilled and
                         experienced dedicated developers having several years of
                         expertise in the field of mobile app development
-                        solutions."
-                  />
-                </div>
-              </div>
-              <div className=" row ">
-                <div className=" col-sm-12 col-lg-6 mt-3">
-                  <QuestionAccordion
-                    question=" How skilled are your dedicated developers?"
-                    answer="At Amplework, we feature a team of highly skilled and
+                        solutions.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </div>
+                  <div className="col-lg-6 p-2 text-start">
+                    <Accordion.Item eventKey="5" className="question-box">
+                      <Accordion.Header>
+                        <h4>How skilled are your dedicated developers?</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        At Amplework, we feature a team of highly skilled and
                         experienced dedicated developers having several years of
                         expertise in the field of mobile app development
-                        solutions."
-                  />
-                </div>
-                <div className=" col-sm-12 col-lg-6 mt-3">
-                  <QuestionAccordion
-                    question=" How skilled are your dedicated developers?"
-                    answer="At Amplework, we feature a team of highly skilled and
+                        solutions.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </div>
+                  <div className="col-lg-6 p-2 text-start">
+                    <Accordion.Item eventKey="6" className="question-box">
+                      <Accordion.Header>
+                        <h4>How skilled are your dedicated developers?</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        At Amplework, we feature a team of highly skilled and
                         experienced dedicated developers having several years of
                         expertise in the field of mobile app development
-                        solutions."
-                  />
-                </div>
-              </div>
-              <div className=" row ">
-                <div className=" col-sm-12 col-lg-6 mt-3">
-                  <QuestionAccordion
-                    question=" How skilled are your dedicated developers?"
-                    answer="At Amplework, we feature a team of highly skilled and
+                        solutions.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </div>
+                  <div className="col-lg-6 p-2 text-start">
+                    <Accordion.Item eventKey="7" className="question-box">
+                      <Accordion.Header>
+                        <h4>How skilled are your dedicated developers?</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        At Amplework, we feature a team of highly skilled and
                         experienced dedicated developers having several years of
                         expertise in the field of mobile app development
-                        solutions."
-                  />
+                        solutions.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </div>
                 </div>
-                <div className=" col-sm-12 col-lg-6 mt-3">
-                  <QuestionAccordion
-                    question=" How skilled are your dedicated developers?"
-                    answer="At Amplework, we feature a team of highly skilled and
-                        experienced dedicated developers having several years of
-                        expertise in the field of mobile app development
-                        solutions."
-                  />
-                </div>
-              </div>
+              </Accordion>
             </Container>
           </div>
         </section>
+
+        {/* ----------------------- */}
+
         <section className="">
           <div className="developer container ">
             <Card
-              className=" text-white"
+              className=" text-white border-0"
               style={{
-                backgroundImage: `url(${TryBg})`,
+                backgroundImage: `url(${DeveloperBG})`,
                 backgroundRepeat: "no-repeat",
                 borderRadius: "10px",
               }}
             >
               <Card.Body>
-                <div className="d-flex flex-wrap justify-content-between">
+                <div className="d-flex flex-wrap justify-content-between p-4 align-self-center">
                   <div className="first col-sm-8">
-                    <p className="fs-4 fw-bold">
+                    <h2 className="dedicated-developer">
+                      {" "}
                       Dedicated Full-stack developer?
-                    </p>
+                    </h2>
                     <Card.Text>
                       Let's Discuss Your Project how we will transform your idea
                       into an amazing digital product?
@@ -984,7 +1075,6 @@ const PageContent = () => {
             <ClientAppreciation />
           </div>
         </section>
-
         <section>
           <h3 className="text-center ">Portfolio of Our Accomplishments</h3>
           <Carousel>
@@ -1094,7 +1184,6 @@ const PageContent = () => {
             </Carousel.Item>
           </Carousel>
         </section>
-
         <section className=" bg-white">
           <div className="container">
             <h3 className="text-center ">
@@ -1275,7 +1364,7 @@ const PageContent = () => {
                             <span className="fs-5">I`m not a robot</span>
                           </div>
                           <div className="col-lg-2">
-                            <img src={Captcha} width={"50px"} />
+                            <img src={captcha} width={"50px"} />
                           </div>
                         </div>
                         <div className="col-md-5 align-self-center text-lg-end text-md-end ">
@@ -1370,7 +1459,7 @@ const PageContent = () => {
                       </td>
                       <td className=" ">
                         <img
-                          src={prakashSir}
+                          src={PrakashSir}
                           className="foundersImg "
                           alt=""
                           width={"105px"}
@@ -1380,7 +1469,7 @@ const PageContent = () => {
                       </td>
                       <td className=" ">
                         <img
-                          src={novaMam}
+                          src={NovaMam}
                           className="foundersImg "
                           alt=""
                           width={"105px"}

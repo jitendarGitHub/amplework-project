@@ -3,7 +3,7 @@ import Namboodiri from "../assets/NAMBOODIRI.png";
 import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 function ClientAppreciation(props) {
   return (
-    <Carousel>
+    <Carousel variant="primary">
       <Carousel.Item>
         <h3 className="fw-bold ">
           We Proudly Showcase - Our Client Appreciations
