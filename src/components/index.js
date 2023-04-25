@@ -10,6 +10,7 @@ import Shapcard from "./ShapCard";
 import WelcomeBlock from "./welcomeBlock/WelcomeBlock";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
+import FullStackDeveloper from "./FullStackDeveloperCard";
 
 export {
   Footer,
@@ -24,4 +25,5 @@ export {
   Shapcard,
   WelcomeBlock,
   Header,
+  FullStackDeveloper,
 };

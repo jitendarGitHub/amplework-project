@@ -5,7 +5,7 @@ const WebDevelopment = (props) => {
     <section style={{ backgroundColor: `${props.bgcolor}` }}>
       <div className="container text-center">
         <h2>{props.title}</h2>
-        <p className="p-4">{props.desc}</p>
+        <p className="p-4 development-desc">{props.desc}</p>
         <div
           className="row justify-content-center text-start"
           style={{ flexDirection: `${props.columnreverse}` }}
@@ -13,25 +13,25 @@ const WebDevelopment = (props) => {
           <div className="col-lg-5">
             <img src={props.image} width={"90%"} />
           </div>
-          <div className="col-lg-5">
-            <p className="fw-bold ">{props.about}</p>
-            <p>
+          <div className="col-lg-5 ">
+            <p className=" list-about">{props.about}</p>
+            <p className="list-style">
               <img src={props.listimg} alt="" width={"10px"} />
               &nbsp;&nbsp;{props.list1}
             </p>
-            <p>
+            <p className="list-style">
               <img src={props.listimg} alt="" width={"10px"} />
               &nbsp;&nbsp; {props.list2}
             </p>
-            <p>
+            <p className="list-style">
               <img src={props.listimg} alt="" width={"10px"} />
               &nbsp;&nbsp; {props.list3}
             </p>
-            <p>
+            <p className="list-style">
               <img src={props.listimg} alt="" width={"10px"} />
               &nbsp;&nbsp; {props.list4}
             </p>
-            <p>
+            <p className="list-style">
               <img src={props.listimg} alt="" width={"10px"} />
               &nbsp;&nbsp; {props.list5}
             </p>

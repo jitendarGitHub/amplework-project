@@ -1,3 +1,18 @@
 .enterprise-para{
     /* padding: 0px 120px 50px 120px; */
-}
+} 
+
+@media only screen and (max-width: 768px){
+    .development-desc {
+        text-align: justify;
+    }
+  }
+
+  .list-style{
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+  .list-about{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 580;
+  }

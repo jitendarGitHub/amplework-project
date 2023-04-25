@@ -88,6 +88,8 @@ import Portaldevelopment from "./Portaldevelopment.png";
 import Uidevelopment from "./uidevelopment.png";
 import AppDevelopment from "./appdevelopment.png";
 import EcommerceDevelopment from "./e-commercedevelopment.png";
+import Paymentdevelopment from "./Paymentdevelopment.png";
+import Contentdevelopment from "./contentdevelopment.png";
 
 export {
   Banner,
@@ -168,4 +170,6 @@ export {
   Uidevelopment,
   AppDevelopment,
   EcommerceDevelopment,
+  Paymentdevelopment,
+  Contentdevelopment,
 };

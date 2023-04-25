@@ -5,7 +5,7 @@ function ClientAppreciation(props) {
   return (
     <Carousel variant="primary">
       <Carousel.Item>
-        <h3 className="fw-bold ">
+        <h3 className="fw-bold text-center ">
           We Proudly Showcase - Our Client Appreciations
         </h3>
         <div className="container">
@@ -40,7 +40,7 @@ function ClientAppreciation(props) {
         </div>
       </Carousel.Item>
       <Carousel.Item>
-        <h3 className="fw-bold ">
+        <h3 className="fw-bold text-center">
           We Proudly Showcase - Our Client Appreciations
         </h3>
         <div className="container">
@@ -75,7 +75,7 @@ function ClientAppreciation(props) {
         </div>
       </Carousel.Item>
       <Carousel.Item>
-        <h3 className="fw-bold ">
+        <h3 className="fw-bold text-center">
           We Proudly Showcase - Our Client Appreciations
         </h3>
         <div className="container">

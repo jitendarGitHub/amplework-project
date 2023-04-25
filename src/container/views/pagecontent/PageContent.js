@@ -1,6 +1,10 @@
 import "../pagecontent/pagecontent.css";
 import { Banner } from "../../../assets";
-import { ClientAppreciation, WelcomeBlock } from "../../../components";
+import {
+  ClientAppreciation,
+  FullStackDeveloper,
+  WelcomeBlock,
+} from "../../../components";
 import {
   Activity,
   Application,
@@ -42,6 +46,7 @@ const PageContent = () => {
         <BussinessOpration />
         <DedicatedTechnology />
         <AmpleQuestion />
+        <FullStackDeveloper />
         <Developer />
         <section className="bg-light text-center">
           <div className="container ">

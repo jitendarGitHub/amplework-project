@@ -1,11 +1,13 @@
 import "../pagecontent2/Pagecontent2.css";
 
-import { WelcomeBlock } from "../../../components";
+import { ClientAppreciation, WelcomeBlock } from "../../../components";
 import {
   AppDevelopment,
+  Contentdevelopment,
   EcommerceDevelopment,
   HourlyPlan,
   Masterpiece,
+  Paymentdevelopment,
   Portaldevelopment,
   ServiceBanner,
   Softwaredevelopment,
@@ -13,6 +15,13 @@ import {
 } from "../../../assets";
 
 import WebDevelopment from "./section/WebDevelopmentService";
+import {
+  AmpleQuestion,
+  CompanyOverview,
+  Developer,
+  Digitalize,
+  FormSection,
+} from "../pagecontent/section";
 
 const PageContent2 = () => {
   return (
@@ -101,6 +110,33 @@ const PageContent2 = () => {
         columnreverse="row-reverse"
         bgcolor="rgb(248 249 250)"
       />
+      <WebDevelopment
+        title="Content Management Solutions"
+        desc="Integrate our content management business solutions for your corporation to store and manage digital content - such as: images, videos and documents. Now, you can empower your business’s SEO practices with the profound utilization of our expert solutions. Moreover, it will also be going to scale your business’s content marketing practices so that you can attract audiences in an effective manner."
+        about="Simplifying Content Creation"
+        image={Contentdevelopment}
+        listimg={HourlyPlan}
+        list1="    Effective content management. "
+        list2="Improved user experience. "
+        list3="Secure management of information."
+        list4=" Integration with other systems. "
+        list5="Streamlined Workflows."
+      />
+
+      {/****Some Section  Are remain */}
+
+      <Developer />
+      <ClientAppreciation />
+      <AmpleQuestion />
+      <Digitalize />
+      <section style={{ backgroundColor: "rgb(243 246 255)" }} className="p-0">
+        <div className="container">
+          <div className="row justify-content-around">
+            <FormSection />
+            <CompanyOverview />
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

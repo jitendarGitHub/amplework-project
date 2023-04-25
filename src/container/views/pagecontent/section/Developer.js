@@ -6,7 +6,7 @@ const Developer = () => {
   return (
     <section className="">
       <div className="developer container ">
-        <Card
+        {/* <Card
           className=" text-white border-0 p-0 align-self-center"
           style={{
             backgroundImage: `url(${DeveloperBG})`,
@@ -36,7 +36,7 @@ const Developer = () => {
               </Button>
             </div>
           </Card.Body>
-        </Card>
+        </Card> */}
         <div className="content text-center my-5">
           <h4 className="fw-bold">Trusted and Skilled Developers</h4>
           <p>
