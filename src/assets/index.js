@@ -5,7 +5,7 @@ import AppMaintenance from "../assets/AppMaintenance.png";
 import Aws from "../assets/aws-consulting-partner.png";
 import banner from "../assets/banner.jpg";
 import bussiness from "../assets/bussiness.png";
-import calendar from "../assets/calendar.png";
+import Calendar from "../assets/calendar.png";
 import captcha from "../assets/captcha.jpg";
 import Duns from "../assets/d-b-register.png";
 import developerBG from "../assets/developerBG.png";
@@ -60,6 +60,7 @@ import Apps8 from "./Apps8.png";
 import QUestionBG from "./questionBG.png";
 import Bussiness from "./bussiness.png";
 import DeveloperBG from "./developerBG.png";
+import Banner from "../assets/banner.jpg";
 
 import BugActivity1 from "./BugActivity1.png";
 import BugActivity2 from "./BugActivity2.png";
@@ -76,7 +77,20 @@ import HourlyPlan from "./hourlyPlan.png";
 import Target from "./Target.png";
 import TargetArrow from "./TargetArrow.png";
 
+import EnterpriseBg from "../assets/enterpriseBg.png";
+import AmpleLogo from "../assets/amplworkLogo.png";
+
+// second Page Content
+import ServiceBanner from "./serviceBanner.jpg";
+import Masterpiece from "./masterpiece.png";
+import Softwaredevelopment from "./softwaredevelopment.png";
+import Portaldevelopment from "./Portaldevelopment.png";
+import Uidevelopment from "./uidevelopment.png";
+import AppDevelopment from "./appdevelopment.png";
+import EcommerceDevelopment from "./e-commercedevelopment.png";
+
 export {
+  Banner,
   Accessibility,
   Adaptability,
   amplworkLogo,
@@ -86,7 +100,7 @@ export {
   Aws,
   banner,
   bussiness,
-  calendar,
+  Calendar,
   captcha,
   Duns,
   developerBG,
@@ -103,7 +117,7 @@ export {
   BugActivity6,
   BugActivity7,
   BugActivity8,
-  enterpriseBg,
+  EnterpriseBg,
   enterprise1,
   enterprise2,
   enterprise3,
@@ -145,4 +159,13 @@ export {
   QUestionBG,
   Bussiness,
   DeveloperBG,
+  AmpleLogo,
+  /*second Pagecontent*/
+  ServiceBanner,
+  Masterpiece,
+  Softwaredevelopment,
+  Portaldevelopment,
+  Uidevelopment,
+  AppDevelopment,
+  EcommerceDevelopment,
 };

@@ -3,15 +3,17 @@ import "./footer.css";
 import { ExploreMore1, ExploreMore2 } from "../button/Buttons";
 
 //cart assets
-import PartTime from "../../assets/partTime.png";
-import Hourglass from "../../assets/hourglass.png";
-import Calendar from "../../assets/calendar.png";
-import StartupBg from "../../assets/startupbg.png";
-import EnterpriseBg from "../../assets/enterpriseBg.png";
-import Accessibility from "../../assets/Accessibility.png";
-import Adaptability from "../../assets/Adaptability.png";
-import Scability from "../../assets/Scalability.png";
-import Amplelogo from "../../assets/amplworkLogo.png";
+import {
+  PartTime,
+  Calendar,
+  StartupBg,
+  EnterpriseBg,
+  Accessibility,
+  Adaptability,
+  Scalability,
+  AmpleLogo,
+  hourglass,
+} from "../../assets";
 
 //aws assests
 import aws from "../../assets/aws-consulting-partner.png";
@@ -33,7 +35,7 @@ const Footer = () => {
               title="Do you want to hire resources of your Project?"
               description="we have web and app development teams to serve modern tech-savy client by bidding on the challenges on their bespoken requirement."
               PartTime={PartTime}
-              Hourglass={Hourglass}
+              Hourglass={hourglass}
               Calendar={Calendar}
               EnterpriseBg={EnterpriseBg}
               DurationContent1="Part Time"
@@ -47,7 +49,7 @@ const Footer = () => {
               description="We have been working with startups since our inception and help them scale as they grow.Our experience can help you refine your business ideas and get into the market asap."
               PartTime={Accessibility}
               Hourglass={Adaptability}
-              Calendar={Scability}
+              Calendar={Scalability}
               EnterpriseBg={StartupBg}
               DurationContent1="Accessibility"
               DurationContent2="Adaptability"
@@ -60,7 +62,7 @@ const Footer = () => {
         </Container>
         <div className="text-white container mt-5 d-lg-flex">
           <div className="col-lg-6 col-md-12 d-lg-flex align-self-center p-5">
-            <img src={Amplelogo} alt="" width={"80%"} />
+            <img src={AmpleLogo} alt="" width={"80%"} />
           </div>
           <div className=" d-flex flex-wrap col-lg-6 col-sm-12 col-md-12 align-self-center justify-content-around">
             <div className="img1 text-center">

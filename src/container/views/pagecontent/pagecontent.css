@@ -2,6 +2,10 @@
     padding: 60px 0px;   
     ;
 } 
+ .header{
+    position: absolute; 
+    width: 100%;
+ }
 /*Maintenance section*/
 
 .maintain { 
@@ -100,7 +104,8 @@
     font-family: sans-serif;
 }
 .experience{
-    height: 400px;
+    padding-bottom: 100px;
+    /* height: auto; */
 } 
 .experienceoption-title{
     font-family:sans-serif;
@@ -275,9 +280,7 @@
             padding: 15px;
             border-style: dashed;   
         }
-        .card:hover img{
-            background-color: red;
-        }
+         
         .card:hover{
             border-color: rgb(6 21 114); 
         }
