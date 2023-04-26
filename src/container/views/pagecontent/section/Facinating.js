@@ -6,10 +6,11 @@ import {
   facinating5,
 } from "../../../../assets";
 import { FacinatingCard } from "../../../../components";
+import "../pagecontent.css";
 
 const Facinating = () => {
   return (
-    <section style={{ backgroundColor: "rgb(245 245 245)" }}>
+    <section className="facinating-section">
       <div className="container text-center  ">
         <h3>
           Fascinating Benefits of Application Maintenance and Support Services

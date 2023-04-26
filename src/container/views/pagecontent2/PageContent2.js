@@ -5,11 +5,11 @@ import {
   AppDevelopment,
   Contentdevelopment,
   EcommerceDevelopment,
+  EnterpriseWebDevelopment,
   HourlyPlan,
   Masterpiece,
   Paymentdevelopment,
   Portaldevelopment,
-  ServiceBanner,
   Softwaredevelopment,
   Uidevelopment,
 } from "../../../assets";
@@ -18,16 +18,20 @@ import WebDevelopment from "./section/WebDevelopmentService";
 import {
   AmpleQuestion,
   CompanyOverview,
+  DedicatedTechnology,
   Developer,
   Digitalize,
   FormSection,
 } from "../pagecontent/section";
+import DevelopmentProcess from "./section/TechnologyStacks";
+import TechnologyStacks from "./section/TechnologyStacks";
+import BenifitsOfBussiness from "./section/BenifitsOfBussiness";
 
 const PageContent2 = () => {
   return (
     <div className="page-content">
       <WelcomeBlock
-        image={ServiceBanner}
+        image={EnterpriseWebDevelopment}
         title="ENTERPRISES WEB DEVELOPMENT"
         description="Elevate Your Web Presence With Enterprise Website Development"
       />
@@ -122,6 +126,9 @@ const PageContent2 = () => {
         list4=" Integration with other systems. "
         list5="Streamlined Workflows."
       />
+
+      <TechnologyStacks />
+      <BenifitsOfBussiness />
 
       {/****Some Section  Are remain */}
 

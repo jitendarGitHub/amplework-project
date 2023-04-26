@@ -14,7 +14,7 @@ const FullStackDeveloper = () => {
       >
         <Card.Body>
           <div className="d-flex flex-wrap justify-content-between p-4 align-self-center">
-            <div className="first col-sm-8">
+            <div className=" col-sm-8">
               <h2 className="dedicated-developer">
                 {" "}
                 Dedicated Full-stack developer?

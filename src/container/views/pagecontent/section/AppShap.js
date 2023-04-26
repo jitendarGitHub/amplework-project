@@ -1,9 +1,10 @@
 import { Target } from "../../../../assets";
 import { Shapcard } from "../../../../components";
+import "../pagecontent.css";
 
 const AppShap = () => {
   return (
-    <section style={{ backgroundColor: "rgb(250 250 250)" }}>
+    <section className="app-shap-section">
       <div className=" app-shap text-center container">
         <h3 className="shap-heading">
           Let's get your app in shape - contact us now and let the

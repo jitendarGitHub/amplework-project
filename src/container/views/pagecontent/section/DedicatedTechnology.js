@@ -1,8 +1,8 @@
 import { Bussiness, HourlyPlan } from "../../../../assets";
-
+import "../pagecontent.css";
 const DedicatedTechnology = () => {
   return (
-    <section style={{ backgroundColor: "rgb(248 249 250)" }}>
+    <section className="dedicated-technology">
       <div className=" container text-center">
         <h3 className="bussiness-heading">
           Are you searching for a dedicated technology partner, not

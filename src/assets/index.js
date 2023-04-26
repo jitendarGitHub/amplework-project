@@ -81,7 +81,7 @@ import EnterpriseBg from "../assets/enterpriseBg.png";
 import AmpleLogo from "../assets/amplworkLogo.png";
 
 // second Page Content
-import ServiceBanner from "./serviceBanner.jpg";
+import EnterpriseWebDevelopment from "./EnterpriseWebDeveloopmentBG.jpg";
 import Masterpiece from "./masterpiece.png";
 import Softwaredevelopment from "./softwaredevelopment.png";
 import Portaldevelopment from "./Portaldevelopment.png";
@@ -90,7 +90,14 @@ import AppDevelopment from "./appdevelopment.png";
 import EcommerceDevelopment from "./e-commercedevelopment.png";
 import Paymentdevelopment from "./Paymentdevelopment.png";
 import Contentdevelopment from "./contentdevelopment.png";
-
+import Benifitsofsuccess from "./benifitsofsuccess.png";
+import benifit1 from "./benifit1.png";
+import benifit2 from "./benifit2.png";
+import benifit3 from "./benifi3.png";
+import benifit4 from "./benifit4.png";
+import benifit5 from "./benifit5.png";
+import benifit6 from "./benifit6.png";
+import benifit7 from "./benifit7.png";
 export {
   Banner,
   Accessibility,
@@ -163,7 +170,7 @@ export {
   DeveloperBG,
   AmpleLogo,
   /*second Pagecontent*/
-  ServiceBanner,
+  EnterpriseWebDevelopment,
   Masterpiece,
   Softwaredevelopment,
   Portaldevelopment,
@@ -172,4 +179,12 @@ export {
   EcommerceDevelopment,
   Paymentdevelopment,
   Contentdevelopment,
+  Benifitsofsuccess,
+  benifit1,
+  benifit2,
+  benifit3,
+  benifit4,
+  benifit5,
+  benifit6,
+  benifit7,
 };

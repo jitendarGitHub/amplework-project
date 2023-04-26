@@ -4,13 +4,10 @@ import { SiTimescale } from "@react-icons/all-files/si/SiTimescale";
 import { VscGraph } from "@react-icons/all-files/vsc/VscGraph";
 import { Table } from "react-bootstrap";
 import { NovaMam, PrakashSir, SantoshSir } from "../../../../assets";
-
+import "../pagecontent.css";
 const CompanyOverview = () => {
   return (
-    <div
-      className="col-sm-12 col-lg-5  p-3 text-white "
-      style={{ backgroundColor: "rgb(6 19 100)" }}
-    >
+    <div className="col-sm-12 col-lg-5  p-3 text-white company-section ">
       <h3 className="QuickStart">Quick Stats</h3>
       <div className="d-flex">
         <div className="col-lg-7 col-7">

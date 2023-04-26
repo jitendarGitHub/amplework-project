@@ -7,11 +7,12 @@ import { IoMdCall } from "@react-icons/all-files/io/IoMdCall";
 import { RiApps2Line } from "@react-icons/all-files/ri/RiApps2Line";
 import { Button, Col, Form, InputGroup, Row } from "react-bootstrap";
 import { captcha } from "../../../../assets";
+import "../pagecontent.css";
 
 const FormSection = () => {
   return (
     <div className="col-sm-12 col-lg-6   p-3 align-self-center">
-      <h3 className="container fw-bold" style={{ fontSize: "19px" }}>
+      <h3 className="container fw-bold form-section-heading">
         Prepare yourself for a quick Response
       </h3>
       <Form className="container pt-5">

@@ -2,17 +2,12 @@ import { Button } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "../../container/views/pagecontent/pagecontent.css";
+import { NavLink } from "react-router-dom";
 
 const Header = (props) => {
   return (
     <div className="header">
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        bg="transparent"
-        variant="dark"
-        className="bg-danger"
-      >
+      <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark">
         <div className="container-fluid">
           <Navbar.Brand>
             <img src={props.image} alt="" width={"250px"} />

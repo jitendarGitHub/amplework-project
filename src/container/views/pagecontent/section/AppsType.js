@@ -1,3 +1,4 @@
+import "../pagecontent.css";
 import {
   Apps1,
   Apps2,
@@ -12,17 +13,7 @@ import {
 const AppsType = () => {
   return (
     <section className="container pb-5 text-center">
-      <h5
-        className=""
-        style={{
-          color: "rgb(245 164 3)",
-          fontFamily:
-            "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
-          fontSize: "14px",
-        }}
-      >
-        Keep Your Applications Always Shine
-      </h5>
+      <h5 className="app-type-section">Keep Your Applications Always Shine</h5>
       <h3>Types of Apps We Maintain At Amplework Software</h3>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting

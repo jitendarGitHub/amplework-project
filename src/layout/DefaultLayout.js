@@ -5,14 +5,12 @@ import { AppContent, Footer, Header } from "../components";
 
 const DefaultLayout = () => {
   return (
-    <div>
-      <div className=" ">
-        <Header image={amplworkLogo} />
-        <div className="">
-          <AppContent />
-        </div>
-        <Footer />
+    <div className=" ">
+      <Header image={amplworkLogo} />
+      <div className="">
+        <AppContent />
       </div>
+      <Footer />
     </div>
   );
 };

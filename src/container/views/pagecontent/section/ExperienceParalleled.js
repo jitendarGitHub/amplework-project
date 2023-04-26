@@ -1,6 +1,7 @@
+import "../pagecontent.css";
 const ExperienceParalleled = () => {
   return (
-    <section className="" style={{ backgroundColor: "rgb(22 45 66)" }}>
+    <section className="experience-paralled-section">
       <div className="container">
         <div className=" text-center text-light experience ">
           <div className=" ">

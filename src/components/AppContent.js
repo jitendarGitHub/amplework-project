@@ -1,13 +1,11 @@
 import React, { Suspense } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
-import { CSpinner } from "@coreui/react";
+import { Route, Routes } from "react-router-dom";
 
-// routes config
 import { routes } from "../routes/Index";
 
 const AppContent = () => {
   return (
-    <Suspense fallback={<CSpinner color="primary" />}>
+    <Suspense>
       <Routes>
         {routes.map((route, idx) => {
           return (

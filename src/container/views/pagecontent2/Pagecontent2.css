@@ -6,13 +6,147 @@
     .development-desc {
         text-align: justify;
     }
+    .list-about{
+      text-align: center !important;
+    } 
   }
-
+   
+  @media only screen and (max-width: 468px){
+    .enterprise-btn{
+      text-align: center;
+    } 
+  }
   .list-style{
-    font-weight: 500;
+    color: #212529;
+    font-weight: 400;
+    padding-bottom: 5px;
+    list-style: none;
+    position: relative;
+    font-family: Poppins,sans-serif;
     font-family: sans-serif;
+    display: list-item;
+    text-align: -webkit-match-parent;
   }
   .list-about{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
     font-weight: 580;
+    font-size: 16px!important;
+    line-height: 1.4!important;
+  }
+
+  /*---*/
+  .technology-stack{
+    text-align: start;
+  }
+  .technology-stack:hover{
+    background-color: #5920f4;
+    color: white;  
+  }
+  .technology-stack:hover h3{
+    color: white;
+  }
+  .technology-stack button{
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    margin-top: 5px;
+    
+    
+  }
+  .technology-stack h3{
+    font-size: 16px!important;
+    line-height: 1.4!important;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #4d2de2;
+font-weight: 600;
+font-family: Poppins,sans-serif;
+
+  } 
+  .technology-stack button:hover{
+    background-color: #f5a403;
+    transition: 0.5s;
+  }
+  .first{
+    background-color:rgb(223 238 255)
+  }
+  .second{
+    background-color:rgb(223 238 255)
+  }
+  .third{
+    background-color:rgb(234 243 254)
+  }
+  .four{
+    background-color:rgb( 241 248 255)
+  }
+  .five{
+    background-color: rgb(223 238 255)
+  }
+  .six{
+    background-color:rgb(223 238 255)
+  }
+  
+  /*benifit of bussiness*/
+  .benifit-section{
+    background-color: rgb(245 245 245);
+  }
+
+  .benifit-type1{
+    color: rgb(240 100 102); 
+     box-shadow: 10px -6px 0px -2px rgb( 255 225 225) ;
+     
+  }
+  .benifit-type-img1{
+    background-color: rgb(240 100 102);
+    border-radius: 5px;
+  }
+  .benifit-type-heading{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Poppins,sans-serif;
+  }
+  .benifit-type2{
+    box-shadow: 10px -6px 0px -2px rgb( 238 208 248) ; 
+    color: rgb(158 109 175);
+  }
+  .benifit-type-img2{
+    background-color: rgb( 158 109 175);
+    border-radius: 5px;
+  }
+
+  .benifit-type3{
+    box-shadow: 10px -6px 0px -2px rgb(255 229 204) ; 
+    color: rgb( 247 164 87);
+  }
+  .benifit-type-img3{
+    background-color: rgb(  247 164 87);
+    border-radius: 5px;
+  }
+  
+  .benifit-type4{
+    box-shadow: 10px -6px 0px -2px rgb(255 231 225) ; 
+    color: rgb( 247 164 87);
+  }
+  .benifit-type-img4{
+    background-color: rgb(244 131 98);
+    border-radius: 5px;
+  }
+
+  .benifit-type5{
+    box-shadow: 10px -6px 0px -2px rgb( 210 246 231) ; 
+    color: rgb( 247 164 87);
+  }
+  .benifit-type-img5{
+    background-color: rgb(78 189 142);
+    border-radius: 5px;
+  }
+  
+  .benifit-type6{
+    box-shadow: 10px -6px 0px -2px rgb( 180 208 255) ; 
+    color: rgb( 247 164 87);
+  }
+  .benifit-type-img6{
+    background-color: rgb(89 148 245);
+    border-radius: 5px;
   }

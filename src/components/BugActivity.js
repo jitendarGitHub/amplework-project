@@ -1,7 +1,7 @@
 const BugActivity = (props) => {
   return (
     <>
-      <div className="first mt-4">
+      <div className="  mt-4">
         <div className="d-flex gap-3 ">
           <div
             className=" shadow-top-right rounded align-self-center"
