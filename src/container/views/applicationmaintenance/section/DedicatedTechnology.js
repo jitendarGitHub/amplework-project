@@ -1,5 +1,5 @@
 import { Bussiness, HourlyPlan } from "../../../../assets";
-import "../pagecontent.css";
+import "../application.css";
 const DedicatedTechnology = () => {
   return (
     <section className="dedicated-technology">

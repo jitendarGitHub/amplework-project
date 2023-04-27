@@ -19,7 +19,7 @@ const Diverse = () => {
             </p>
           </div>
           <div className="col-sm-12 col-lg-6 d-lg-flex gap-3">
-            <div className="first">
+            <div className="">
               <Card
                 className="mt-3 card-img border-3 text-light text-start "
                 style={{
@@ -69,7 +69,7 @@ const Diverse = () => {
                 </Card.Body>
               </Card>
             </div>
-            <div className="second mt-4">
+            <div className="mt-4">
               <Card
                 className="mt-3 card-img1 border-3 text-light text-start"
                 style={{

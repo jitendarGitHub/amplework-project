@@ -7,7 +7,7 @@ import { IoMdCall } from "@react-icons/all-files/io/IoMdCall";
 import { RiApps2Line } from "@react-icons/all-files/ri/RiApps2Line";
 import { Button, Col, Form, InputGroup, Row } from "react-bootstrap";
 import { captcha } from "../../../../assets";
-import "../pagecontent.css";
+import "../application.css";
 
 const FormSection = () => {
   return (

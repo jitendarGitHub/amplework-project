@@ -1,11 +1,11 @@
-import "../pagecontent2/Pagecontent2.css";
+// import "../pagecontent2/Pagecontent2.css";
 
 import { ClientAppreciation, WelcomeBlock } from "../../../components";
 import {
   AppDevelopment,
   Contentdevelopment,
   EcommerceDevelopment,
-  EnterpriseWebDevelopment,
+  EnterpriseWebDevelopmentBG,
   HourlyPlan,
   Masterpiece,
   Paymentdevelopment,
@@ -14,24 +14,26 @@ import {
   Uidevelopment,
 } from "../../../assets";
 
-import WebDevelopment from "./section/WebDevelopmentService";
 import {
   AmpleQuestion,
   CompanyOverview,
-  DedicatedTechnology,
   Developer,
   Digitalize,
   FormSection,
-} from "../pagecontent/section";
-import DevelopmentProcess from "./section/TechnologyStacks";
-import TechnologyStacks from "./section/TechnologyStacks";
-import BenifitsOfBussiness from "./section/BenifitsOfBussiness";
+} from "../applicationmaintenance/section";
 
-const PageContent2 = () => {
+import {
+  WebDevelopment,
+  TechnologyStacks,
+  BenifitsOfBussiness,
+  ReasonAmple,
+} from "./section";
+
+const EnterpriseWebDevelopment = () => {
   return (
     <div className="page-content">
       <WelcomeBlock
-        image={EnterpriseWebDevelopment}
+        image={EnterpriseWebDevelopmentBG}
         title="ENTERPRISES WEB DEVELOPMENT"
         description="Elevate Your Web Presence With Enterprise Website Development"
       />
@@ -115,23 +117,35 @@ const PageContent2 = () => {
         bgcolor="rgb(248 249 250)"
       />
       <WebDevelopment
+        title="Payment Gateway Integrations"
+        desc="If your websites involve the activities of financial transactions then utilize the payment gateway to facilitate secure online payments. It enables customers to complete transactions using credit/debit cards, bank transfers or digital wallets. We effectively configure the payment gateway, testing the functionality, and ensuring that it meets industry standards. We believe that secure payment gateway integration is essential for the success of any online business that accepts payments."
+        about="Seamless Secure Transactions"
+        image={Paymentdevelopment}
+        listimg={HourlyPlan}
+        list5="Secure and reliable payment for customers."
+        list1="Integration with multiple payment methods and gateways."
+        list2="Simplified checkout process for customers."
+        list3="Reduced risk of fraud and chargebacks. "
+        list4="Compliance with industry standards."
+      />
+      <WebDevelopment
         title="Content Management Solutions"
         desc="Integrate our content management business solutions for your corporation to store and manage digital content - such as: images, videos and documents. Now, you can empower your business’s SEO practices with the profound utilization of our expert solutions. Moreover, it will also be going to scale your business’s content marketing practices so that you can attract audiences in an effective manner."
         about="Simplifying Content Creation"
         image={Contentdevelopment}
         listimg={HourlyPlan}
-        list1="    Effective content management. "
+        list1="Effective content management. "
         list2="Improved user experience. "
         list3="Secure management of information."
         list4=" Integration with other systems. "
         list5="Streamlined Workflows."
+        columnreverse="row-reverse"
+        bgcolor="rgb(248 249 250)"
       />
 
       <TechnologyStacks />
       <BenifitsOfBussiness />
-
-      {/****Some Section  Are remain */}
-
+      <ReasonAmple />
       <Developer />
       <ClientAppreciation />
       <AmpleQuestion />
@@ -147,4 +161,4 @@ const PageContent2 = () => {
     </div>
   );
 };
-export default PageContent2;
+export default EnterpriseWebDevelopment;

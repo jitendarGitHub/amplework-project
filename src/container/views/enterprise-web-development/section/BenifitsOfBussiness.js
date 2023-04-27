@@ -9,7 +9,7 @@ import {
   benifit6,
   benifit7,
 } from "../../../../assets";
-import "../Pagecontent2.css";
+import "../enterpriseweb.css";
 const BenifitsOfBussiness = () => {
   return (
     <section className="benifit-section">
@@ -22,9 +22,9 @@ const BenifitsOfBussiness = () => {
           re-structuring your website’s structure and adding specific features.
         </p>
         <div className="row">
-          <div className="col-lg-5">
-            <div className="d-flex pt-5 ">
-              <div className="text-end">
+          <div className="col-lg-4">
+            <div className="d-flex pt-5 benifit-row-reverse">
+              <div className="text-end  ">
                 <h3 className="benifit-type-heading">
                   Higher Scalability & Performance
                 </h3>
@@ -91,8 +91,8 @@ const BenifitsOfBussiness = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-3">
-            <img src={Benifitsofsuccess} width={"100%"} />
+          <div className="col-lg-4 pt-5">
+            <img src={Benifitsofsuccess} width={"70%"} />
           </div>
           <div className="col-lg-4">
             <div className="d-flex pt-5">
@@ -122,7 +122,11 @@ const BenifitsOfBussiness = () => {
               <div className="p-4 pt-1">
                 <div className="shadow-top-right rounded align-self-center benifit-type5">
                   <p className="icon benifit-type-img5 text-center">
-                    <img src={benifit5} className="img-fluid rounded-pill" />
+                    <img
+                      src={benifit5}
+                      className="img-fluid rounded-pill pb-2"
+                      width={"22px"}
+                    />
                   </p>
                 </div>
               </div>
@@ -141,7 +145,11 @@ const BenifitsOfBussiness = () => {
               <div className="p-4 pt-1">
                 <div className="shadow-top-right rounded align-self-center benifit-type6">
                   <p className="icon benifit-type-img6 text-center">
-                    <img src={benifit6} className="img-fluid rounded-pill" />
+                    <img
+                      src={benifit6}
+                      className="img-fluid rounded-pill pb-2"
+                      width={"25px"}
+                    />
                   </p>
                 </div>
               </div>
@@ -158,23 +166,24 @@ const BenifitsOfBussiness = () => {
             </div>
           </div>
         </div>
-
-        <Card className="bg-transparent border-0" width={"10rem"}>
-          <Card.Body>
-            <div className="shadow-top-right rounded align-self-center benifit-type6">
-              <p className="icon benifit-type-img6 text-center">
-                <img src={benifit6} className="img-fluid rounded-pill" />
-              </p>
-            </div>
-            <h3 className="benifit-type-heading">Analytics & Tracking</h3>
-            <p>
-              Integrating analytics & tracking effectively make sure to
-              integrate key market
-              <br /> measures for analysing about system performance &
-              behaviour.
+        <div class="col-lg-12">
+          <div class="analytics">
+            <img
+              src="https://www.amplework.com/wp-content/uploads/2023/04/analytics.png"
+              width={"55px"}
+              className=""
+            />
+            <h3 className="benifit-type-heading p-2">
+              Analytics &amp; Tracking
+            </h3>
+            <p class="mb-0 benifit-type-bottom">
+              Integrating analytics &amp; tracking effectively make sure to
+              integrate key
+              <br /> market measures for analysing about system performance
+              &amp; behaviour.
             </p>
-          </Card.Body>
-        </Card>
+          </div>
+        </div>
       </div>
     </section>
   );

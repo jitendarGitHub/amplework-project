@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import "../Pagecontent2.css";
+import "../enterpriseweb.css";
 const TechnologyStacks = () => {
   return (
     <section className="bg-light">

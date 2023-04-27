@@ -1,7 +1,26 @@
-import React from "react";
-import { PageContent, PageContent2 } from "../container/Index";
+import {
+  ApplicationMaintenance,
+  EnterpriseMobility,
+  EnterpriseWebDevelopment,
+} from "../container/Index";
 
 export const routes = [
-  { path: "/", exact: true, name: "Home", element: PageContent },
-  { path: "/home", exact: true, name: "home", element: PageContent2 },
+  {
+    path: "/",
+    exact: true,
+    name: "Application Maintenance",
+    element: ApplicationMaintenance,
+  },
+  {
+    path: "/enterprise-web-development",
+    exact: true,
+    name: "Enterprise Web",
+    element: EnterpriseWebDevelopment,
+  },
+  {
+    path: "/enterprise-mobility",
+    exact: true,
+    name: "Enterprise Mobility",
+    element: EnterpriseMobility,
+  },
 ];

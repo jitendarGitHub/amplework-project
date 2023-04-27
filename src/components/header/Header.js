@@ -1,8 +1,6 @@
 import { Button } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import "../../container/views/pagecontent/pagecontent.css";
-import { NavLink } from "react-router-dom";
 
 const Header = (props) => {
   return (
@@ -18,8 +16,8 @@ const Header = (props) => {
             id="responsive-navbar-nav"
             className="responsive-navbar-nav "
           >
-            <Nav className="me-auto bg-warning"></Nav>
-            <Nav>
+            {/* <Nav className="me-auto bg-warning"></Nav> */}
+            <Nav className="ms-auto">
               <Nav.Link className="header-item fw-100  text-white">
                 Who we are
               </Nav.Link>
@@ -41,7 +39,7 @@ const Header = (props) => {
               <Nav.Link className="header-item fw-100  text-white">
                 Contact Us
               </Nav.Link>
-              <Button className="inquire-btn bg-transparent text-warning border-warning px-5 py-2">
+              <Button className="inquire-btn bg-transparent text-warning border-warning">
                 INQUIRE NOW
               </Button>
             </Nav>

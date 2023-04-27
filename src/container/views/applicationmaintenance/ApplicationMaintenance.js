@@ -1,4 +1,4 @@
-import "../pagecontent/pagecontent.css";
+import "./application.css";
 import { Banner } from "../../../assets";
 import {
   ClientAppreciation,
@@ -25,7 +25,7 @@ import {
   AmpleQuestion,
 } from "./section";
 
-const PageContent = () => {
+const ApplicationMaintenance = () => {
   return (
     <>
       <div className="page-content">
@@ -33,6 +33,7 @@ const PageContent = () => {
           image={Banner}
           title="APPLICATION MAINTENANCE AND SUPPORT"
           description="Top class application maintenance and support services for error-free, high performing applications"
+          btn="Schedule btn"
         />
         <Maintenance />
         <ExperienceParalleled />
@@ -45,7 +46,7 @@ const PageContent = () => {
         <Diverse />
         <BussinessOpration />
         <DedicatedTechnology />
-        <AmpleQuestion />
+        {/* <AmpleQuestion /> */}
         <FullStackDeveloper />
         <Developer />
         <section className="bg-light text-center">
@@ -70,4 +71,4 @@ const PageContent = () => {
     </>
   );
 };
-export default PageContent;
+export default ApplicationMaintenance;

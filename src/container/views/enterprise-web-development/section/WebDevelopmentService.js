@@ -1,4 +1,4 @@
-import "../../pagecontent2/Pagecontent2.css";
+import "../enterpriseweb.css";
 
 const WebDevelopment = (props) => {
   return (
@@ -14,7 +14,9 @@ const WebDevelopment = (props) => {
             <img src={props.image} width={"100%"} />
           </div>
           <div className="col-lg-5 ">
-            <h3 className=" list-about">{props.about}</h3>
+            <h3 className=" list-about text-center text-md-start">
+              {props.about}
+            </h3>
             <p className="list-style">
               <img src={props.listimg} alt="" width={"15px"} />
               &nbsp;&nbsp;{props.list1}
@@ -35,7 +37,7 @@ const WebDevelopment = (props) => {
               <img src={props.listimg} alt="" width={"15px"} />
               &nbsp;&nbsp; {props.list5}
             </p>
-            <div className="enterprise-btn ">
+            <div className="enterprise-btn text-center text-md-start">
               <button className="btn bg-primary text-white mt-3">
                 LET`S TALK
               </button>

@@ -1,4 +1,4 @@
-import "../pagecontent.css";
+import "../application.css";
 import {
   Apps1,
   Apps2,

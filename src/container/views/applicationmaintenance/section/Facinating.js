@@ -6,7 +6,7 @@ import {
   facinating5,
 } from "../../../../assets";
 import { FacinatingCard } from "../../../../components";
-import "../pagecontent.css";
+import "../application.css";
 
 const Facinating = () => {
   return (

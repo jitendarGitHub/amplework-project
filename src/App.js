@@ -2,8 +2,7 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React, { Suspense } from "react";
 import DefaultLayout from "./layout/DefaultLayout";
-import Page404 from "./container/views/Page404";
-import Page500 from "./container/views/Page500";
+import { Page404, Page500 } from "./container/Index";
 
 const loading = (
   <div className="pt-3 text-center">

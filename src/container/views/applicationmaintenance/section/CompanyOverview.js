@@ -4,7 +4,7 @@ import { SiTimescale } from "@react-icons/all-files/si/SiTimescale";
 import { VscGraph } from "@react-icons/all-files/vsc/VscGraph";
 import { Table } from "react-bootstrap";
 import { NovaMam, PrakashSir, SantoshSir } from "../../../../assets";
-import "../pagecontent.css";
+import "../application.css";
 const CompanyOverview = () => {
   return (
     <div className="col-sm-12 col-lg-5  p-3 text-white company-section ">

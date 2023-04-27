@@ -1,6 +1,6 @@
 import { Target } from "../../../../assets";
 import { Shapcard } from "../../../../components";
-import "../pagecontent.css";
+import "../application.css";
 
 const AppShap = () => {
   return (

@@ -21,7 +21,7 @@ const WelcomeBlock = (props) => {
           <h1 className="welcome-description text-white fw-bold">
             {props.description}
           </h1>
-          <ScheduleBtn />
+          {props.btn && props.btn.length ? <ScheduleBtn btn={props.btn} /> : ""}
         </div>
       </div>
     </>

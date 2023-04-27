@@ -1,4 +1,4 @@
-import "../pagecontent.css";
+import "../application.css";
 const ExperienceParalleled = () => {
   return (
     <section className="experience-paralled-section">

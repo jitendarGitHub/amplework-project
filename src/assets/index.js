@@ -75,13 +75,14 @@ import DiverseCardBg from "./DiverseCardBg.png";
 import HourlyPlan from "./hourlyPlan.png";
 
 import Target from "./Target.png";
+import target2 from "./target2.png";
 import TargetArrow from "./TargetArrow.png";
 
 import EnterpriseBg from "../assets/enterpriseBg.png";
 import AmpleLogo from "../assets/amplworkLogo.png";
 
 // second Page Content
-import EnterpriseWebDevelopment from "./EnterpriseWebDeveloopmentBG.jpg";
+import EnterpriseWebDevelopmentBG from "./EnterpriseWebDeveloopmentBG.jpg";
 import Masterpiece from "./masterpiece.png";
 import Softwaredevelopment from "./softwaredevelopment.png";
 import Portaldevelopment from "./Portaldevelopment.png";
@@ -98,6 +99,16 @@ import benifit4 from "./benifit4.png";
 import benifit5 from "./benifit5.png";
 import benifit6 from "./benifit6.png";
 import benifit7 from "./benifit7.png";
+import SelectingAmple from "./reason.png";
+
+//Third page content
+import EnterpriseMobilityBG from "./enterprisemobilityBG.jpg";
+import Profound from "./profound.png";
+import Inovateglobal from "./inovateglobal.png";
+import InovateRealTime from "./inovaterealtime.png";
+import InovateSecure from "./inovatesecure.png";
+import InovateSkill from "./inovateskill.png";
+import InovateStandard from "./inovatestandard.png";
 export {
   Banner,
   Accessibility,
@@ -105,6 +116,7 @@ export {
   amplworkLogo,
   AppMaintenance,
   Target,
+  target2,
   TargetArrow,
   Aws,
   banner,
@@ -170,7 +182,7 @@ export {
   DeveloperBG,
   AmpleLogo,
   /*second Pagecontent*/
-  EnterpriseWebDevelopment,
+  EnterpriseWebDevelopmentBG,
   Masterpiece,
   Softwaredevelopment,
   Portaldevelopment,
@@ -187,4 +199,13 @@ export {
   benifit5,
   benifit6,
   benifit7,
+  SelectingAmple,
+  /*third page content*/
+  EnterpriseMobilityBG,
+  Profound,
+  InovateRealTime,
+  InovateSecure,
+  InovateSkill,
+  InovateStandard,
+  Inovateglobal,
 };

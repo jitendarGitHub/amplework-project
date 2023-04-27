@@ -26,14 +26,14 @@ export const ExploreMore2 = () => {
   );
 };
 //for WelcomeBlock
-export const ScheduleBtn = () => {
+export const ScheduleBtn = (props) => {
   return (
     <>
       <Button
         color="warning"
         className="schedule-btn text-dark px-5 py-3 fw-bold fs-5 mt-2"
       >
-        Schedule a call
+        {props.btn}
       </Button>
     </>
   );
