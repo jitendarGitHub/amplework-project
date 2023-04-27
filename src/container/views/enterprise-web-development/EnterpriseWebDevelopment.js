@@ -1,5 +1,3 @@
-// import "../pagecontent2/Pagecontent2.css";
-
 import { ClientAppreciation, WelcomeBlock } from "../../../components";
 import {
   AppDevelopment,

@@ -1,5 +1,5 @@
 import { Card, CardGroup, Container } from "react-bootstrap";
-// import "./FooterCard.css";
+
 const FooterCard = (props) => {
   const {
     PartTime,

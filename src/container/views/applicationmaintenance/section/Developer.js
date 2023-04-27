@@ -1,5 +1,3 @@
-import { Button, Card } from "react-bootstrap";
-import { DeveloperBG } from "../../../../assets";
 import { Cards } from "../../../../components";
 
 const Developer = () => {
