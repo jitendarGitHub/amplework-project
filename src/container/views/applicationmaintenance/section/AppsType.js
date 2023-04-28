@@ -42,7 +42,7 @@ const AppsType = () => {
           </div>
           <div className="contents">
             <h5 className="text-white fw-bold">Cloud Apps & SaaS</h5>
-            <p className=" ">
+            <p className="">
               Le Lorem Ipsum est simplement du faux texte employé dans la
               composition et la mise en page avant impression. Le Lorem Ipsum
             </p>

@@ -53,5 +53,19 @@ border-radius: 10px;
 .inovate-para{
     font-size: 14px;
     margin-top: 12px;
+}  
+.brand-app-para{
+    word-spacing: 1px;
+    letter-spacing: 0.5px; 
+    margin-bottom: 10px!important;
+    font-family: Poppins,sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;  
 } 
- 
+
+
+/*Engagement Modal section*/
+.list-style{
+    list-style: none;
+}

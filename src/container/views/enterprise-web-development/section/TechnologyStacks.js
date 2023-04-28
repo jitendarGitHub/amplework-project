@@ -1,15 +1,11 @@
 import { Button } from "react-bootstrap";
 import "../enterpriseweb.css";
-const TechnologyStacks = () => {
+const TechnologyStacks = (props) => {
   return (
     <section className="bg-light">
       <div className="container text-center">
-        <h2>Technology Stacks</h2>
-        <p className="p-2">
-          If your websites involve the activities of financial transactions then
-          utilize the payment gateway to facilitate secure online payments. It
-          enables customers to complete transactions using credit/debit cards,
-        </p>
+        <h2>{props.heading}</h2>
+        <p className="p-2">{props.para}</p>
         <div className="tables">
           <div className="row">
             <div className="col-lg-6 p-4 first technology-stack pb-5">

@@ -3,9 +3,37 @@
     .development-desc {
         text-align: justify;
     } 
-  }
+  } 
    
- 
+  /* Enterprise web service*/
+  .service-card{
+  border: 1px solid rgb(236, 226, 226);
+  box-shadow: 2px 2px 5px rgb(137, 133, 130);
+
+  }
+  .service-card:hover{
+    background-color: #0731be;
+    color: white;
+    font-weight: 600;
+  } 
+  .service-para{
+    font-size: 15px ;
+    font-family: Poppins,sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.5px;
+    word-spacing: 1.5px; 
+  }
+  .service-heading{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Poppins,sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   .list-style{
     color: #212529;
     font-weight: 400;

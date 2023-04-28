@@ -46,7 +46,7 @@ const ApplicationMaintenance = () => {
         <Diverse />
         <BussinessOpration />
         <DedicatedTechnology />
-        {/* <AmpleQuestion /> */}
+        <AmpleQuestion />
         <FullStackDeveloper />
         <Developer />
         <section className="bg-light text-center">
@@ -54,7 +54,11 @@ const ApplicationMaintenance = () => {
             <ClientAppreciation />
           </div>
         </section>
-        <PortFolio />
+        <PortFolio
+          image={Banner}
+          title="Software Maintenance ans Support "
+          heading="Software Maintenance and support service for essintial in bussiness that rely in Technology"
+        />
         <Digitalize />
         <section
           style={{ backgroundColor: "rgb(243 246 255)" }}

@@ -25,7 +25,9 @@ import {
   TechnologyStacks,
   BenifitsOfBussiness,
   ReasonAmple,
+  EnterpriseWebService,
 } from "./section";
+import "./enterpriseweb.css";
 
 const EnterpriseWebDevelopment = () => {
   return (
@@ -35,6 +37,11 @@ const EnterpriseWebDevelopment = () => {
         title="ENTERPRISES WEB DEVELOPMENT"
         description="Elevate Your Web Presence With Enterprise Website Development"
       />
+
+      <section className="bg-light">
+        <EnterpriseWebService />
+      </section>
+
       <WebDevelopment
         title="Enterprise Web Development Services"
         desc="Enterprise web development services effectively involve building and maintaining web-based applications for large-scale organizations. Our developers incorporate 7+ years of experience in working towards the latest technologies - such as: Java, .NET, Ruby on Rails, React, Node.js and many more. We also provide consultancy services to you for suggesting new enterprise IT strategies and enterprise web design solutions."
@@ -141,7 +148,12 @@ const EnterpriseWebDevelopment = () => {
         bgcolor="rgb(248 249 250)"
       />
 
-      <TechnologyStacks />
+      <TechnologyStacks
+        heading="Technology Stacks"
+        para="  If your websites involve the activities of financial transactions then
+          utilize the payment gateway to facilitate secure online payments. It
+          enables customers to complete transactions using credit/debit cards,"
+      />
       <BenifitsOfBussiness />
       <ReasonAmple />
       <Developer />

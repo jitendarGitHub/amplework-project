@@ -109,6 +109,34 @@ import InovateRealTime from "./inovaterealtime.png";
 import InovateSecure from "./inovatesecure.png";
 import InovateSkill from "./inovateskill.png";
 import InovateStandard from "./inovatestandard.png";
+import BrandApp1 from "./brandapp1.png";
+import BrandApp2 from "./brandapp2.png";
+import BrandApp3 from "./brandapp3.png";
+import BrandApp4 from "./brandapp4.png";
+import BrandApp5 from "./brandapp5.png";
+import BrandApp6 from "./brandapp6.png";
+import BrandApp7 from "./brandapp7.png";
+import BrandApp8 from "./brandapp8.png";
+import BrandApp9 from "./brandapp9.png";
+import BrandApp10 from "./brandapp10.png";
+import BrandApp11 from "./brandapp11.png";
+import BrandApp12 from "./brandapp12.png";
+import BrandApp13 from "./brandapp13.png";
+import BrandApp14 from "./brandapp14.png";
+import BrandApp15 from "./brandapp15.png";
+import EngagementCheck from "./engagement-check.png";
+
+/*Four Page Content*/
+import SoftwareMaintenanceBG from "./softwareMaintainBg.png";
+import GrowingSoftware from "./growingsoftware.png";
+import leave from "./leave.png";
+import Bugdata from "./bugdata.png";
+import Bugchat from "./bugchat.png";
+import Bugmodification from "./bugmodification.png";
+import BugMagix from "./bugmagic.png";
+import BugSpeed from "./bugspeed-test.png";
+import ExtraForUseImg from "./less.png";
+
 export {
   Banner,
   Accessibility,
@@ -208,4 +236,30 @@ export {
   InovateSkill,
   InovateStandard,
   Inovateglobal,
+  BrandApp1,
+  BrandApp2,
+  BrandApp3,
+  BrandApp4,
+  BrandApp5,
+  BrandApp6,
+  BrandApp7,
+  BrandApp8,
+  BrandApp9,
+  BrandApp10,
+  BrandApp11,
+  BrandApp12,
+  BrandApp13,
+  BrandApp14,
+  BrandApp15,
+  EngagementCheck,
+  /*Four Page*/
+  SoftwareMaintenanceBG,
+  GrowingSoftware,
+  leave,
+  Bugdata,
+  Bugchat,
+  Bugmodification,
+  BugMagix,
+  BugSpeed,
+  ExtraForUseImg,
 };

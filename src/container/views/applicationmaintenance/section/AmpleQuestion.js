@@ -15,7 +15,7 @@ const AmpleQuestion = () => {
         <h4 className="fw-bold">Frequently Asked Questions</h4>
         <Container className="pb-4 py-0">
           <Accordion>
-            <div className="row bg-warning">
+            <div className="row">
               <div className="col-lg-6 text-start">
                 <Accordion.Item eventKey="0" className="question-box">
                   <Accordion.Header className="fs-1">

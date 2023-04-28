@@ -2,6 +2,7 @@ import {
   ApplicationMaintenance,
   EnterpriseMobility,
   EnterpriseWebDevelopment,
+  SoftwareMaintenance,
 } from "../container/Index";
 
 export const routes = [
@@ -22,5 +23,11 @@ export const routes = [
     exact: true,
     name: "Enterprise Mobility",
     element: EnterpriseMobility,
+  },
+  {
+    path: "/software-maintenance-support",
+    exact: true,
+    name: "Software Maintenance",
+    element: SoftwareMaintenance,
   },
 ];
