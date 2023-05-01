@@ -11,6 +11,7 @@ import WelcomeBlock from "./welcomeBlock/WelcomeBlock";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import FullStackDeveloper from "./FullStackDeveloperCard";
+import DreamModalCard from "./DreamModalCard";
 
 export {
   Footer,
@@ -26,4 +27,5 @@ export {
   WelcomeBlock,
   Header,
   FullStackDeveloper,
+  DreamModalCard,
 };

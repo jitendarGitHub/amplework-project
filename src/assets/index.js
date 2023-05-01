@@ -136,6 +136,19 @@ import Bugmodification from "./bugmodification.png";
 import BugMagix from "./bugmagic.png";
 import BugSpeed from "./bugspeed-test.png";
 import ExtraForUseImg from "./less.png";
+import RoleApplicationSupport from "./role-software-application.png";
+import RoleSoftwareDeveloper from "./role-software-developer.png";
+import RoleDevOPS from "./role-devops.png";
+import RoleOUTLINE from "./role-OUTLINE.png";
+import EnhanceCertificate from "./Enhance-certificate.png";
+import Engagement1 from "./engagement1.png";
+import EngagementBG from "./engagementBG.png";
+import ReasonAmplebg1 from "./reasonamplebg1.png";
+import ReasonAmplebg2 from "./reasonample2.png";
+import ReasonAmplebg3 from "./reasonamplebg3.png";
+import Dreammanagement from "./dream-management.png";
+import DreamOffshare from "./dream-offshare.png";
+import Dreamoutshare from "./dream-outsouece.png";
 
 export {
   Banner,
@@ -262,4 +275,17 @@ export {
   BugMagix,
   BugSpeed,
   ExtraForUseImg,
+  RoleApplicationSupport,
+  RoleDevOPS,
+  RoleOUTLINE,
+  RoleSoftwareDeveloper,
+  EnhanceCertificate,
+  Engagement1,
+  EngagementBG,
+  ReasonAmplebg1,
+  ReasonAmplebg2,
+  ReasonAmplebg3,
+  Dreammanagement,
+  DreamOffshare,
+  Dreamoutshare,
 };

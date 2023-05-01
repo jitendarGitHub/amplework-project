@@ -1,7 +1,24 @@
 import { SoftwareMaintenanceBG } from "../../../assets";
-import { WelcomeBlock } from "../../../components";
-import { LeaveSoftwareMaintenance } from "./section";
-import UnIntrupted from "./section/UnIntrupted";
+import {
+  ClientAppreciation,
+  FullStackDeveloper,
+  WelcomeBlock,
+} from "../../../components";
+import {
+  AmpleQuestion,
+  CompanyOverview,
+  Developer,
+  Digitalize,
+  FormSection,
+  PortFolio,
+} from "../applicationmaintenance/section";
+import {
+  Dream,
+  IntegrateProfesional,
+  LeaveSoftwareMaintenance,
+  RoleInSoftwareMaintenance,
+  UnIntrupted,
+} from "./section/index.js";
 
 const SoftwareMaintenance = () => {
   return (
@@ -13,6 +30,27 @@ const SoftwareMaintenance = () => {
       />
       <LeaveSoftwareMaintenance />
       <UnIntrupted />
+      <section>
+        <RoleInSoftwareMaintenance />
+      </section>
+      <section className="dream-section">
+        <Dream />
+      </section>
+      <section>
+        <IntegrateProfesional />
+      </section>
+      <AmpleQuestion />
+      <FullStackDeveloper />
+      <Developer />
+      <ClientAppreciation />
+      <PortFolio />
+      <Digitalize />
+      <div className="container">
+        <div className="row justify-content-around">
+          <FormSection />
+          <CompanyOverview />
+        </div>
+      </div>
     </div>
   );
 };

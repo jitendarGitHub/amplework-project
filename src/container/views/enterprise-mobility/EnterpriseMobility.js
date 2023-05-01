@@ -1,11 +1,19 @@
 import "./EnterpriseMobility.css";
-import { EnterpriseMobilityBG } from "../../../assets";
+import {
+  EnterpriseMobilityBG,
+  EngagementBG,
+  ReasonAmplebg1,
+  ReasonAmplebg2,
+  ReasonAmplebg3,
+} from "../../../assets";
 import { ClientAppreciation, WelcomeBlock } from "../../../components";
 import {
   BrandApp,
   EngagementModal,
+  EnhanceROIservice,
   InovateFeature,
   ProfoundEnterprise,
+  ReasonAmpleSM,
 } from "./section";
 import { TechnologyStacks } from "../enterprise-web-development/section";
 import {
@@ -31,9 +39,29 @@ const EnterpriseMobility = () => {
         <InovateFeature />
       </section>
       <section>
-        <BrandApp />
+        <EnhanceROIservice />
+      </section>
+      <section
+        style={{
+          backgroundImage: `url(${ReasonAmplebg1}), url(${ReasonAmplebg2}) ,url(${ReasonAmplebg3})`,
+          backgroundRepeat: "no-repeat,no-repeat,no-repeat",
+          backgroundPosition: "top left, center, bottom right",
+          backgroundColor: "rgb(29 115 248)",
+        }}
+      >
+        <ReasonAmpleSM />
       </section>
       <section>
+        <BrandApp />
+      </section>
+      <section
+        className="engagement-section"
+        style={{
+          backgroundImage: `url(${EngagementBG})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
         <EngagementModal />
       </section>
       <section>

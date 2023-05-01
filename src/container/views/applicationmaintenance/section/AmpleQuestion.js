@@ -4,7 +4,7 @@ const AmpleQuestion = () => {
   return (
     <section className="">
       <div
-        className="question text-center p-5"
+        className="question text-center p-5 "
         style={{
           backgroundImage: `url(${QUestionBG})`,
           backgroundRepeat: "no-repeat",

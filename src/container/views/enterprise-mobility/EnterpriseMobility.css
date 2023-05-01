@@ -28,8 +28,22 @@ section{
     margin-block-start: 1em;
     margin-block-end: 1em; 
 }
-/*enterprise mobility*/
+/*Reason Ampele*/
+.reason-ample h1{
+font-weight: 600; 
+} 
+.fff{
+    border-bottom: 1px solid rgb(97 152 238);
+    border-right: 1px solid rgb(97 152 238);
+    border-left: 1px solid rgb(97 152 238);
 
+}
+.ffff{
+    border-top: 1px solid rgb(97 152 238);
+    border-right: 1px solid rgb(97 152 238);
+    border-left: 1px solid rgb(97 152 238);
+}
+/*enterprise mobility*/ 
 .inovate-first{
 background-color:rgb(245 164 3);
 border-radius: 10px;
@@ -68,4 +82,66 @@ border-radius: 10px;
 /*Engagement Modal section*/
 .list-style{
     list-style: none;
+} 
+.price{
+    border-bottom: 3px solid rgb(0 128 255);
 }
+.price2{
+    border-bottom: 3px solid white;
+}
+.hire-mobility{
+    border-bottom: 3px solid rgb(10 165 155);
+    color: #032de2;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.4;
+}
+.hire-mobility-para{
+    font-size: 15px; 
+    padding: 0 0 20px;
+    margin-bottom: 0!important;
+}  
+.engagement-btn{
+    background-color:rgb(7 49 190);
+}
+.engagement-para{
+    font-size: 14px;
+    line-height:2;
+}
+/**ROI */
+.notched-card{ 
+    background:white;
+    position: relative; 
+    box-shadow: 0px 0px 3px 0px;
+    font-family: Poppins,sans-serif;
+}
+.heading{
+   color: black; 
+}
+.notched-card:after {
+    content: '';
+    position: absolute; 
+    top: 0;
+    right: 0;
+    border-top: 50px solid rgb(200 222 255);
+    border-left: 50px solid white;
+    /* width: 0; */
+  } 
+  .notched-card :hover.rio-heading{
+    border-bottom: 3px solid blue;
+    transition: 1s; 
+  }
+  .notched-card:hover::after{
+    background-color: red;
+  }
+  .notched-card :hover .heading{
+    color: blue; 
+  }
+
+
+  body{
+    font-family: Poppins,sans-serif;
+  }
+  .monthly-card{
+    background-color: rgb(7 49 190);
+  }
