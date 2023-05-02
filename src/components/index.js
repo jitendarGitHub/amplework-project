@@ -12,6 +12,8 @@ import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import FullStackDeveloper from "./FullStackDeveloperCard";
 import DreamModalCard from "./DreamModalCard";
+import PhasesCard from "./CategoryPhase";
+import BrandCard from "./BrandColaborateCard";
 
 export {
   Footer,
@@ -28,4 +30,6 @@ export {
   Header,
   FullStackDeveloper,
   DreamModalCard,
+  PhasesCard,
+  BrandCard,
 };

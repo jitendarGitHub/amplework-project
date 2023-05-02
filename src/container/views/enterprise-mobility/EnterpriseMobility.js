@@ -9,9 +9,11 @@ import {
 import { ClientAppreciation, WelcomeBlock } from "../../../components";
 import {
   BrandApp,
+  BrandCollaborate,
   EngagementModal,
   EnhanceROIservice,
   InovateFeature,
+  PhasesOfEnterpriseMobility,
   ProfoundEnterprise,
   ReasonAmpleSM,
 } from "./section";
@@ -52,7 +54,14 @@ const EnterpriseMobility = () => {
         <ReasonAmpleSM />
       </section>
       <section>
+        <PhasesOfEnterpriseMobility />
+      </section>
+
+      <section>
         <BrandApp />
+      </section>
+      <section>
+        <BrandCollaborate />
       </section>
       <section
         className="engagement-section"

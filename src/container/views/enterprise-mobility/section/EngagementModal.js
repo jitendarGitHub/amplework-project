@@ -1,5 +1,5 @@
 import { Button, Card, CardGroup } from "react-bootstrap";
-import { EngagementCheck } from "../../../../assets";
+import { EngagementCheck, Recommended } from "../../../../assets";
 import "../EnterpriseMobility.css";
 import { Engagement1 } from "../../../../assets";
 
@@ -66,7 +66,15 @@ const EngagementModal = () => {
                 </li>
               </Card>
             </div>
-            <div className="col-lg-6 p-1 monthly-card ">
+            <div className="col-lg-6 p-1 monthly-card mt-2">
+              <img
+                src={Recommended}
+                style={{
+                  marginTop: "-33px",
+                  marginLeft: "15px",
+                  position: "absolute",
+                }}
+              />
               <Card className="bg-transparent text-light border-0">
                 <div className="d-flex price2">
                   <h1 className="  fw-bold">$2500</h1>

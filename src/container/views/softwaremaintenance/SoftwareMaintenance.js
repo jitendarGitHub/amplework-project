@@ -13,6 +13,7 @@ import {
   PortFolio,
 } from "../applicationmaintenance/section";
 import {
+  AccoumplishResult,
   Dream,
   IntegrateProfesional,
   LeaveSoftwareMaintenance,
@@ -30,6 +31,9 @@ const SoftwareMaintenance = () => {
       />
       <LeaveSoftwareMaintenance />
       <UnIntrupted />
+      <section>
+        <AccoumplishResult />
+      </section>
       <section>
         <RoleInSoftwareMaintenance />
       </section>

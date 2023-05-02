@@ -125,6 +125,26 @@ import BrandApp13 from "./brandapp13.png";
 import BrandApp14 from "./brandapp14.png";
 import BrandApp15 from "./brandapp15.png";
 import EngagementCheck from "./engagement-check.png";
+import Phaseimg1 from "./phaseimg1.png";
+import Phaseimg2 from "./phaseimg2.png";
+import Phaseimg3 from "./phaseimg3.png";
+import Phaseimg4 from "./phaseimg4.png";
+import Phaseimg from "./phaseimg4.png";
+import LeftdottedCircle from "./dotted-circle-left.png";
+import RightdottedCircle from "./dotted-circle-right.png";
+import Brandimg1 from "./brandimg1.png";
+import Brandimg2 from "./brandimg2.png";
+import Brandimg3 from "./brandimg3.png";
+import Brandimg4 from "./brandimg4.png";
+import Brandimg5 from "./brandimg5.png";
+import Brandimg6 from "./brandimg6.png";
+import Brandimg7 from "./brandimg7.png";
+import Brandimg8 from "./brandimg8.png";
+import Brandimg9 from "./brandimg9.png";
+import Brandimg10 from "./brandimg10.png";
+import Brandimg11 from "./brandimg11.png";
+import Brandimg12 from "./brandimg12.png";
+import Recommended from "./recommended.png";
 
 /*Four Page Content*/
 import SoftwareMaintenanceBG from "./softwareMaintainBg.png";
@@ -265,6 +285,26 @@ export {
   BrandApp14,
   BrandApp15,
   EngagementCheck,
+  Recommended,
+  Phaseimg1,
+  Phaseimg2,
+  Phaseimg3,
+  Phaseimg4,
+  LeftdottedCircle,
+  RightdottedCircle,
+  Brandimg1,
+  Brandimg2,
+  Brandimg3,
+  Brandimg4,
+  Brandimg5,
+  Brandimg6,
+  Brandimg7,
+  Brandimg8,
+  Brandimg9,
+  Brandimg10,
+  Brandimg11,
+  Brandimg12,
+
   /*Four Page*/
   SoftwareMaintenanceBG,
   GrowingSoftware,
