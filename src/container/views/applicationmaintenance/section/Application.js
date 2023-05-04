@@ -1,7 +1,11 @@
 import { Button, CardGroup } from "react-bootstrap";
 import { ApplicationCard } from "../../../../components";
-import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
-import { BsClipboardData } from "@react-icons/all-files/bs/BsClipboardData";
+import DefaultCard from "../../../../components/card/Index";
+import {
+  Applicationimg1,
+  Applicationimg2,
+  Applicationimg3,
+} from "../../../../assets";
 
 const Application = () => {
   return (
@@ -19,26 +23,58 @@ const Application = () => {
             require the advanced solutions to keep the working mechanism of the
             <br /> applications in a perfect shape. At Amplework,
           </h6>
-          <CardGroup>
-            <ApplicationCard
-              bgcolor="rgb(47 126 255)"
-              icon={FaBeer()}
-              title="Application Re-engineering"
-              description="Our developers evaluate existing applications through a series of in-house testing processes in order to evaluate the functionalities of the applications that need to be re-engineered."
-            />
-            <ApplicationCard
-              bgcolor="rgb(17 95 224)"
-              icon={BsClipboardData()}
-              title="Application Migration & Integration"
-              description="Our engineers are profound in supporting you for moving applications from physical or local settings to remote based servers. We also provide application migration as well as integration services."
-            />
-            <ApplicationCard
-              bgcolor="rgb(4 80 206)"
-              icon={FaBeer()}
-              title="Application Support"
-              description="It includes a range of activities for ensuring proper functioning and optimization of a web or mobile application. We focus towards continuous monitoring and continuous improvement of functions."
-            />
-          </CardGroup>
+
+          <div className="row">
+            <div className="col-lg-4 p-0">
+              <DefaultCard
+                cardclass="text-start p-3 pt-4  application-cart"
+                imgdivclass="pb-3"
+                imgstyle={{ width: "40px" }}
+                cardimage={Applicationimg1}
+                headingclass="card-title"
+                heading="Application Re-engineering"
+                headingstyle={{ visibility: "hidden" }}
+                paraclass="card-description"
+                para="Our developers evaluate existing applications through a series of in-house testing processes in order to evaluate the functionalities of the applications that need to be re-engineered."
+                cardstyle={{
+                  backgroundColor: "rgb(47 126 255)",
+                }}
+              />
+            </div>
+            <div className="col-lg-4 p-0">
+              <DefaultCard
+                cardclass="text-start p-3 pt-4 application-cart"
+                imgdivclass="pb-3"
+                imgstyle={{ width: "44px" }}
+                cardimage={Applicationimg2}
+                headingclass="card-title"
+                heading="Application Re-engineering"
+                headingstyle={{ visibility: "hidden" }}
+                paraclass="card-description"
+                para="Our developers evaluate existing applications through a series of in-house testing processes in order to evaluate the functionalities of the applications that need to be re-engineered."
+                cardstyle={{
+                  backgroundColor: "rgb(17 95 224)",
+                }}
+              />
+            </div>
+            <div className="col-lg-4 p-0">
+              <DefaultCard
+                cardclass="text-start p-3 pt-4 application-cart"
+                imgdivclass="pb-3"
+                imgstyle={{ width: "39px" }}
+                cardimage={Applicationimg3}
+                headingclass="card-title"
+                headingstyle={{ visibility: "hidden" }}
+                heading="Application Re-engineering"
+                paraclass="card-description"
+                para="Our developers evaluate existing applications through a series of in-house testing processes in order to evaluate the functionalities of the applications that need to be re-engineered."
+                cardstyle={{
+                  backgroundColor: "rgb(4 80 206)",
+                }}
+              />
+            </div>
+          </div>
+
           <Button className="free-quote mt-4">GET A FREE QUOTE</Button>
         </div>
       </div>

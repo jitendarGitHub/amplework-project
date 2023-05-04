@@ -8,123 +8,118 @@ import {
   enterprise7,
   enterprise8,
   EnterpriseBg,
+  Apps1,
 } from "../../../../assets";
+import DefaultCard from "../../../../components/card/Index";
 
 const MaintenancBox = () => {
   return (
     <section className="bg-light p-2 pb-5">
       <div className="container maintenance-Section">
         <div className=" maintenance">
-          <div className="box">
-            <div className="icon text-center align-self-center fs-1 ">
-              <img src={enterprise1} className="fa" alt="" />
-            </div>
-
-            <div className="content">
-              <h5 className="text-dark fw-bold">
-                Proactive Monitoring & Maintenance
-              </h5>
-              <p className="text-dark">
-                Le Lorem Ipsum est simplement du faux texte employé dans la
-                composition et la mise en page avant impression. Le Lorem Ipsum
-              </p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="icon text-center align-self-center fs-1 ">
-              <img src={enterprise2} className="fa" alt="" />
-            </div>
-            <div className="content">
-              <h5 className="text-dark fw-bold">Web App Maintenance</h5>
-              <p className="text-dark">
-                Le Lorem Ipsum est simplement du faux texte employé dans la
-                composition et la mise en page avant impression. Le Lorem Ipsum
-              </p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="icon text-center align-self-center fs-1 ">
-              <img src={enterprise3} className="fa" alt="" />
-            </div>
-            <div className="content ">
-              {" "}
-              <h5 className="text-dark fw-bold">
-                Incident Management and Resolution
-              </h5>
-              <p className="text-dark">
-                Le Lorem Ipsum est simplement du faux texte employé dans la
-                composition et la mise en page avant impression. Le Lorem Ipsum
-              </p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="icon text-center align-self-center fs-1 ">
-              <img src={enterprise4} className="fa" alt="" />
-            </div>
-            <div className="content">
-              {" "}
-              <h5 className="text-dark fw-bold">Performance Optimization</h5>
-              <p className="text-dark">
-                Le Lorem Ipsum est simplement du faux texte employé dans la
-                composition et la mise en page avant impression. Le Lorem Ipsum
-              </p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="icon text-center align-self-center fs-1 ">
-              <img src={enterpeise5} className="fa" alt="" />
-            </div>
-            <div className="content">
-              {" "}
-              <h5 className="text-dark fw-bold">
-                Application Security and Compliance
-              </h5>
-              <p className="text-dark">
-                Le Lorem Ipsum est simplement du faux texte employé dans la
-                composition et la mise en page avant impression. Le Lorem Ipsum
-              </p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="icon text-center align-self-center fs-1 ">
-              <img src={enterprise6} className="fa" alt="" />
-            </div>
-            <div className="content">
-              <h5 className="text-dark fw-bold">Regular Updates & Upgrades</h5>
-              <p className="text-dark">
-                Le Lorem Ipsum est simplement du faux texte employé dans la
-                composition et la mise en page avant impression. Le Lorem Ipsum
-              </p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="icon text-center align-self-center fs-1 ">
-              <img src={enterprise7} className="fa" alt="" />
-            </div>
-            <div class="content">
-              {" "}
-              <h5 className="text-dark fw-bold">Application Integration</h5>
-              <p className="text-dark">
-                Le Lorem Ipsum est simplement du faux texte employé dans la
-                composition et la mise en page avant impression. Le Lorem Ipsum
-              </p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="icon text-center align-self-center fs-1 ">
-              <img src={enterprise8} className="fa" alt="" />
-            </div>
-            <div className="content">
-              {" "}
-              <h3 className="text-dark fw-bold">Customized Support Plans</h3>
-              <p className="text-dark ">
-                Le Lorem Ipsum est simplement du faux texte employé dans la
-                composition et la mise en page avant impression. Le Lorem Ipsum
-                est le faux texte standard de l'imprimerie depuis les années
-                1500
-              </p>
-            </div>
-          </div>
+          <DefaultCard
+            cardclass="box "
+            imgdivclass="icon text-center align-self-center fs-1"
+            imgclass="fa"
+            cardimage={enterprise1}
+            contentclass="content"
+            headingclass="text-dark fw-bold"
+            headingstyle={{ visibility: "hidden" }}
+            heading="Web App Maintenance"
+            paraclass="text-dark"
+            para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
+          />
+          <DefaultCard
+            cardclass="box"
+            imgdivclass="icon text-center align-self-center fs-1"
+            imgclass="fa"
+            cardimage={enterprise2}
+            contentclass="content"
+            headingclass="text-dark fw-bold"
+            headingstyle={{ visibility: "hidden" }}
+            heading="Incident Management and Resolution"
+            paraclass="text-dark"
+            para=" Le Lorem Ipsum est simplement du faux texte employé dans la
+            composition et la mise en page avant impression. Le Lorem Ipsum"
+          />
+          <DefaultCard
+            cardclass="box"
+            imgdivclass="icon text-center align-self-center fs-1"
+            imgclass="fa"
+            cardimage={enterprise3}
+            contentclass="content"
+            headingclass="text-dark fw-bold"
+            headingstyle={{ visibility: "hidden" }}
+            heading="Incident Management and Resolution"
+            paraclass="text-dark"
+            para=" Le Lorem Ipsum est simplement du faux texte employé dans la
+            composition et la mise en page avant impression. Le Lorem Ipsum"
+          />
+          <DefaultCard
+            cardclass="box"
+            imgdivclass="icon text-center align-self-center fs-1"
+            imgclass="fa"
+            cardimage={enterprise4}
+            contentclass="content"
+            headingclass="text-dark fw-bold"
+            headingstyle={{ visibility: "hidden" }}
+            heading="Performance Optimization"
+            paraclass="text-dark"
+            para=" Le Lorem Ipsum est simplement du faux texte employé dans la
+            composition et la mise en page avant impression. Le Lorem Ipsum"
+          />
+          <DefaultCard
+            cardclass="box"
+            imgdivclass="icon text-center align-self-center fs-1"
+            imgclass="fa"
+            cardimage={enterpeise5}
+            contentclass="content"
+            headingclass="text-dark fw-bold"
+            headingstyle={{ visibility: "hidden" }}
+            heading="Application Security and Compliance"
+            paraclass="text-dark"
+            para=" Le Lorem Ipsum est simplement du faux texte employé dans la
+            composition et la mise en page avant impression. Le Lorem Ipsum"
+          />
+          <DefaultCard
+            cardclass="box"
+            imgdivclass="icon text-center align-self-center fs-1"
+            imgclass="fa"
+            cardimage={enterprise6}
+            contentclass="content"
+            headingclass="text-dark fw-bold"
+            heading="Regular Updates & Upgrades"
+            headingstyle={{ visibility: "hidden" }}
+            paraclass="text-dark"
+            para=" Le Lorem Ipsum est simplement du faux texte employé dans la
+            composition et la mise en page avant impression. Le Lorem Ipsum"
+          />
+          <DefaultCard
+            cardclass="box"
+            imgdivclass="icon text-center align-self-center fs-1"
+            imgclass="fa"
+            cardimage={enterprise7}
+            contentclass="content"
+            headingclass="text-dark fw-bold"
+            heading="Application Integration"
+            headingstyle={{ visibility: "hidden" }}
+            paraclass="text-dark"
+            para=" Le Lorem Ipsum est simplement du faux texte employé dans la
+            composition et la mise en page avant impression. Le Lorem Ipsum"
+          />
+          <DefaultCard
+            cardclass="box"
+            imgdivclass="icon text-center align-self-center fs-1"
+            imgclass="fa"
+            cardimage={enterprise8}
+            contentclass="content"
+            headingclass="text-dark fw-bold"
+            heading="Customized Support Plans"
+            headingstyle={{ visibility: "hidden" }}
+            paraclass="text-dark"
+            para=" Le Lorem Ipsum est simplement du faux texte employé dans la
+            composition et la mise en page avant impression. Le Lorem Ipsum"
+          />
         </div>
       </div>
     </section>

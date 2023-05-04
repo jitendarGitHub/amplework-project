@@ -22,6 +22,9 @@ import enterpeise5 from "../assets/experience5.png";
 import enterprise6 from "../assets/experience6.png";
 import enterprise7 from "../assets/experience7.png";
 import enterprise8 from "../assets/experience8.png";
+import Applicationimg1 from "../assets/applicationimg1.png";
+import Applicationimg2 from "../assets/applicationimg2.png";
+import Applicationimg3 from "../assets/applicationimg3.png";
 
 import facinating1 from "../assets/facinating1.png";
 import facinating2 from "../assets/facinating2.png";
@@ -77,6 +80,7 @@ import HourlyPlan from "./hourlyPlan.png";
 import Target from "./Target.png";
 import target2 from "./target2.png";
 import TargetArrow from "./TargetArrow.png";
+import Cursor from "./cursor.png";
 
 import EnterpriseBg from "../assets/enterpriseBg.png";
 import AmpleLogo from "../assets/amplworkLogo.png";
@@ -190,6 +194,7 @@ export {
   AppMaintenance,
   Target,
   target2,
+  Cursor,
   TargetArrow,
   Aws,
   banner,
@@ -220,6 +225,9 @@ export {
   enterprise6,
   enterprise7,
   enterprise8,
+  Applicationimg1,
+  Applicationimg2,
+  Applicationimg3,
   facinating1,
   facinating2,
   facinating3,

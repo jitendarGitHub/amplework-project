@@ -1,0 +1,3 @@
+const DiverseCard = () => {
+  return;
+};

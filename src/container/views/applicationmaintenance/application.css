@@ -83,6 +83,7 @@
   
   .maintain .maintain-box:hover .contents {
     top: 60px;  
+    color: #fff;
   }
   
   .maintain .maintain-box .contents h3 {
@@ -91,6 +92,7 @@
     color: #fff;
     font-size: 24px;
   }
+  
   
   .maintain .maintain-box .contents p {
     margin: 0;
@@ -119,6 +121,7 @@
 .app-type-section{ 
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 14px;
+color: rgb(245 164 3);;
 } 
 
 /*dedicated development*/
@@ -254,9 +257,16 @@ font-size: 14px;
     font-size: 16px;
     font-family: sans-serif; 
 }
-.icon{
-    font-size: 1.8rem;
+.icon{ 
+    margin-top: 0px;
+    align-self: center;
+    padding: 5px;
+    font-size: 1rem;
 }
+.bug-icon{
+    width: 20px;
+}
+
 .title{ 
     width: 120px;
 }
@@ -333,14 +343,24 @@ font-size: 14px;
         .card-title:hover{
             color: rgb(245 164 3); 
         } 
-         
+        .fixed-issue{
+            color: red;
+        }
+        .card-content:hover .fixed-issue{
+        color: rgb(245 164 3);
+        } 
+        .change-paragraph{
+            letter-spacing: 1px;
+            line-height: 2rem;
+        }
        
 
         /*facinating*/
 
         .img-background{
             background-color: rgb(224, 224, 227);
-            width: 65px;
+            width: 65px; 
+            height: 65px;
         }
         .img-background:hover{
             background-color: white;

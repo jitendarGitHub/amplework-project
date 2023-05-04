@@ -1,5 +1,6 @@
 import { Card } from "react-bootstrap";
-import { DiverseCardBg } from "../../../../assets";
+import { DiverseCardBg, facinating4 } from "../../../../assets";
+import DefaultCard from "../../../../components/card/Index";
 
 const Diverse = () => {
   return (

@@ -20,31 +20,31 @@ const AppShap = () => {
           <div className="col-sm-12 col-md-6 col-lg-4">
             <Shapcard
               image={Target}
-              title="Fixed"
-              para="Slow and glitch software updates with no-real benefits for users?"
               bgcolor="rgb(6 21 114)"
               color="rgb(245 164 3)"
               footer="Amplework’s Solution"
+              para="Suffering from the high cost off software maintenance"
+              changepara="Our in-house support matrix and best-in-industry prices will resultant in cost reduction by 30% to 40%."
             />
           </div>
           <div className="col-sm-12 col-md-6 col-lg-4">
             <Shapcard
               image={Target}
-              title="issue"
-              para="Slow and glitch software updates with no-real benefits for users?"
               footer="Amplework’s Solution"
               bgcolor="rgb(6 21 114)"
               color="rgb(245 164 3)"
+              para="Slow and glitch software updates with no-real benefits for users?"
+              changepara="For enhance UX by 4x, we roll out updates at a regular interval of 3-5 weeks as a part of CI/CD"
             />
           </div>
           <div className="col-sm-12 col-md-6 col-lg-4">
             <Shapcard
               image={Target}
-              title="issue"
-              para="Slow and glitch software updates with no-real benefits for users?"
+              para="Need profound resources for program visibility?"
               footer="Amplework’s Solution"
               bgcolor="rgb(6 21 114)"
               color="rgb(245 164 3)"
+              changepara="We incorporate in-house KPIs for improving software visibility and maintaining clarity at all levels."
             />
           </div>
         </div>

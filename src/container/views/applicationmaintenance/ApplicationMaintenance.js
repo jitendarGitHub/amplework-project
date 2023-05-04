@@ -1,5 +1,5 @@
 import "./application.css";
-import { Banner } from "../../../assets";
+import { Apps1, Banner } from "../../../assets";
 import {
   ClientAppreciation,
   FullStackDeveloper,
@@ -24,6 +24,7 @@ import {
   PortFolio,
   AmpleQuestion,
 } from "./section";
+import DefaultCard from "../../../components/card/Index";
 
 const ApplicationMaintenance = () => {
   return (

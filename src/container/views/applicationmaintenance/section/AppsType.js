@@ -9,6 +9,7 @@ import {
   Apps7,
   Apps8,
 } from "../../../../assets";
+import DefaultCard from "../../../../components/card/Index";
 
 const AppsType = () => {
   return (
@@ -21,114 +22,95 @@ const AppsType = () => {
         <br /> standard dummy text ever since the 1500s,
       </p>
       <div className="maintain p-1 mt-5">
-        <div className="maintain-box">
-          <div className="maintain-icon text-center align-self-center fs-1 ">
-            <img src={Apps1} className="fa-icon" alt="" />
-            <h5 className="mt-4 fw-bold">Web App</h5>
-          </div>
+        <DefaultCard
+          cardclass="maintain-box"
+          imgdivclass="maintain-icon text-center align-self-center fs-1 "
+          imgclass="fa-icon"
+          cardimage={Apps1}
+          contentclass="contents"
+          headingclass=" fw-bold"
+          heading="Web Apps"
+          paraclass="text-white"
+          para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
+        />
 
-          <div className="contents">
-            <h5 className="fw-bold text-white ">Web Apps</h5>
-            <p className=" ">
-              Le Lorem Ipsum est simplement du faux texte employé dans la
-              composition et la mise en page avant impression. Le Lorem Ipsum
-            </p>
-          </div>
-        </div>
-        <div className="maintain-box">
-          <div className="maintain-icon text-center align-self-center fs-1 ">
-            <img src={Apps2} className="fa-icon" alt="" />
-            <h5 className="mt-4 fw-bold">Cloud Apps & SaaS</h5>
-          </div>
-          <div className="contents">
-            <h5 className="text-white fw-bold">Cloud Apps & SaaS</h5>
-            <p className="">
-              Le Lorem Ipsum est simplement du faux texte employé dans la
-              composition et la mise en page avant impression. Le Lorem Ipsum
-            </p>
-          </div>
-        </div>
-        <div className="maintain-box">
-          <div className="maintain-icon text-center align-self-center fs-1 ">
-            <img src={Apps3} className="fa-icon" alt="" />
-            <h5 className="mt-4 fw-bold">Enterprise App</h5>
-          </div>
-          <div className="contents ">
-            <h5 className=" text-white  fw-bold">Enterprise Apps</h5>
-            <p className=" ">
-              Le Lorem Ipsum est simplement du faux texte employé dans la
-              composition et la mise en page avant impression. Le Lorem Ipsum
-            </p>
-          </div>
-        </div>
-        <div className="maintain-box">
-          <div className="maintain-icon text-center align-self-center fs-1 ">
-            <img src={Apps4} className="fa-icon" alt="" />
-            <h5 className="mt-4 fw-bold">AR/VR Apps</h5>
-          </div>
-          <div className="contents">
-            {" "}
-            <h5 className=" text-white  fw-bold">AR/VR Apps</h5>
-            <p className=" ">
-              Le Lorem Ipsum est simplement du faux texte employé dans la
-              composition et la mise en page avant impression. Le Lorem Ipsum
-            </p>
-          </div>
-        </div>
-        <div className="maintain-box">
-          <div className="maintain-icon text-center align-self-center fs-1 ">
-            <img src={Apps5} className="fa-icon" alt="" />
-            <h5 className="mt-4 fw-bold">Database Apps</h5>
-          </div>
-          <div className="contents">
-            {" "}
-            <h5 className=" text-white  fw-bold">Database Apps</h5>
-            <p className=" ">
-              Le Lorem Ipsum est simplement du faux texte employé dans la
-              composition et la mise en page avant impression. Le Lorem Ipsum
-            </p>
-          </div>
-        </div>
-        <div className="maintain-box">
-          <div className="maintain-icon text-center align-self-center fs-1 ">
-            <img src={Apps6} className="fa-icon" alt="" />
-            <h5 className="mt-4 fw-bold">AI/ML Apps</h5>
-          </div>
-          <div className="contents">
-            <h5 className=" text-white  fw-bold">AI/ML Apps</h5>
-            <p className=" ">
-              Le Lorem Ipsum est simplement du faux texte employé dans la
-              composition et la mise en page avant impression. Le Lorem Ipsum
-            </p>
-          </div>
-        </div>
-        <div className="maintain-box">
-          <div className="maintain-icon text-center align-self-center ">
-            <img src={Apps7} className="fa-icon" alt="" />
-            <h5 className="mt-4 fw-bold">Gaming Apps</h5>
-          </div>
-          <div class="contents">
-            <h5 className=" text-white  fw-bold">Gaming Apps</h5>
-            <p className=" ">
-              Le Lorem Ipsum est simplement du faux texte employé dans la
-              composition et la mise en page avant impression. Le Lorem Ipsum
-            </p>
-          </div>
-        </div>
-        <div className="maintain-box">
-          <div className="maintain-icon text-center align-self-center ">
-            <img src={Apps8} className="fa-icon" alt="" />
-            <h5 className="mt-4 fw-bold">Hybrid Apps</h5>
-          </div>
-          <div className="contents">
-            <h3 className="text-white fw-bold">Hybrid Apps</h3>
-            <p className="">
-              Le Lorem Ipsum est simplement du faux texte employé dans la
-              composition et la mise en page avant impression. Le Lorem Ipsum
-              est le faux texte standard de l'imprimerie depuis les années 1500
-            </p>
-          </div>
-        </div>
+        <DefaultCard
+          cardclass="maintain-box"
+          imgdivclass="maintain-icon text-center align-self-center fs-1 "
+          imgclass="fa-icon"
+          cardimage={Apps2}
+          contentclass="contents"
+          headingclass=" fw-bold"
+          heading="Cloud Apps and Saas"
+          paraclass="text-white"
+          para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
+        />
+        <DefaultCard
+          cardclass="maintain-box"
+          imgdivclass="maintain-icon text-center align-self-center fs-1 "
+          imgclass="fa-icon"
+          cardimage={Apps3}
+          contentclass="contents"
+          headingclass=" fw-bold"
+          heading="Enterpeise Apps"
+          paraclass="text-white"
+          para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
+        />
+        <DefaultCard
+          cardclass="maintain-box"
+          imgdivclass="maintain-icon text-center align-self-center fs-1 "
+          imgclass="fa-icon"
+          cardimage={Apps4}
+          contentclass="contents"
+          headingclass=" fw-bold"
+          heading="AR/VR Apps"
+          paraclass="text-white"
+          para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
+        />
+        <DefaultCard
+          cardclass="maintain-box"
+          imgdivclass="maintain-icon text-center align-self-center fs-1 "
+          imgclass="fa-icon"
+          cardimage={Apps5}
+          contentclass="contents"
+          headingclass=" fw-bold"
+          heading="Database Apps"
+          paraclass="text-white"
+          para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
+        />
+        <DefaultCard
+          cardclass="maintain-box"
+          imgdivclass="maintain-icon text-center align-self-center fs-1 "
+          imgclass="fa-icon"
+          cardimage={Apps6}
+          contentclass="contents"
+          headingclass=" fw-bold"
+          heading="AI/ML Apps"
+          paraclass="text-white"
+          para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
+        />
+        <DefaultCard
+          cardclass="maintain-box"
+          imgdivclass="maintain-icon text-center align-self-center fs-1 "
+          imgclass="fa-icon"
+          cardimage={Apps7}
+          contentclass="contents"
+          headingclass=" fw-bold"
+          heading="Gaming Apps"
+          paraclass="text-white"
+          para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
+        />
+        <DefaultCard
+          cardclass="maintain-box"
+          imgdivclass="maintain-icon text-center align-self-center fs-1 "
+          imgclass="fa-icon"
+          cardimage={Apps8}
+          contentclass="contents"
+          headingclass=" fw-bold"
+          heading="Hybrid Apps"
+          paraclass="text-white"
+          para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
+        />
       </div>
     </section>
   );

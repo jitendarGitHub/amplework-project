@@ -1,29 +1,33 @@
 import { useState } from "react";
-import { Card } from "react-bootstrap";
-import { Target, target2 } from "../assets";
+import { Card, Image } from "react-bootstrap";
+import { Cursor, Target, target2 } from "../assets";
 
 const Shapcard = (props) => {
-  const [over, setOver] = useState(true);
+  const [over, setOver] = useState(false);
   return (
     <>
       <div
         className="card text-center p-4 mt-3  border-4 border-dashed "
-        onMouseOver={() => setOver(false)}
-        onMouseOut={() => setOver(true)}
+        onMouseOver={() => setOver(true)}
+        onMouseOut={() => setOver(false)}
+        onClick={() => setOver(true)}
       >
         <Card className="card-content">
           <Card.Body>
-            <img src={over ? Target : target2} width={"10%"} />
-            <Card.Title
-              className="card-title"
-              style={{ color: `${props.color}` }}
-            >
-              {over.title ? "Resolved" : "issue"}
+            <Image src={over ? target2 : Target} width={"10%"} />
+            <Card.Title className="fixed-issue">
+              {over ? "Fixed" : "issue"}
             </Card.Title>
-            <Card.Text>{props.para}</Card.Text>
-            <Card.Text className=" ample-footers text-primary">
-              {props.footer}
-            </Card.Text>
+            {over ? (
+              <p className="change-paragraph">{props.changepara}</p>
+            ) : (
+              <>
+                <Card.Text>{props.para}</Card.Text>
+                <Card.Text className=" ample-footers text-primary">
+                  {props.footer} <img src={Cursor} alt="" />
+                </Card.Text>
+              </>
+            )}
           </Card.Body>
         </Card>
       </div>

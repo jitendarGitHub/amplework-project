@@ -1,8 +1,10 @@
 import { Button } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { useNavigate } from "react-router-dom";
 
 const Header = (props) => {
+  const navigate = useNavigate();
   return (
     <div className="header">
       <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark">
@@ -18,7 +20,10 @@ const Header = (props) => {
           >
             {/* <Nav className="me-auto bg-warning"></Nav> */}
             <Nav className="ms-auto">
-              <Nav.Link className="header-item fw-100  text-white">
+              <Nav.Link
+                className="header-item fw-100  text-white"
+                onClick={() => navigate("/enterprise-mobility")}
+              >
                 Who we are
               </Nav.Link>
               <Nav.Link className="header-item fw-100  text-white">

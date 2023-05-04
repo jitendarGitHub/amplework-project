@@ -11,8 +11,8 @@ const BugActivity = (props) => {
               boxShadow: `${props.shadow}`,
             }}
           >
-            <p className="icon  text-center ">
-              <img src={props.icon} className="img-fluid" />
+            <p className="icon text-center">
+              <img src={props.icon} className="img-fluid bug-icon" />
             </p>
           </div>
           <p className="  ">{props.title}</p>
