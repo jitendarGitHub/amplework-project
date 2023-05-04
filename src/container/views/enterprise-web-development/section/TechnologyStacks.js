@@ -1,59 +1,27 @@
-import { Button } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 import "../enterpriseweb.css";
+import { TechnologyStackMockup } from "../../../../mockup/WebdevMockup";
+
 const TechnologyStacks = (props) => {
   return (
-    <section className="bg-light">
-      <div className="container text-center">
-        <h2>{props.heading}</h2>
-        <p className="p-2">{props.para}</p>
-        <div className="tables">
-          <div className="row">
-            <div className="col-lg-6 p-4 first technology-stack pb-5">
-              <h3>Front-end frameworks and libraries</h3>
-              <Button>React</Button> <Button>Angular</Button>{" "}
-              <Button>Vue.js</Button> <Button>jQuery</Button>
-            </div>
-            <div className="col-lg-6 p-4 four technology-stack pb-5">
-              <h3>Development tools and libraries</h3>
-              <Button>Git</Button> <Button>Docker</Button>{" "}
-              <Button>Jenkins</Button> <Button> Apache Maven </Button>{" "}
-              <Button>Grunt</Button> <Button>Gulp </Button>{" "}
-              <Button> NPM</Button>{" "}
-            </div>
-            <div className="col-lg-3 p-4 third technology-stack pb-5">
-              <h3>Back-end frameworks</h3>
-              <Button>Spring</Button> <Button>Express</Button>{" "}
-              <Button>Laravel</Button> <Button>Ruby on Rails</Button>{" "}
-            </div>
-            <div className="col-lg-3 p-4 four technology-stack pb-5">
-              <h3>MEAN stack</h3>
-              <Button>MongoDB</Button> <Button>Express</Button>{" "}
-              <Button>AngularJS</Button> <Button>Node.js</Button>{" "}
-            </div>
-            <div className="col-lg-3 p-4 five technology-stack pb-5">
-              <h3>LAMP stack</h3>
-              <Button>Linux</Button> <Button>Apache</Button>{" "}
-              <Button>MySQL</Button> <Button>PHP</Button>{" "}
-            </div>
-            <div className="col-lg-3 p-4 third technology-stack pb-5">
-              <h3>Ruby on Rails</h3>
-              <Button>Ruby</Button> <Button>Rails</Button>{" "}
-              <Button>PostgreSQL</Button>
-            </div>
-            <div className="col-lg-6 five technology-stack pb-5 p-4 ">
-              <h3>Front-end frameworks and libraries</h3>
-              <Button>React</Button> <Button>Angular</Button>{" "}
-              <Button> Vue.js</Button> <Button>jQuery</Button>{" "}
-            </div>
-            <div className="col-lg-6 four technology-stack pb-5 p-4 ">
-              <h3>Django stack</h3>
-              <Button>Python</Button> <Button>Django</Button>{" "}
-              <Button>PostgreSQL</Button>
-            </div>
+    // <div className="">
+    <div className="container text-center">
+      <h3 className="p-2">{props.heading}</h3>
+      <p className="p-0">{props.para}</p>
+      <div className="row ">
+        {TechnologyStackMockup.map((items, key) => (
+          <div className={`${items.className} p-3`}>
+            <h3>{items.text}</h3>
+            {items?.btn?.map((item) => (
+              <button className={`${items.btnclass} ps-3 pe-3 p-1 m-1`}>
+                {item.language}
+              </button>
+            ))}
           </div>
-        </div>
+        ))}
       </div>
-    </section>
+    </div>
+    // </div>
   );
 };
 export default TechnologyStacks;

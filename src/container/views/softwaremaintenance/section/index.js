@@ -4,6 +4,7 @@ import UnIntrupted from "./UnIntrupted";
 import Dream from "./Dream";
 import IntegrateProfesional from "./IntegrateProfessional";
 import AccoumplishResult from "./AccomplishResult";
+import TechnicalExperties from "./TechnicalExperties";
 
 export {
   LeaveSoftwareMaintenance,
@@ -12,4 +13,5 @@ export {
   Dream,
   IntegrateProfesional,
   AccoumplishResult,
+  TechnicalExperties,
 };

@@ -4,8 +4,8 @@ const BrandCard = (props) => {
   return (
     <>
       <div className="container justify-content-between ">
-        <div className=" justify-content-center m-2">
-          <Card className="brand-card  border-0" style={{ width: "18rem" }}>
+        <div className=" justify-content-center mt-4">
+          <Card className="brand-card  border-0">
             <Card.Body className="">
               <div className=" card-contents">
                 <div className="img-block">

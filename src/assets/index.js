@@ -100,6 +100,11 @@ import benifit5 from "./benifit5.png";
 import benifit6 from "./benifit6.png";
 import benifit7 from "./benifit7.png";
 import SelectingAmple from "./reason.png";
+import Capabilityimg1 from "./capabilityimg1.png";
+import Capabilityimg2 from "./capabilityimg2.png";
+import Capabilityimg3 from "./capabilityimg3.png";
+import Capabilityimg4 from "./capabilityimg4.png";
+import CapabilityBG from "./capabilitybg.png";
 
 //Third page content
 import EnterpriseMobilityBG from "./enterprisemobilityBG.jpg";
@@ -169,6 +174,13 @@ import ReasonAmplebg3 from "./reasonamplebg3.png";
 import Dreammanagement from "./dream-management.png";
 import DreamOffshare from "./dream-offshare.png";
 import Dreamoutshare from "./dream-outsouece.png";
+import Accomplishimg1 from "./accomplishimg1.png";
+import Accomplishimg2 from "./accomplishimg2.png";
+import Accomplishimg3 from "./accomplishimg3.png";
+import Accomplishimg4 from "./accomplishimg4.png";
+import Accomplishimg5 from "./accomplishimg5.png";
+import Accomplishimg6 from "./accomplishimg6.png";
+import TechnicalExpertimg from "./technicalexpert.png";
 
 export {
   Banner,
@@ -261,6 +273,12 @@ export {
   benifit6,
   benifit7,
   SelectingAmple,
+  Capabilityimg1,
+  Capabilityimg2,
+  Capabilityimg3,
+  Capabilityimg4,
+  CapabilityBG,
+
   /*third page content*/
   EnterpriseMobilityBG,
   Profound,
@@ -328,4 +346,11 @@ export {
   Dreammanagement,
   DreamOffshare,
   Dreamoutshare,
+  Accomplishimg1,
+  Accomplishimg2,
+  Accomplishimg3,
+  Accomplishimg4,
+  Accomplishimg5,
+  Accomplishimg6,
+  TechnicalExpertimg,
 };

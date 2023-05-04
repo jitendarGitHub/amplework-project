@@ -9,7 +9,7 @@ const EngagementModal = () => {
       <h2 className="text-center ">
         Save Up-To 55% Operational Cost With Our Engagement Model
       </h2>
-      <div className="row">
+      <div className="row mt-4">
         <div
           className="col-lg-4 "
           style={{
@@ -66,7 +66,7 @@ const EngagementModal = () => {
                 </li>
               </Card>
             </div>
-            <div className="col-lg-6 p-1 monthly-card mt-2">
+            <div className="col-lg-6 p-1 monthly-card mt-2 ">
               <img
                 src={Recommended}
                 style={{
@@ -75,7 +75,7 @@ const EngagementModal = () => {
                   position: "absolute",
                 }}
               />
-              <Card className="bg-transparent text-light border-0">
+              <Card className="bg-transparent text-light border-0 pt-sm-4">
                 <div className="d-flex price2">
                   <h1 className="  fw-bold">$2500</h1>
                   <span className="mt-3 ">Monthly</span>

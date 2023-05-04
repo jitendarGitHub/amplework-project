@@ -6,11 +6,10 @@ const DreamModalCard = (props) => {
   return (
     <>
       <Card
-        className="p-3 pt-4 border-none"
+        className="p-3 pt-4 border-1"
         style={{
           borderBottom: `${props.borderbottom}`,
           boxShadow: `${props.boxshadow}`,
-          //   borderStyle: "none",
         }}
       >
         <img src={props.img} width={"50px"} />

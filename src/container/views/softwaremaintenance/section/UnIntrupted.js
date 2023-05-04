@@ -10,7 +10,7 @@ import "../softwaremaintenance.css";
 
 const UnIntrupted = () => {
   return (
-    <section className="bg-light">
+    <section className="">
       <div className="container">
         <h2>
           Software Maintenance and Support Company For Uninterrupted Business
@@ -22,7 +22,7 @@ const UnIntrupted = () => {
           Without proper maintenance.
         </p>
         <div className="row intrupted text-center">
-          <div className="col-lg-4 p-3">
+          <div className="col-lg-4 col-md-6 p-3">
             <img src={ExtraForUseImg} alt="" />
             <h4>Bugs & Glitch Removal</h4>
             <p>
@@ -30,7 +30,7 @@ const UnIntrupted = () => {
               applications, simplifying multithreading with ease.
             </p>
           </div>
-          <div className="col-lg-4 p-3 ">
+          <div className="col-lg-4 col-md-6 p-3 ">
             <img src={Bugdata} alt="" />
             <h4>Data Migration & Audits</h4>
             <p>
@@ -38,7 +38,7 @@ const UnIntrupted = () => {
               applications, simplifying multithreading with ease.
             </p>
           </div>
-          <div className="col-lg-4 p-3">
+          <div className="col-lg-4 col-md-6 p-3">
             <img src={Bugchat} alt="" />
             <h4>WordPress Support & Maintenance Audits</h4>
             <p>
@@ -46,7 +46,7 @@ const UnIntrupted = () => {
               applications, simplifying multithreading with ease.
             </p>
           </div>
-          <div className="col-lg-4 p-3">
+          <div className="col-lg-4 col-md-6 p-3">
             <img src={Bugmodification} alt="" />
             <h4>Modification & Reconfiguration</h4>
             <p>
@@ -54,7 +54,7 @@ const UnIntrupted = () => {
               applications, simplifying multithreading with ease.
             </p>
           </div>
-          <div className="col-lg-4 p-3">
+          <div className="col-lg-4 col-md-6 p-3">
             <img src={BugMagix} alt="" />
             <h4>Enhancement & Insertions</h4>
             <p>
@@ -62,7 +62,7 @@ const UnIntrupted = () => {
               applications, simplifying multithreading with ease.
             </p>
           </div>
-          <div className="col-lg-4 p-3">
+          <div className="col-lg-4 col-md-6 p-3">
             <img src={BugSpeed} alt="" />
             <h4>Performance Monitoring</h4>
             <p>

@@ -53,28 +53,28 @@ const BrandCollaborate = () => {
         know-how. You can trust Mindbowser to deliver top-notch results.
       </p>
       <div className="row">
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 ">
           <BrandCard
             img={Brandimg1}
             title="FINTECH"
             about="Develop a fin-tech application that represents your brand’s reputation and enhances your brand’s presence in the market."
           />
         </div>
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 ">
           <BrandCard
             img={Brandimg2}
             title="TRANSPORT"
             about="Streamline your logistics and transportation operations with our transport application building services - update your logistics units."
           />
         </div>
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 ">
           <BrandCard
             img={Brandimg3}
             title="TRAVEL"
             about="Bring your idea to life by developing a healthcare application for better patient management, prescription details, etc."
           />
         </div>
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 ">
           <BrandCard
             img={Brandimg4}
             title="HEALTHCARE"
@@ -82,28 +82,28 @@ const BrandCollaborate = () => {
           />
         </div>
 
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 ">
           <BrandCard
             img={Brandimg5}
             title="MARKETPLACE"
             about="Show the world about your innovative design ideas on your application. Connect with us for developing a fascinating application."
           />
         </div>
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 ">
           <BrandCard
             img={Brandimg6}
             title="FASHION"
             about="Give a boost to your education and learning platform for enhancing your user experience in an integrated platform."
           />
         </div>
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 ">
           <BrandCard
             img={Brandimg7}
             title="EDUCATION"
             about="Give a platform to your audiences for buying/selling multiple items without facing any downtime errors."
           />
         </div>
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 ">
           <BrandCard
             img={Brandimg8}
             title="E-COMMERCE"
@@ -111,28 +111,28 @@ const BrandCollaborate = () => {
           />
         </div>
 
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 ">
           <BrandCard
             img={Brandimg9}
             title="RENTAL"
             about="Develop a fin-tech application that represents your brand’s reputation and enhances your brand’s presence in the market."
           />
         </div>
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 ">
           <BrandCard
             img={Brandimg10}
             title="ENTERTAINMENT"
             about="Streamline your logistics and transportation operations with our transport application building services - update your logistics units."
           />
         </div>
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 ">
           <BrandCard
             img={Brandimg11}
             title="SPORTS"
             about="Bring your idea to life by developing a healthcare application for better patient management, prescription details, etc."
           />
         </div>
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 ">
           <BrandCard
             img={Brandimg12}
             title="AGRICULTURE"

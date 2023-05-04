@@ -27,79 +27,79 @@ const BrandApp = () => {
         know-how. You can trust Mindbowser to deliver top-notch results.
       </p>
       <div className="d-flex flex-wrap justify-content-center">
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between align-items-center">
-            <img src={BrandApp1} class="img-fluid my-3  " width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between align-items-center">
+            <img src={BrandApp1} className="img-fluid my-3  " width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between align-items-center">
-            <img src={BrandApp2} class="img-fluid my-3" width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between align-items-center">
+            <img src={BrandApp2} className="img-fluid my-3" width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between align-items-center">
-            <img src={BrandApp3} class="img-fluid my-3  " width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between align-items-center">
+            <img src={BrandApp3} className="img-fluid my-3  " width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between align-items-center">
-            <img src={BrandApp4} class="img-fluid my-3" width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between align-items-center">
+            <img src={BrandApp4} className="img-fluid my-3" width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between  align-items-center">
-            <img src={BrandApp5} class="img-fluid my-3  " width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between  align-items-center">
+            <img src={BrandApp5} className="img-fluid my-3  " width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between align-items-center">
-            <img src={BrandApp6} class="img-fluid my-3" width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between align-items-center">
+            <img src={BrandApp6} className="img-fluid my-3" width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between  align-items-center">
-            <img src={BrandApp7} class="img-fluid my-3  " width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between  align-items-center">
+            <img src={BrandApp7} className="img-fluid my-3  " width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between  align-items-center">
-            <img src={BrandApp8} class="img-fluid my-3" width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between  align-items-center">
+            <img src={BrandApp8} className="img-fluid my-3" width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between  align-items-center">
-            <img src={BrandApp9} class="img-fluid my-3  " width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between  align-items-center">
+            <img src={BrandApp9} className="img-fluid my-3  " width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between  align-items-center">
-            <img src={BrandApp10} class="img-fluid my-3" width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between  align-items-center">
+            <img src={BrandApp10} className="img-fluid my-3" width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between align-items-center">
-            <img src={BrandApp11} class="img-fluid my-3" width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between align-items-center">
+            <img src={BrandApp11} className="img-fluid my-3" width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between align-items-center">
-            <img src={BrandApp12} class="img-fluid my-3" width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between align-items-center">
+            <img src={BrandApp12} className="img-fluid my-3" width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between align-items-center">
-            <img src={BrandApp13} class="img-fluid my-3  " width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between align-items-center">
+            <img src={BrandApp13} className="img-fluid my-3  " width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between align-items-center">
-            <img src={BrandApp14} class="img-fluid my-3" width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between align-items-center">
+            <img src={BrandApp14} className="img-fluid my-3" width={"60%"} />
           </div>
         </aside>
-        <aside class="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
-          <div class="d-flex justify-content-between align-items-center">
-            <img src={BrandApp15} class="img-fluid my-3" width={"60%"} />
+        <aside className="brands_borders col-lg-2 col-md-4 col-sm-6 col-xs-6 m-lg-3">
+          <div className="d-flex justify-content-between align-items-center">
+            <img src={BrandApp15} className="img-fluid my-3" width={"60%"} />
           </div>
         </aside>
       </div>

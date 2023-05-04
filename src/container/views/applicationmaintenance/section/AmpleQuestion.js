@@ -3,20 +3,20 @@ import { QUestionBG } from "../../../../assets";
 const AmpleQuestion = () => {
   return (
     <section className="">
-      <div
-        className="question text-center p-5 "
-        style={{
-          backgroundImage: `url(${QUestionBG})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <h4 className="fw-bold">Frequently Asked Questions</h4>
-        <Container className="pb-4 py-0">
+      <Container className="">
+        <div
+          className="question text-center "
+          style={{
+            backgroundImage: `url(${QUestionBG})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <h4 className="fw-bold">Frequently Asked Questions</h4>
           <Accordion>
             <div className="row">
-              <div className="col-lg-6 text-start">
+              <div className="col-lg-6 p-2 text-start">
                 <Accordion.Item eventKey="0" className="question-box">
                   <Accordion.Header className="fs-1">
                     <h4>How skilled are your dedicated developers?</h4>
@@ -114,8 +114,8 @@ const AmpleQuestion = () => {
               </div>
             </div>
           </Accordion>
-        </Container>
-      </div>
+        </div>
+      </Container>
     </section>
   );
 };

@@ -60,7 +60,7 @@ const EnterpriseMobility = () => {
       <section>
         <BrandApp />
       </section>
-      <section>
+      <section className="bg-light">
         <BrandCollaborate />
       </section>
       <section

@@ -14,6 +14,8 @@ import FullStackDeveloper from "./FullStackDeveloperCard";
 import DreamModalCard from "./DreamModalCard";
 import PhasesCard from "./CategoryPhase";
 import BrandCard from "./BrandColaborateCard";
+import AccomplishCard from "./AccomplishCard";
+import CapabilityCard from "./CapabilityCard";
 
 export {
   Footer,
@@ -32,4 +34,6 @@ export {
   DreamModalCard,
   PhasesCard,
   BrandCard,
+  AccomplishCard,
+  CapabilityCard,
 };

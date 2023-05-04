@@ -26,6 +26,7 @@ import {
   BenifitsOfBussiness,
   ReasonAmple,
   EnterpriseWebService,
+  CoreCapability,
 } from "./section";
 import "./enterpriseweb.css";
 
@@ -90,7 +91,7 @@ const EnterpriseWebDevelopment = () => {
         list5="Integration with other systems."
         list1="Improved user experiences and engagement."
         list2="Increased productivity and time savings."
-        list3="Easier Navigation. "
+        list3="Easier Navigation."
         list4="Higher User-friendliness."
         columnreverse="row-reverse"
         bgcolor="rgb(248 249 250)"
@@ -147,13 +148,18 @@ const EnterpriseWebDevelopment = () => {
         columnreverse="row-reverse"
         bgcolor="rgb(248 249 250)"
       />
+      <section>
+        <CoreCapability />
+      </section>
 
-      <TechnologyStacks
-        heading="Technology Stacks"
-        para="  If your websites involve the activities of financial transactions then
+      <section className="bg-light">
+        <TechnologyStacks
+          heading="Technology Stacks"
+          para="  If your websites involve the activities of financial transactions then
           utilize the payment gateway to facilitate secure online payments. It
           enables customers to complete transactions using credit/debit cards,"
-      />
+        />
+      </section>
       <BenifitsOfBussiness />
       <ReasonAmple />
       <Developer />

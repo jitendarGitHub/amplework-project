@@ -18,6 +18,7 @@ import {
   IntegrateProfesional,
   LeaveSoftwareMaintenance,
   RoleInSoftwareMaintenance,
+  TechnicalExperties,
   UnIntrupted,
 } from "./section/index.js";
 
@@ -31,20 +32,25 @@ const SoftwareMaintenance = () => {
       />
       <LeaveSoftwareMaintenance />
       <UnIntrupted />
-      <section>
+      <section className="bg-light">
         <AccoumplishResult />
-      </section>
-      <section>
-        <RoleInSoftwareMaintenance />
       </section>
       <section className="dream-section">
         <Dream />
       </section>
       <section>
+        <FullStackDeveloper />
+      </section>
+      <section>
+        <TechnicalExperties />
+      </section>
+      <section>
+        <RoleInSoftwareMaintenance />
+      </section>
+      <section className="bg-warning">
         <IntegrateProfesional />
       </section>
       <AmpleQuestion />
-      <FullStackDeveloper />
       <Developer />
       <ClientAppreciation />
       <PortFolio />

@@ -32,7 +32,7 @@ function ClientAppreciation(props) {
               </p>
               <span className="fw-bold"> MANU NAMBOODIRI</span>
               <p className="namboodiri-position">Founder, Flawless Plank</p>
-              <span className="fs-1 text-primary">
+              <span className="fs-1 text-primary ">
                 <AiFillLinkedin />
               </span>
             </div>
