@@ -7,10 +7,8 @@ import {
   enterprise6,
   enterprise7,
   enterprise8,
-  EnterpriseBg,
-  Apps1,
 } from "../../../../assets";
-import DefaultCard from "../../../../components/card/Index";
+import { DefaultCard } from "../../../../components";
 
 const MaintenancBox = () => {
   return (
@@ -18,13 +16,12 @@ const MaintenancBox = () => {
       <div className="container maintenance-Section">
         <div className=" maintenance">
           <DefaultCard
-            cardclass="box "
+            cardclass="box"
             imgdivclass="icon text-center align-self-center fs-1"
             imgclass="fa"
             cardimage={enterprise1}
             contentclass="content"
             headingclass="text-dark fw-bold"
-            headingstyle={{ visibility: "hidden" }}
             heading="Web App Maintenance"
             paraclass="text-dark"
             para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"

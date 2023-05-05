@@ -24,7 +24,6 @@ import {
   PortFolio,
   AmpleQuestion,
 } from "./section";
-import DefaultCard from "../../../components/card/Index";
 
 const ApplicationMaintenance = () => {
   return (

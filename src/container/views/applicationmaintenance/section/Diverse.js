@@ -1,6 +1,5 @@
-import { Card } from "react-bootstrap";
-import { DiverseCardBg, facinating4 } from "../../../../assets";
-import DefaultCard from "../../../../components/card/Index";
+import { DiverseCardBg } from "../../../../assets";
+import { DiverseCard } from "../../../../components";
 
 const Diverse = () => {
   return (
@@ -19,106 +18,54 @@ const Diverse = () => {
               valuable insights about operations.
             </p>
           </div>
-          <div className="col-sm-12 col-lg-6 d-lg-flex gap-3">
+          <div className="col-sm-12 col-lg-6  d-lg-flex justify-content-center gap-3">
             <div className="">
-              <Card
-                className="mt-3 card-img border-3 text-light text-start "
-                style={{
-                  backgroundImage: `url(${DiverseCardBg})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
-              >
-                <Card.Body>
-                  <span style={{ fontSize: "14px" }}>Level 1</span>
-                  <br />
-                  <span className="fw-bold" style={{ fontSize: "12px" }}>
-                    Covers Basic App Services
-                  </span>
-                  <br />
-                  <ul className="p-1 mx-2 lh-lg">
-                    <li>Consists of technical information. </li>
-                    <li>Basic system maintenance.</li>
-                    <li>Basic bug fixes.</li>
-                    <li>Troubleshooting</li>
-                    <li>Basic security maintenance.</li>
-                  </ul>
-                </Card.Body>
-              </Card>
-              <Card
-                className="mt-3 card-img2  border-3 text-light text-start"
-                style={{
-                  backgroundImage: `url(${DiverseCardBg})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
-              >
-                <Card.Body>
-                  <span style={{ fontSize: "14px" }}>Level 2</span>
-                  <br />
-                  <span className="fw-bold" style={{ fontSize: "12px" }}>
-                    Comprehensive Maintenance
-                  </span>
-                  <br />
-                  <ul className="p-1 mx-2 lh-lg">
-                    <li> Configuration Management. </li>
-                    <li>Basic Documentation. </li>
-                    <li>Basic Testing. </li>
-                    <li>Problem Management. </li>
-                    <li>Advance Bug Fixes.</li>
-                  </ul>
-                </Card.Body>
-              </Card>
+              <DiverseCard
+                diversecardBG={DiverseCardBg}
+                heading="Level1"
+                about="Covers Basic App Service"
+                list1="Consists of technical informmation"
+                list2="Basic System maintenance"
+                list3="Basic Bug Fixed "
+                list4="Troubleshooting"
+                list5="Basic security maintenance"
+                cardclass="card-img"
+              />
+              <DiverseCard
+                diversecardBG={DiverseCardBg}
+                heading="Level2"
+                about="Comprehensive Maintenance"
+                list1="Basic Documentation"
+                list2="Problem Management"
+                list3="Advance BuG Fixed!"
+                list4="Comprehensive Management"
+                list5="Basic security maintenance"
+                cardclass="card-img1"
+              />
             </div>
-            <div className="mt-4">
-              <Card
-                className="mt-3 card-img1 border-3 text-light text-start"
-                style={{
-                  backgroundImage: `url(${DiverseCardBg})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
-              >
-                <Card.Body>
-                  <span style={{ fontSize: "14px" }}>Level 3</span>
-                  <br />
-                  <span className="fw-bold" style={{ fontSize: "12px" }}>
-                    Advanced Support Services
-                  </span>
-                  <br />
-                  <ul className="p-1 mx-2 lh-lg">
-                    <li>Performance Tuning.</li>
-                    <li>Advanced Testing.</li>
-                    <li> Advanced Documentation.</li>
-                    <li>Release Management.</li>
-                    <li> Advanced Bug Fixes.</li>
-                  </ul>
-                </Card.Body>
-              </Card>
-              <Card
-                className="mt-3 card-img3 border-3 text-light text-start"
-                style={{
-                  backgroundImage: `url(${DiverseCardBg})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
-              >
-                <Card.Body>
-                  <span style={{ fontSize: "14px" }}>Level 4</span>
-                  <br />
-                  <span className="fw-bold" style={{ fontSize: "12px" }}>
-                    Specialized Support Services
-                  </span>
-                  <br />
-                  <ul className="p-1 mx-2 lh-lg">
-                    <li> Root Cause Analysis. </li>
-                    <li>Database Administration. </li>
-                    <li>Architecture Design. </li>
-                    <li>Secure Operations. </li>
-                    <li>Personalized Solutions.</li>
-                  </ul>
-                </Card.Body>
-              </Card>
+            <div className="mt-4 ">
+              <DiverseCard
+                diversecardBG={DiverseCardBg}
+                heading="Level3"
+                about="Advanced Support Service"
+                list1="Performing Tuning"
+                list2="Advanced Testing"
+                list3="Advanced Documentation"
+                list4="Release Management"
+                list5="Advanced Bug Fixed"
+                cardclass="card-img2"
+              />
+              <DiverseCard
+                diversecardBG={DiverseCardBg}
+                heading="Level4"
+                about="Specialized Support Analysis"
+                list1="Root Cause Analysis"
+                list2="Database Administration"
+                list3="Architecture Design"
+                list4="Secure Opration"
+                list5="Personalized Solution"
+                cardclass="card-img3"
+              />
             </div>
           </div>
         </div>

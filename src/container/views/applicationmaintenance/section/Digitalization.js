@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import { digitalApp, digitalApp2, digitalApp3 } from "../../../../assets";
+import { DefaultCard } from "../../../../components";
 
 const Digitalize = () => {
   return (
@@ -8,23 +9,40 @@ const Digitalize = () => {
         <h3 className="text-center ">
           Digitalize Your Product Idea - Learn More About MVP
         </h3>
+
         <div className=" py-5 row justify-content-between">
           <div className="col-sm-12 col-md-6 col-lg-4">
-            <img src={digitalApp} width={"100%"} />
-            <h5>
-              Top 10 AI Content Detector Tools &amp; Extension Free in...{" "}
-            </h5>
+            <DefaultCard
+              cardclass=""
+              imgdivclass=""
+              imgclass=""
+              cardimage={digitalApp}
+              headingstyle={{ visibility: "hidden" }}
+              heading="Chatbots in Healthcare–Advantages ,Disadvantages Applications & their Future"
+              paraclass="developer-position"
+            />
           </div>
-
           <div className=" col-sm-12 col-md-6 col-lg-4">
-            <img src={digitalApp2} alt="" width={"100%"} />
-            <h5>How to Develop an E-Learning Mobile Application? </h5>
+            <DefaultCard
+              cardclass=""
+              imgdivclass=""
+              imgclass=""
+              cardimage={digitalApp2}
+              headingstyle={{ visibility: "hidden" }}
+              heading="Foldable Smartphone App Development – 5 Dos"
+              paraclass="developer-position"
+            />
           </div>
           <div className=" col-sm-12 col-md-6 col-lg-4">
-            <img src={digitalApp3} alt="" width={"100%"} />
-            <h5>
-              MVP Software Development: A Quickstart Guide to Success i...{" "}
-            </h5>
+            <DefaultCard
+              cardclass=""
+              imgdivclass=""
+              imgclass=""
+              cardimage={digitalApp3}
+              headingstyle={{ visibility: "hidden" }}
+              heading="Mobile DevOps – Advantages & Challenges"
+              paraclass="developer-position"
+            />
           </div>
         </div>
         <div className="text-center">

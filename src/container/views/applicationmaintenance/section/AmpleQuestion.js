@@ -1,19 +1,77 @@
 import { Accordion, Container } from "react-bootstrap";
 import { QUestionBG } from "../../../../assets";
+import { Accordions } from "../../../../components";
 const AmpleQuestion = () => {
   return (
-    <section className="">
-      <Container className="">
-        <div
-          className="question text-center "
-          style={{
-            backgroundImage: `url(${QUestionBG})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <h4 className="fw-bold">Frequently Asked Questions</h4>
+    <section className="question ">
+      <Container className="text-center mt-5 pt-3">
+        <h4 className="fw-bold bg-transparent">Frequently Asked Questions</h4>
+        <Accordion>
+          <div className="row">
+            <div className="col-lg-6 p-2 text-start">
+              <Accordions
+                eventkeys="0"
+                question="How skilled are your dedicated developers?"
+                answer=" At Amplework, we feature a team of highly skilled and experienced dedicatsed developers having several years of expertise in the field of mobile app development solutions."
+              />
+            </div>
+            <div className="col-lg-6 p-2 text-start">
+              <Accordions
+                eventkeys="1"
+                question="How skilled are your dedicated developers?"
+                answer=" At Amplework, we feature a team of highly skilled and experienced dedicatsed developers having several years of expertise in the field of mobile app development solutions."
+              />
+            </div>
+            <div className="col-lg-6 p-2 text-start">
+              <Accordions
+                eventkeys="2"
+                question="How skilled are your dedicated developers?"
+                answer=" At Amplework, we feature a team of highly skilled and experienced dedicatsed developers having several years of expertise in the field of mobile app development solutions."
+              />
+            </div>
+            <div className="col-lg-6 p-2 text-start">
+              <Accordions
+                eventkeys="3"
+                question="How skilled are your dedicated developers?"
+                answer=" At Amplework, we feature a team of highly skilled and experienced dedicatsed developers having several years of expertise in the field of mobile app development solutions."
+              />
+            </div>
+            <div className="col-lg-6 p-2 text-start">
+              <Accordions
+                eventkeys="4"
+                question="How skilled are your dedicated developers?"
+                answer=" At Amplework, we feature a team of highly skilled and experienced dedicatsed developers having several years of expertise in the field of mobile app development solutions."
+              />
+            </div>
+            <div className="col-lg-6 p-2 text-start">
+              <Accordions
+                eventkeys="5"
+                question="How skilled are your dedicated developers?"
+                answer=" At Amplework, we feature a team of highly skilled and experienced dedicatsed developers having several years of expertise in the field of mobile app development solutions."
+              />
+            </div>
+            <div className="col-lg-6 p-2 text-start">
+              <Accordions
+                eventkeys="6"
+                question="How skilled are your dedicated developers?"
+                answer=" At Amplework, we feature a team of highly skilled and experienced dedicatsed developers having several years of expertise in the field of mobile app development solutions."
+              />
+            </div>
+            <div className="col-lg-6 p-2 text-start">
+              <Accordions
+                eventkeys="7"
+                question="How skilled are your dedicated developers?"
+                answer=" At Amplework, we feature a team of highly skilled and experienced dedicatsed developers having several years of expertise in the field of mobile app development solutions."
+              />
+            </div>
+          </div>
+        </Accordion>
+        {/* <Accordions
+          eventkey="1"
+          question="How skilled are your dedicated developers?"
+          answer=" At Amplework, we feature a team of highly skilled and experienced dedicatsed developers having several years of expertise in the field of mobile app development solutions."
+        />
+        <div className="question text-center bg-warning">
           <Accordion>
             <div className="row">
               <div className="col-lg-6 p-2 text-start">
@@ -114,7 +172,7 @@ const AmpleQuestion = () => {
               </div>
             </div>
           </Accordion>
-        </div>
+        </div> */}
       </Container>
     </section>
   );

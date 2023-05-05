@@ -16,8 +16,13 @@ import PhasesCard from "./CategoryPhase";
 import BrandCard from "./BrandColaborateCard";
 import AccomplishCard from "./AccomplishCard";
 import CapabilityCard from "./CapabilityCard";
+import DiverseCard from "./DiverseCard";
+import Accordions from "./accordion/Accordion";
+import DefaultCard from "./card/Index";
+import FormInput from "./formInput/FormInput";
 
 export {
+  DefaultCard,
   Footer,
   AppContent,
   ApplicationCard,
@@ -36,4 +41,7 @@ export {
   BrandCard,
   AccomplishCard,
   CapabilityCard,
+  DiverseCard,
+  Accordions,
+  FormInput,
 };

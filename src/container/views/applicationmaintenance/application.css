@@ -359,8 +359,9 @@ color: rgb(245 164 3);;
 
         .img-background{
             background-color: rgb(224, 224, 227);
-            width: 65px; 
+            width: 120px; 
             height: 65px;
+            align-self: center;
         }
         .img-background:hover{
             background-color: white;
@@ -435,7 +436,19 @@ color: rgb(245 164 3);;
             background-repeat: "no-repeat";
             background-size: "cover";
             background-position:  "center";
+            
         }
+    .ample-section{
+        background-color: red;
+    }
+
+    /*full stack developer*/
+    .full-stack-dev{
+        background-image: url("../../../assets/developerBG.png");
+        background-repeat: no-repeat;
+        border-radius: 10px;
+    }
+    
 
         
         /*bussiness*/
@@ -451,7 +464,7 @@ color: rgb(245 164 3);;
             opacity: 0.7;
         }
         .bussiness-card{
-        border: none;
+        border: none; 
         }
         .bussiness{
             background-color: rgb(245 245 245); 
@@ -488,6 +501,14 @@ color: rgb(245 164 3);;
         width: 15rem; 
         border-radius: 50px 0px 50px 0px;
       }
+      .developer-name{ 
+        text-align: start;
+        margin-top: -12px;
+      }
+      .developer-position{
+        margin-top: -10px;
+        text-align: start;
+      }
 
       @media screen and (max-width: 480px) {
         .testerimg{
@@ -508,7 +529,11 @@ color: rgb(245 164 3);;
         letter-spacing: 1px;
         line-height: 2rem;
       }
-      
+      /*digitalise*/
+
+      .digitalise-heading{
+        margin-top: -15px;
+      }
 
 
       /*sweatcoin*/

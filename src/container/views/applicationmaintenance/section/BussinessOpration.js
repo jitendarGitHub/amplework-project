@@ -1,4 +1,5 @@
 import { BussinessTimeCard } from "../../../../components";
+import DefaultCard from "../../../../components/card/Index";
 
 const BussinessOpration = () => {
   return (
@@ -13,21 +14,38 @@ const BussinessOpration = () => {
           <br /> support service provider. We resolve even the most severe
           incidents in less than 8 hours.
         </p>
-        <div className="d-lg-flex justify-content-between">
-          <BussinessTimeCard
-            time="10-15 Mins"
+
+        <div className="d-lg-flex  justify-content-between">
+          <DefaultCard
+            cardclass=" bussiness-card bg-white p-3 pt-0 m-1"
+            headingclass="fw-bold bussiness-headings"
+            headingstyle={{ visibility: "hidden" }}
+            heading="10-15 Mins"
+            paraclass="text-dark"
             para="Minimum incident Response Time"
-          />{" "}
-          <BussinessTimeCard
-            time="2-3 Hours"
-            para="Minimum Incident Solution Time"
-          />{" "}
-          <BussinessTimeCard
-            time="10-15 Mins"
+          />
+          <DefaultCard
+            cardclass=" bussiness-card bg-white p-3 pt-0 m-1"
+            headingclass="fw-bold  bussiness-headings"
+            headingstyle={{ visibility: "hidden" }}
+            heading="2-3 Hours"
+            paraclass="text-dark"
+            para="Minimum incident solution Time"
+          />
+          <DefaultCard
+            cardclass=" bussiness-card bg-white p-3 pt-0 m-1"
+            headingclass="fw-bold  bussiness-headings"
+            headingstyle={{ visibility: "hidden" }}
+            heading="10-15 Mins"
+            paraclass="text-dark"
             para="Minimum incident Response Time"
-          />{" "}
-          <BussinessTimeCard
-            time="10-15 Mins"
+          />
+          <DefaultCard
+            cardclass=" bussiness-card bg-white p-3 pt-0 m-1"
+            headingclass="fw-bold  bussiness-headings"
+            headingstyle={{ visibility: "hidden" }}
+            heading="10-15 Mins"
+            paraclass="text-dark"
             para="Minimum incident Response Time"
           />
         </div>

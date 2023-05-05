@@ -2,7 +2,6 @@
 import "./footer.css";
 import { ExploreMore1, ExploreMore2 } from "../button/Buttons";
 
-//cart assets
 import {
   PartTime,
   Calendar,

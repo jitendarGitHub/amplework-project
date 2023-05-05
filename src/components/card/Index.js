@@ -14,6 +14,8 @@ const DefaultCard = (props) => {
     paraclass,
     para,
     cardstyle,
+    parashow,
+    headingshow,
   } = props;
   return (
     <>
@@ -24,9 +26,14 @@ const DefaultCard = (props) => {
             className={`${imgclass} img-fluid`}
             style={imgstyle}
           />
-          <h5 className={headingclass} style={headingstyle}>
-            {heading}
-          </h5>
+          {headingshow ? (
+            <h5 className={headingclass} style={headingstyle}>
+              {heading}
+            </h5>
+          ) : (
+            ""
+          )}
+          {parashow ? <p>{para}</p> : ""}
         </div>
         <div className={contentclass}>
           <h5 className={headingclass}>{heading}</h5>
@@ -36,4 +43,5 @@ const DefaultCard = (props) => {
     </>
   );
 };
+
 export default DefaultCard;

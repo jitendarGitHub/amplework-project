@@ -8,6 +8,7 @@ import { RiApps2Line } from "@react-icons/all-files/ri/RiApps2Line";
 import { Button, Col, Form, InputGroup, Row } from "react-bootstrap";
 import { captcha } from "../../../../assets";
 import "../application.css";
+import { FormInput } from "../../../../components";
 
 const FormSection = () => {
   return (
@@ -17,102 +18,51 @@ const FormSection = () => {
       </h3>
       <Form className="container pt-5">
         <Row className="mb-3">
-          <Form.Group as={Col} md="6" className="">
-            <InputGroup className="mb-3">
-              <InputGroup.Text
-                id="basic-addon1"
-                className="text-warning  inputBorder"
-              >
-                {<HiOutlineUser />}
-              </InputGroup.Text>
-              <Form.Control
-                type="text"
-                placeholder="Name*"
-                className="inputBorder"
-              />
-            </InputGroup>
-          </Form.Group>
-          <Form.Group as={Col} md="6" controlId="validationCustom01">
-            <InputGroup className="mb-3">
-              <InputGroup.Text
-                id="basic-addon1"
-                className=" text-warning inputBorder "
-              >
-                {<HiOutlineMail />}
-              </InputGroup.Text>
-              <Form.Control
-                type="email"
-                placeholder="Email Address*"
-                className="inputBorder"
-              />
-            </InputGroup>
-          </Form.Group>
-          <Form.Group as={Col} md="6">
-            <InputGroup className="mb-3 ">
-              <InputGroup.Text
-                id="basic-addon1"
-                className="text-warning inputBorder "
-              >
-                {<IoMdCall />}
-              </InputGroup.Text>
-              <Form.Control
-                type="text"
-                placeholder="Mobile Number*"
-                className="inputBorder"
-              />
-            </InputGroup>
-          </Form.Group>
-          <Form.Group as={Col} md="6">
-            <InputGroup className="mb-3 ">
-              <InputGroup.Text className="text-warning inputBorder">
-                {<RiApps2Line />}
-              </InputGroup.Text>
-              <Form.Select
-                aria-label="Floating label select example"
-                className="inputBorder"
-              >
-                <option>Intrested In*</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </Form.Select>
-            </InputGroup>
-          </Form.Group>
-          <Form.Group as={Col} md="6">
-            <InputGroup className="mb-3 ">
-              <InputGroup.Text
-                id="basic-addon1"
-                className="text-warning inputBorder"
-              >
-                {<BiMessageAltDetail />}
-              </InputGroup.Text>
-              <Form.Control
-                type="text"
-                placeholder="Skype Id/WhatsApp No.*"
-                className="inputBorder"
-              />
-            </InputGroup>
-          </Form.Group>
-          <Form.Group as={Col} md="6">
-            <InputGroup className="mb-3 ">
-              <InputGroup.Text className="text-warning inputBorder ">
-                {<BiDollar />}
-              </InputGroup.Text>
-              <Form.Select
-                aria-label="Floating label select example"
-                className="inputBorder"
-              >
-                <option>Select Your Budget*</option>
-                <option value="1">10$</option>
-                <option value="2">50$</option>
-                <option value="3">30$</option>
-              </Form.Select>
-            </InputGroup>
-          </Form.Group>
-
+          <FormInput
+            logo={<HiOutlineUser />}
+            placeholder="Name* "
+            type="text"
+            size="6"
+          />
+          <FormInput
+            size="6"
+            logo={<HiOutlineMail />}
+            placeholder="Email* "
+            type="email"
+          />
+          <FormInput
+            size="6"
+            logo={<IoMdCall />}
+            placeholder="Mobile Number* "
+            type="text"
+          />
+          <FormInput
+            size="6"
+            logo={<RiApps2Line />}
+            option="Intrested In *"
+            value1="1"
+            value2="2"
+            value3="3"
+            formselect
+          />
+          <FormInput
+            size="6"
+            logo={<BiMessageAltDetail />}
+            type="number"
+            placeholder="Skype Id/WhatsApp No.*"
+          />
+          <FormInput
+            size="6"
+            logo={<BiDollar />}
+            option="Select Your Budget*"
+            value1="10$"
+            value2="20$"
+            value3="30$"
+            formselect
+          />
           <Form.Group
             as={Col}
-            md="6"
+            md="12"
             className="mb-0 "
             controlId="exampleForm.ControlTextarea1"
           >
@@ -126,8 +76,9 @@ const FormSection = () => {
               &nbsp;&nbsp; MESSAGE *
             </InputGroup>
           </Form.Group>
+
           <Form.Group as={Col} md="12">
-            <Form.Control as="textarea" rows={2} className="" />
+            <Form.Control as="textarea" rows={2} />
           </Form.Group>
 
           <div className="container mt-3">

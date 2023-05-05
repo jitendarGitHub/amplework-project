@@ -23,6 +23,7 @@ const AppsType = () => {
       </p>
       <div className="maintain p-1 mt-5">
         <DefaultCard
+          headingshow
           cardclass="maintain-box"
           imgdivclass="maintain-icon text-center align-self-center fs-1 "
           imgclass="fa-icon"
@@ -35,6 +36,7 @@ const AppsType = () => {
         />
 
         <DefaultCard
+          headingshow
           cardclass="maintain-box"
           imgdivclass="maintain-icon text-center align-self-center fs-1 "
           imgclass="fa-icon"
@@ -46,6 +48,7 @@ const AppsType = () => {
           para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
         />
         <DefaultCard
+          headingshow
           cardclass="maintain-box"
           imgdivclass="maintain-icon text-center align-self-center fs-1 "
           imgclass="fa-icon"
@@ -57,6 +60,7 @@ const AppsType = () => {
           para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
         />
         <DefaultCard
+          headingshow
           cardclass="maintain-box"
           imgdivclass="maintain-icon text-center align-self-center fs-1 "
           imgclass="fa-icon"
@@ -68,6 +72,7 @@ const AppsType = () => {
           para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
         />
         <DefaultCard
+          headingshow
           cardclass="maintain-box"
           imgdivclass="maintain-icon text-center align-self-center fs-1 "
           imgclass="fa-icon"
@@ -79,6 +84,7 @@ const AppsType = () => {
           para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
         />
         <DefaultCard
+          headingshow
           cardclass="maintain-box"
           imgdivclass="maintain-icon text-center align-self-center fs-1 "
           imgclass="fa-icon"
@@ -90,6 +96,7 @@ const AppsType = () => {
           para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
         />
         <DefaultCard
+          headingshow
           cardclass="maintain-box"
           imgdivclass="maintain-icon text-center align-self-center fs-1 "
           imgclass="fa-icon"
@@ -101,6 +108,7 @@ const AppsType = () => {
           para=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum"
         />
         <DefaultCard
+          headingshow
           cardclass="maintain-box"
           imgdivclass="maintain-icon text-center align-self-center fs-1 "
           imgclass="fa-icon"
