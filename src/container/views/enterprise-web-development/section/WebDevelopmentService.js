@@ -1,4 +1,6 @@
+import { Button } from "react-bootstrap";
 import "../enterpriseweb.css";
+import { DefaultButton } from "../../../../components";
 
 const WebDevelopment = (props) => {
   return (
@@ -38,9 +40,10 @@ const WebDevelopment = (props) => {
               &nbsp;&nbsp; {props.list5}
             </p>
             <div className="enterprise-btn text-center text-md-start">
-              <button className="btn bg-primary text-white mt-3">
-                LET`S TALK
-              </button>
+              <DefaultButton
+                btnClass="btn bg-primary text-white mt-3"
+                value="LET`S TALK"
+              />
             </div>
           </div>
         </div>

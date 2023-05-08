@@ -1,4 +1,5 @@
 import { SelectingAmple } from "../../../../assets";
+import { DefaultCard } from "../../../../components";
 import "../enterpriseweb.css";
 const ReasonAmple = () => {
   return (
@@ -21,27 +22,41 @@ const ReasonAmple = () => {
               our enterprise web development services.
             </p>
           </div>
-          <div className="col-lg-6 project-section">
+          <div className="col-lg-6 project-section ">
             <div className="row">
-              <div className="col-lg-6 px-lg-4 pt-2">
-                <h2 className="h2">350+</h2>
-                <p className="p">Projects accomplished</p>
-              </div>
-              <div className="col-lg-6 px-lg-4 pt-2">
-                <h2 className="h2">50+</h2>
-                <p className="p">Certified designers & developers</p>
-              </div>
-              <div className="col-lg-12">
-                <img src={SelectingAmple} width={"100%"} />
-              </div>
-              <div className="col-lg-6 px-lg-4 pt-2">
-                <h2 className="h2">50M+</h2>
-                <p className="p">Revenue generated for clients</p>
-              </div>
-              <div className="col-lg-6 px-lg-4 pt-2">
-                <h2 className="h2">5+ Years</h2>
-                <p className="p">Average experience of our developers.</p>
-              </div>
+              <DefaultCard
+                cardclass="col-lg-6 px-lg-4 pt-2"
+                heading="350+"
+                headingclass="h2"
+                para="Projects accomplished"
+                paraclass="p"
+              />
+              <DefaultCard
+                cardclass="col-lg-6 px-lg-4 pt-2"
+                heading="50+"
+                headingclass="h2"
+                para="Certified designers & developers"
+                paraclass="p"
+              />
+              <DefaultCard
+                cardclass="col-lg-12 ps-0 pe-0"
+                cardimage={SelectingAmple}
+              />
+
+              <DefaultCard
+                cardclass="col-lg-6 px-lg-4 "
+                heading="50M"
+                headingclass="h2"
+                para="Revenue generated for clients"
+                paraclass="p"
+              />
+              <DefaultCard
+                cardclass="col-lg-6 px-lg-4"
+                heading="5+ Years"
+                headingclass="h2"
+                para="Average experience of our developers"
+                paraclass="p"
+              />
             </div>
           </div>
         </div>

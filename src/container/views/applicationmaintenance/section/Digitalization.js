@@ -1,6 +1,6 @@
 import { Button } from "react-bootstrap";
 import { digitalApp, digitalApp2, digitalApp3 } from "../../../../assets";
-import { DefaultCard } from "../../../../components";
+import { DefaultButton, DefaultCard } from "../../../../components";
 
 const Digitalize = () => {
   return (
@@ -20,6 +20,7 @@ const Digitalize = () => {
               headingstyle={{ visibility: "hidden" }}
               heading="Chatbots in Healthcare–Advantages ,Disadvantages Applications & their Future"
               paraclass="developer-position"
+              headingclass="fs-6"
             />
           </div>
           <div className=" col-sm-12 col-md-6 col-lg-4">
@@ -31,6 +32,7 @@ const Digitalize = () => {
               headingstyle={{ visibility: "hidden" }}
               heading="Foldable Smartphone App Development – 5 Dos"
               paraclass="developer-position"
+              headingclass="fs-6"
             />
           </div>
           <div className=" col-sm-12 col-md-6 col-lg-4">
@@ -42,11 +44,15 @@ const Digitalize = () => {
               headingstyle={{ visibility: "hidden" }}
               heading="Mobile DevOps – Advantages & Challenges"
               paraclass="developer-position"
+              headingclass="fs-6"
             />
           </div>
         </div>
         <div className="text-center">
-          <Button className="rounded-pill text-center">Read all post</Button>
+          <DefaultButton
+            btnClass="rounded-pill text-center"
+            value="Read all post"
+          />
         </div>
       </div>
     </section>

@@ -1,11 +1,12 @@
 import { Button, CardGroup } from "react-bootstrap";
-import { ApplicationCard } from "../../../../components";
+import { ApplicationCard, DefaultButton } from "../../../../components";
 import DefaultCard from "../../../../components/card/Index";
 import {
   Applicationimg1,
   Applicationimg2,
   Applicationimg3,
 } from "../../../../assets";
+import { Applicationmockup } from "../../../../mockup/ApplicationMockup";
 
 const Application = () => {
   return (
@@ -25,57 +26,26 @@ const Application = () => {
           </h6>
 
           <div className="row">
-            <div className="col-lg-4 p-0">
-              <DefaultCard
-                cardclass="text-start p-3 pt-4  application-cart"
-                imgdivclass="pb-3"
-                imgstyle={{ width: "40px" }}
-                cardimage={Applicationimg1}
-                headingclass="card-title"
-                heading="Application Re-engineering"
-                headingstyle={{ visibility: "hidden" }}
-                paraclass="card-description"
-                para="Our developers evaluate existing applications through a series of in-house testing processes in order to evaluate the functionalities of the applications that need to be re-engineered."
-                cardstyle={{
-                  backgroundColor: "rgb(47 126 255)",
-                }}
-              />
-            </div>
-            <div className="col-lg-4 p-0">
-              <DefaultCard
-                cardclass="text-start p-3 pt-4 application-cart"
-                imgdivclass="pb-3"
-                imgstyle={{ width: "44px" }}
-                cardimage={Applicationimg2}
-                headingclass="card-title"
-                heading="Application Re-engineering"
-                headingstyle={{ visibility: "hidden" }}
-                paraclass="card-description"
-                para="Our developers evaluate existing applications through a series of in-house testing processes in order to evaluate the functionalities of the applications that need to be re-engineered."
-                cardstyle={{
-                  backgroundColor: "rgb(17 95 224)",
-                }}
-              />
-            </div>
-            <div className="col-lg-4 p-0">
-              <DefaultCard
-                cardclass="text-start p-3 pt-4 application-cart"
-                imgdivclass="pb-3"
-                imgstyle={{ width: "39px" }}
-                cardimage={Applicationimg3}
-                headingclass="card-title"
-                headingstyle={{ visibility: "hidden" }}
-                heading="Application Re-engineering"
-                paraclass="card-description"
-                para="Our developers evaluate existing applications through a series of in-house testing processes in order to evaluate the functionalities of the applications that need to be re-engineered."
-                cardstyle={{
-                  backgroundColor: "rgb(4 80 206)",
-                }}
-              />
-            </div>
+            {Applicationmockup.map((items) => {
+              return (
+                <div className="col-lg-4 p-0">
+                  <DefaultCard
+                    cardclass="text-start p-3 pt-4  application-cart"
+                    imgdivclass="pb-3"
+                    headingclass="card-title"
+                    paraclass="card-description"
+                    cardimage={items.cardimage}
+                    heading={items.heading}
+                    para={items.para}
+                    cardstyle={items.cardstyle}
+                    imgstyle={items.imgstyle}
+                  />
+                </div>
+              );
+            })}
           </div>
 
-          <Button className="free-quote mt-4">GET A FREE QUOTE</Button>
+          <DefaultButton value="GET A FREE QUOTE" btnClass="free-quote mt-4" />
         </div>
       </div>
     </section>

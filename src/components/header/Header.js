@@ -2,6 +2,7 @@ import { Button } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useNavigate } from "react-router-dom";
+import { DefaultButton } from "../button/Buttons";
 
 const Header = (props) => {
   const navigate = useNavigate();
@@ -22,49 +23,51 @@ const Header = (props) => {
             <Nav className="ms-auto">
               <Nav.Link
                 className="header-item fw-100  text-white"
-                onClick={() => navigate("/enterprise-web-development")}
+                onClick={() => navigate("/who-we-are")}
               >
                 Who we are
               </Nav.Link>
               <Nav.Link
                 className="header-item fw-100  text-white"
-                onClick={() => navigate("/enterprise-mobility")}
+                onClick={() => navigate("/what-we-do")}
               >
                 What we do
               </Nav.Link>
               <Nav.Link
                 className="header-item fw-100  text-white"
-                onClick={() => navigate("/software-maintenance-support")}
+                onClick={() => navigate("/our-culture")}
               >
                 Our culture
               </Nav.Link>
               <Nav.Link
                 className="header-item fw-100  text-white"
-                onClick={() => navigate("/enterprise-web-development")}
+                onClick={() => navigate("/who-we-are")}
               >
                 Work with us
               </Nav.Link>
               <Nav.Link
                 className="header-item fw-100  text-white"
-                onClick={() => navigate("/enterprise-mobility")}
+                onClick={() => navigate("/what-we-do")}
               >
                 Case studies
               </Nav.Link>
               <Nav.Link
                 className="header-item fw-100  text-white"
-                onClick={() => navigate("/software-maintenance-support")}
+                onClick={() => navigate("/our-culture")}
               >
                 Blog
               </Nav.Link>
               <Nav.Link
                 className="header-item fw-100  text-white"
-                onClick={() => navigate("/enterprise-web-development")}
+                onClick={() => navigate("/who-we-are")}
               >
                 Contact Us
               </Nav.Link>
-              <Button className="inquire-btn bg-transparent text-warning border-warning">
-                INQUIRE NOW
-              </Button>
+
+              <DefaultButton
+                btnClass="inquire-btn bg-transparent  border-warning"
+                value="INQUIRE NOW"
+              />
             </Nav>
           </Navbar.Collapse>
         </div>

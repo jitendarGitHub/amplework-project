@@ -20,6 +20,7 @@ import DiverseCard from "./DiverseCard";
 import Accordions from "./accordion/Accordion";
 import DefaultCard from "./card/Index";
 import FormInput from "./formInput/FormInput";
+import { DefaultButton } from "./button/Buttons";
 
 export {
   DefaultCard,
@@ -44,4 +45,5 @@ export {
   DiverseCard,
   Accordions,
   FormInput,
+  DefaultButton,
 };

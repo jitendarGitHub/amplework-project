@@ -1,5 +1,6 @@
 .explore-1{  
     border: 2px solid azure;
+    border-radius: 100px;
 }
 .explore-1:hover{
     color: black;
@@ -9,6 +10,7 @@
 .explore-2{  
     border: 2px solid  hsl(43, 84%, 48%);
     background-color: transparent;
+    border-radius: 100px;
 }
 .explore-2:hover{
     background-color:hsl(43, 84%, 48%);;

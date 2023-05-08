@@ -24,7 +24,7 @@ const Dream = () => {
               title="Team Extension Model"
               para="Increase the current capability of your team members by integrating our services into your existing operations. Scale."
               list1="Scale Up Operations. "
-              list2="Flexibility. "
+              list2="Flexibility."
               list3="Extended Capabilities."
               list4="Diverse Expertise."
               borderbottom="3px solid blue"

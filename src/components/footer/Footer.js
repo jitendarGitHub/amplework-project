@@ -1,6 +1,5 @@
 //css
 import "./footer.css";
-import { ExploreMore1, ExploreMore2 } from "../button/Buttons";
 
 import {
   PartTime,
@@ -40,8 +39,9 @@ const Footer = () => {
               DurationContent1="Part Time"
               DurationContent2="Full Time"
               DurationContent3="Hourly"
-              Button={ExploreMore1()}
+              // Button={ExploreMore1()}
               Bgcolor="#0d6efd"
+              btnC
             />
             <FooterCard
               title="Are you a startup and want to go live asap?"
@@ -53,7 +53,7 @@ const Footer = () => {
               DurationContent1="Accessibility"
               DurationContent2="Adaptability"
               DurationContent3="Scability"
-              Button={ExploreMore2()}
+              // Button={ExploreMore2()}
               Bgcolor="transparent"
               CardBorder="#0d6efd"
             />

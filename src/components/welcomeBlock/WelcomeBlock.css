@@ -36,3 +36,9 @@
     font-family: Poppins,sans-serif;
   font-weight: 700;
  }
+ .inquire-btn:hover{
+   background-color: #f5a403 !important;
+   transition: 1s;
+   color: white;
+   
+ }

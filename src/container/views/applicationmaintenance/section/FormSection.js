@@ -8,7 +8,7 @@ import { RiApps2Line } from "@react-icons/all-files/ri/RiApps2Line";
 import { Button, Col, Form, InputGroup, Row } from "react-bootstrap";
 import { captcha } from "../../../../assets";
 import "../application.css";
-import { FormInput } from "../../../../components";
+import { DefaultButton, FormInput } from "../../../../components";
 
 const FormSection = () => {
   return (
@@ -107,13 +107,12 @@ const FormSection = () => {
                 </div>
               </div>
               <div className="col-md-5 align-self-center text-lg-end text-md-end ">
-                <Button
+                <DefaultButton
+                  btnClass=" border-0 p-2 mt-2"
+                  value="Send Your Inquiry"
                   type="submit"
-                  className=" border-0 p-2 mt-2"
-                  style={{ backgroundColor: "rgb(245 164 3)" }}
-                >
-                  Send Your Inquiry
-                </Button>
+                  btnStyle={{ backgroundColor: "rgb(245 164 3)" }}
+                />
               </div>
             </div>
           </div>

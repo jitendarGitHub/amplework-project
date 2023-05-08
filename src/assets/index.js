@@ -84,6 +84,7 @@ import Cursor from "./cursor.png";
 
 import EnterpriseBg from "../assets/enterpriseBg.png";
 import AmpleLogo from "../assets/amplworkLogo.png";
+import Dedicated from "../assets/dedicatedimg.png";
 
 // second Page Content
 import EnterpriseWebDevelopmentBG from "./EnterpriseWebDeveloopmentBG.jpg";
@@ -262,6 +263,7 @@ export {
   Bussiness,
   DeveloperBG,
   AmpleLogo,
+  Dedicated,
   /*second Pagecontent*/
   EnterpriseWebDevelopmentBG,
   Masterpiece,

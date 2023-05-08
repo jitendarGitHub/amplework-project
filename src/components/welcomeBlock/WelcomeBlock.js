@@ -1,4 +1,4 @@
-import { ScheduleBtn } from "../button/Buttons.js";
+import { DefaultButton, ScheduleBtn } from "../button/Buttons.js";
 import "./WelcomeBlock.css";
 
 const WelcomeBlock = (props) => {
@@ -21,7 +21,15 @@ const WelcomeBlock = (props) => {
           <h1 className="welcome-description text-white fw-bold">
             {props.description}
           </h1>
-          {props.btn && props.btn.length ? <ScheduleBtn btn={props.btn} /> : ""}
+          {props.btn && props.btn.length ? (
+            <DefaultButton
+              btn={props.btn}
+              value="Schedule a Call"
+              btnClass="schedule-btn text-dark px-5 py-3 fw-bold fs-5 mt-2"
+            />
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </>

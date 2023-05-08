@@ -1,5 +1,7 @@
-import { Button, Card, Container } from "react-bootstrap";
-import { DeveloperBG } from "../assets";
+import { Card, Container } from "react-bootstrap";
+import { DefaultButton } from "./button/Buttons";
+import DefaultCard from "./card/Index";
+import { facinating6 } from "../assets";
 
 const FullStackDeveloper = () => {
   return (
@@ -17,13 +19,13 @@ const FullStackDeveloper = () => {
                   into an amazing digital product?
                 </Card.Text>
               </div>
-              <Button
-                className="rounded-pill mt-2 bg-primary border-0 text-light fw-bold"
-                style={{ height: "50px" }}
-              >
-                Get 2 Week Free Trial &nbsp;&nbsp;
-                <i class="bi bi-arrow-up-right"></i>
-              </Button>
+
+              <DefaultButton
+                btnClass="rounded-pill align-self-center bg-primary  fw-bold"
+                btnStyle={{ height: "50px" }}
+                icon=<i class="bi bi-arrow-up-right" />
+                value="Get 2 Week Free Trial &nbsp;&nbsp;"
+              />
             </div>
           </Card.Body>
         </Card>

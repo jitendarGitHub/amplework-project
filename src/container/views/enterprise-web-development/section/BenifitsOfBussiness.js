@@ -6,8 +6,8 @@ import {
   benifit4,
   benifit5,
   benifit6,
-  benifit7,
 } from "../../../../assets";
+import { DefaultCard } from "../../../../components";
 import "../enterpriseweb.css";
 const BenifitsOfBussiness = () => {
   return (

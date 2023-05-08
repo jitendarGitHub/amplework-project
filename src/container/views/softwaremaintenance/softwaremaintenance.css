@@ -68,12 +68,13 @@
 }
 .brand-card { 
     box-shadow: 0px 0px 5px 0px rgb(164, 185, 185); 
+    
 }
 .brand-card:hover {
     background-color: rgb(3, 45, 226);
-    color: #FFF;
+    color: #FFF; 
     /* translate: 0px 0px 0px 50px; */
-    translate: 0px -25px;
+    /* translate: 0px -1px; */
     /* transition: 2s;  */
     /* transform: scale(1.1);  */
     /* transition: 1s;   */

@@ -1,17 +1,12 @@
+import { Dedicated } from "../../../../assets";
+
 const Maintenance = () => {
   return (
     <section className="bg-light">
       <div className="container">
         <div className="row justify-content-between justify-content-lg-end columnreverse">
           <div className="col-sm-12 col-lg-5 pt-md-2  pl-md-5 align-self-center">
-            <div className="position-relative right">
-              <div className="">
-                <img
-                  src="https://www.amplework.com/wp-content/uploads/2023/04/clicks.png"
-                  width={"90%"}
-                />
-              </div>
-            </div>
+            <img src={Dedicated} width={"90%"} />
           </div>
           <div className="col-sm-12 col-lg-7">
             <h6 className="supporter-title text-primary fw-bold">
