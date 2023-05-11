@@ -1,13 +1,14 @@
-import { Card } from "react-bootstrap";
+import { Card, Image } from "react-bootstrap";
 import "../EnterpriseMobility.css";
 import { EnhanceCertificate } from "../../../../assets";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 
 const EnhanceROIservice = () => {
   const ROIcard = (props) => {
     return (
       <Card className="notched-card border-0 p-lg-4 pt-1 m-3">
         <Card.Title className="rio-heading">
-          <img src={props.img} /> &nbsp;&nbsp;
+          <Image src={props.img} /> &nbsp;&nbsp;
           <span className="heading">{props.title}</span>{" "}
         </Card.Title>
         <Card.Text className="mt-1">{props.text}</Card.Text>
@@ -17,15 +18,17 @@ const EnhanceROIservice = () => {
   return (
     <>
       <div className="container ">
-        <h2 className="text-center">
-          Enhance ROI With Our Customized Mobility Services
-        </h2>
-        <p className="text-center">
-          Our tested & verified enterprise mobile app development services
+        <PrimaryText
+          className="text-center"
+          heading=" Enhance ROI With Our Customized Mobility Services"
+        />
+        <SecondaryText
+          className="text-center"
+          para="Our tested & verified enterprise mobile app development services
           incorporate unique business solutions to empower corporations into the
           market. So, utilizing our solutions can gain competitive advantages to
-          enhance your business growth.
-        </p>
+          enhance your business growth."
+        />
         <div className="row">
           <div className="col-lg-4 col-md-6">
             <ROIcard

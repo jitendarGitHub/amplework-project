@@ -7,19 +7,22 @@ import {
   RightdottedCircle,
 } from "../../../../assets";
 import { PhasesCard } from "../../../../components";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 import "../EnterpriseMobility.css";
 
 const PhasesOfEnterpriseMobility = () => {
   return (
     <>
       <div className="container mt-2">
-        <h3 className="phase-head text-center">
-          4 Category Phases of Enterprise Mobility Management Software
-        </h3>
-        <p className="phase-p text-center">
-          Enterprise mobility solutions stand on 4 primary key phrases. At
-          Amplework, we share our expertise in all these categories.
-        </p>
+        <PrimaryText
+          className="phase-head text-center fs-3"
+          heading="4 Category Phases of Enterprise Mobility Management Software"
+        />
+        <SecondaryText
+          className="phase-p text-center"
+          para="Enterprise mobility solutions stand on 4 primary key phrases. At
+          Amplework, we share our expertise in all these categories."
+        />
         <PhasesCard
           img={Phaseimg1}
           head="1"

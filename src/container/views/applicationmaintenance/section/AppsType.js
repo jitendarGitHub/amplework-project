@@ -1,17 +1,18 @@
 import "../application.css";
-import DefaultCard from "../../../../components/card/Index";
+import DefaultCard from "../../../../components/card";
 import { Apptypemockup } from "../../../../mockup/Apptypemockup";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 
 const AppsType = () => {
   return (
     <section className="container pb-5 text-center">
-      <h5 className="app-type-section">Keep Your Applications Always Shine</h5>
-      <h3>Types of Apps We Maintain At Amplework Software</h3>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's
-        <br /> standard dummy text ever since the 1500s,
-      </p>
+      <SecondaryText
+        className="app-type-section"
+        para="Keep Your Applications Always Shine"
+      />
+      <PrimaryText heading="Types of Apps We Maintain At Amplework Software" />
+      <SecondaryText para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry' standard dummy text ever since the 1500s," />
+
       <div className="maintain p-1 mt-5">
         {Apptypemockup.map((items) => {
           return (

@@ -1,4 +1,4 @@
-import { ClientAppreciation, WelcomeBlock } from "../../../components";
+import { ClientAppreciation, CustomWelcomeBlock } from "../../../components";
 import {
   AppDevelopment,
   Contentdevelopment,
@@ -33,7 +33,7 @@ import "./enterpriseweb.css";
 const EnterpriseWebDevelopment = () => {
   return (
     <div className="page-content">
-      <WelcomeBlock
+      <CustomWelcomeBlock
         image={EnterpriseWebDevelopmentBG}
         title="ENTERPRISES WEB DEVELOPMENT"
         description="Elevate Your Web Presence With Enterprise Website Development"

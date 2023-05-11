@@ -1,5 +1,6 @@
 import { DiverseCardBg } from "../../../../assets";
 import { DiverseCard } from "../../../../components";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 
 const Diverse = () => {
   return (
@@ -7,16 +8,14 @@ const Diverse = () => {
       <div className="container">
         <div className="diverse row">
           <div className="col-sm-12 col-lg-6 diverse-first ">
-            <h3 className="diverse-heading col-sm-9">
-              Diverse Levels Of Support Offered By Our Prowess Experts
-            </h3>
-            <p className="diverse-para ">
-              We offer support for application maintenance at a diverse level of
-              operations to help our clients in accomplishing their specific
-              goals. If you are confused that which level of support service
-              will be beneficial for you then you can connect with us to get
-              valuable insights about operations.
-            </p>
+            <PrimaryText
+              heading=" Diverse Levels Of Support Offered By Our Prowess Experts"
+              className="diverse-heading col-sm-9"
+            />
+            <SecondaryText
+              para=" We offer support for application maintenance at a diverse level of operations to help our clients in accomplishing their specific goals. If you are confused that which level of support service will be beneficial for you then you can connect with us to get valuable insights about operations."
+              className="diverse-para"
+            />
           </div>
           <div className="col-sm-12 col-lg-6  d-lg-flex justify-content-center gap-3">
             <div className="">

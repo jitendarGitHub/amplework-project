@@ -26,6 +26,7 @@ const DefaultCard = (props) => {
             className={`${imgclass} img-fluid`}
             style={imgstyle}
           />
+
           {headingshow ? (
             <h5 className={headingclass} style={headingstyle}>
               {heading}

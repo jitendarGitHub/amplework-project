@@ -278,12 +278,13 @@ color: rgb(245 164 3);;
 }
 /*Application performance*/
 
-.application h3{
+.application h2{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     opacity: 0.8;
+    font-size: 27px;
     /* word-spacing: 4px; */
     }
-    .application h6{
+    .application .h6{
         font-family:sans-serif; 
         opacity: 0.6; 
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -496,6 +497,8 @@ color: rgb(245 164 3);;
         
 
         /*777*/
+       
+          
 
       .testerimg{ 
         width: 15rem; 

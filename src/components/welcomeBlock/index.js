@@ -1,7 +1,7 @@
-import { DefaultButton, ScheduleBtn } from "../button/Buttons.js";
+import CustomButtom from "../button/index.js";
 import "./WelcomeBlock.css";
 
-const WelcomeBlock = (props) => {
+const CustomWelcomeBlock = (props) => {
   return (
     <>
       <div
@@ -22,7 +22,7 @@ const WelcomeBlock = (props) => {
             {props.description}
           </h1>
           {props.btn && props.btn.length ? (
-            <DefaultButton
+            <CustomButtom
               btn={props.btn}
               value="Schedule a Call"
               btnClass="schedule-btn text-dark px-5 py-3 fw-bold fs-5 mt-2"
@@ -35,4 +35,4 @@ const WelcomeBlock = (props) => {
     </>
   );
 };
-export default WelcomeBlock;
+export default CustomWelcomeBlock;

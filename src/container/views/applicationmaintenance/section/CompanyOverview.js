@@ -5,6 +5,7 @@ import { VscGraph } from "@react-icons/all-files/vsc/VscGraph";
 import { Table } from "react-bootstrap";
 import { NovaMam, PrakashSir, SantoshSir } from "../../../../assets";
 import "../application.css";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 const CompanyOverview = () => {
   return (
     <div className="col-sm-12 col-lg-5  p-3 text-white company-section ">
@@ -12,49 +13,63 @@ const CompanyOverview = () => {
       <div className="d-flex">
         <div className="col-lg-7 col-7">
           <div className="d-flex align-items-baseline">
-            <h1 className="text-warning fw-bold projectHeading">170+</h1>
+            <PrimaryText
+              className="text-warning fw-bold projectHeading"
+              heading="170+"
+            />
             <div className="img">
               <span className="text-light fs-1">{<FiLayers />}</span>
             </div>
           </div>
-          <p className="projectPara">Successful Projects</p>
+          <SecondaryText className="projectPara" para="Successful Projects" />
         </div>
         <div className="col-sm-5 ">
           <div className="d-flex align-items-baseline">
             <div className="d-flex align-items-baseline">
-              <h1 className="text-warning fw-bold projectHeading">92%</h1>
+              <PrimaryText
+                className="text-warning fw-bold projectHeading"
+                heading="92%"
+              />
               <div className="img">
                 <span className=" text-light fs-1">{<FaUsers />}</span>
               </div>
             </div>
           </div>
-          <p className="projectPara">Client retention</p>
+          <SecondaryText className="projectPara" para="Client retention" />
         </div>
       </div>
       <div className="d-flex ">
         <div className="col-lg-7 col-7">
           <div className="d-flex align-items-baseline">
-            <h1 className="text-warning fw-bold projectHeading">$200M+</h1>
+            <PrimaryText
+              className="text-warning fw-bold projectHeading"
+              heading="$200M+"
+            />
             <div className="img">
               <span className="fs-1 text-light ">{<VscGraph />}</span>
             </div>
           </div>
-          <p className="projectPara">Our clients overall revenue</p>
+          <SecondaryText
+            className="projectPara"
+            para="Our clients overall revenue"
+          />
         </div>
         <div className="col-sm-5">
           <div className="d-flex align-items-baseline">
             <div className="d-flex align-items-baseline">
-              <h1 className="text-warning fw-bold projectHeading">1M+</h1>
+              <PrimaryText
+                className="text-warning fw-bold projectHeading"
+                heading="1M+"
+              />
               <div className="img">
                 <span className="fs-1 text-light ">{<SiTimescale />}</span>
               </div>
             </div>
           </div>
-          <p className="projectPara">Work hours</p>
+          <SecondaryText className="projectPara" para="Work hours" />
         </div>
       </div>
-
-      <h3 className="topExecutive">Top Executives</h3>
+      <PrimaryText className="topExecutive" heading="Top Executives" />
       <Table responsive="lg" className="table table-borderless">
         <tbody className="text-center text-white">
           <tr className="justify-content-between">
@@ -65,8 +80,8 @@ const CompanyOverview = () => {
                 alt=""
                 width={"105px"}
               />
-              <p>Santosh Singh</p>
-              <p>CEO</p>
+              <SecondaryText para=" Santosh Singh" />
+              <SecondaryText para="CEO" />
             </td>
             <td className=" ">
               <img
@@ -75,8 +90,8 @@ const CompanyOverview = () => {
                 alt=""
                 width={"105px"}
               />
-              <p>Prakash Saini</p>
-              <p>CEO</p>
+              <SecondaryText para="Prakash Saini" />
+              <SecondaryText para="CTO" />
             </td>
             <td className=" ">
               <img
@@ -85,8 +100,8 @@ const CompanyOverview = () => {
                 alt=""
                 width={"105px"}
               />
-              <p>Supernova C.</p>
-              <p>CXO</p>
+              <SecondaryText para="Supernova C." />
+              <SecondaryText para="CXO" />
             </td>
           </tr>
         </tbody>

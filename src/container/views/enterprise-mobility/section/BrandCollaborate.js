@@ -15,43 +15,14 @@ import {
   Brandimg9,
 } from "../../../../assets";
 import { BrandCard } from "../../../../components";
-
-// const Brand = (props) => {
-//   return (
-//     <>
-//       <div className="container justify-content-between ">
-//         <div className=" justify-content-center m-2">
-//           <Card className="brand-card " style={{ width: "18rem" }}>
-//             <Card.Body className="">
-//               <div className=" card-contents">
-//                 <div className="img-block">
-//                   <img src={props.img} className="img-fluid" width={"70px"} />
-//                 </div>
-//                 <Card.Title className="py-2 text-dark">
-//                   {props.title}
-//                 </Card.Title>
-//               </div>
-//               <div className="change-contents">
-//                 <Card.Title>{props.title}</Card.Title>
-//                 <span className="">{props.about}</span>
-//               </div>
-//             </Card.Body>
-//           </Card>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 
 const BrandCollaborate = () => {
   return (
     <div className="container text-center">
-      <h2>Brands we've collaborated with</h2>
-      <p>
-        Our track record of collaborating with various brands speaks to our
-        exceptional process-driven methodology and unparalleled technical
-        know-how. You can trust Mindbowser to deliver top-notch results.
-      </p>
+      <PrimaryText heading="Brands we've collaborated with" />
+      <SecondaryText para=" Our track record of collaborating with various brands speaks to our exceptional process-driven methodology and unparalleled technical know-how. You can trust Mindbowser to deliver top-notch results." />
+
       <div className="row">
         <div className="col-lg-3 col-md-6 ">
           <BrandCard

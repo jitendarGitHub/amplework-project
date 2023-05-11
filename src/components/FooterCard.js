@@ -1,5 +1,5 @@
 import { Card, CardGroup, Container } from "react-bootstrap";
-import { DefaultButton } from "./button/Buttons";
+import { CustomButton } from "../components/index";
 
 const FooterCard = (props) => {
   const {
@@ -7,15 +7,12 @@ const FooterCard = (props) => {
     Hourglass,
     Calendar,
     EnterpriseBg,
-    Button,
     DurationContent1,
     DurationContent2,
     DurationContent3,
     Bgcolor,
     CardBorder,
     btnC,
-    explore1,
-    explore2,
   } = props;
 
   return (
@@ -76,7 +73,7 @@ const FooterCard = (props) => {
           </div>
         </Card.Text>
         <div className="">
-          <DefaultButton
+          <CustomButton
             btnClass={btnC ? `explore-1` : `explore-2`}
             value="EXPLORE MORE "
             btnStyle={{ borderRadiusL: "100px" }}

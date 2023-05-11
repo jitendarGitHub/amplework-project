@@ -5,16 +5,21 @@ import {
   Capabilityimg4,
 } from "../../../../assets";
 import { DefaultCard } from "../../../../components";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 const CoreCapability = () => {
   return (
     <div className="container capability-bg">
       <div className="row p-lg-5">
         <div className="col-lg-6 align-self-center">
-          <h3 className="diverse-heading">Our Core Capabilities</h3>
-          <p className=" pt-0 mt-0">
-            Our core capabilities are rooted in delivering innovative and custom
-            solutions that meet the unique needs of each of our clients.
-          </p>
+          <PrimaryText
+            className="diverse-heading"
+            heading="Our Core Capabilities"
+          />
+          <SecondaryText
+            className="pt-0 mt-0"
+            para=" Our core capabilities are rooted in delivering innovative and custom
+            solutions that meet the unique needs of each of our clients."
+          />
         </div>
         <div className="col-lg-6  text-center ">
           <div className="row pb-3">

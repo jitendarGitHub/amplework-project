@@ -1,5 +1,6 @@
 import { Target } from "../../../../assets";
 import { Shapcard } from "../../../../components";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 import { Appshapmockup } from "../../../../mockup/Appshapmockup";
 import "../application.css";
 
@@ -7,15 +8,15 @@ const AppShap = () => {
   return (
     <section className="app-shap-section">
       <div className=" app-shap text-center container">
-        <h3 className="shap-heading">
-          Let's get your app in shape - contact us now and let the
-          <br /> maintenance magic begin
-        </h3>
-        <p className="shap-para mt-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's
-          <br /> standard dummy text ever since the 1500s,
-        </p>
+        <PrimaryText
+          heading="Let's get your app in shape - contact us now and let the maintenance magic begin"
+          className="shap-heading"
+        />
+
+        <SecondaryText
+          para="  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          className="shap-para mt-3"
+        />
 
         <div className="row justify-content-center ">
           {Appshapmockup.map((items) => {

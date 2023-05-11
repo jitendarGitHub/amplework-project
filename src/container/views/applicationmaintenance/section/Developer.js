@@ -1,5 +1,6 @@
 import { enterprise1 } from "../../../../assets";
 import { Cards, DefaultCard } from "../../../../components";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 import { Developermockup } from "../../../../mockup/Developermockup";
 
 const Developer = () => {
@@ -7,11 +8,11 @@ const Developer = () => {
     <section className="bg-light">
       <div className="developer container ">
         <div className="content text-center my-5">
-          <h4 className="fw-bold">Trusted and Skilled Developers</h4>
-          <p>
-            Our developers are ready to join your team and build amazing mobile
-            & web apps.
-          </p>
+          <PrimaryText
+            heading="Trusted and Skilled Developers"
+            className="fs-4 fw-bold"
+          />
+          <SecondaryText para="Our developers are ready to join your team and build amazing mobile & web apps." />
           <div className="row">
             <div className="d-flex flex-wrap justify-content-between">
               {Developermockup.map((items) => {

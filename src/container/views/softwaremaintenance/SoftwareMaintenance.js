@@ -1,8 +1,8 @@
 import { SoftwareMaintenanceBG } from "../../../assets";
 import {
   ClientAppreciation,
+  CustomWelcomeBlock,
   FullStackDeveloper,
-  WelcomeBlock,
 } from "../../../components";
 import {
   AmpleQuestion,
@@ -25,7 +25,7 @@ import {
 const SoftwareMaintenance = () => {
   return (
     <div className="software-maintenance">
-      <WelcomeBlock
+      <CustomWelcomeBlock
         title="SOFTWARE MAINTENANCE AND SUPPORT SERVICE "
         description="Partner with Us for Hassle free-software Maintenance and Support "
         image={SoftwareMaintenanceBG}

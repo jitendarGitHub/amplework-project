@@ -19,9 +19,10 @@ import iso from "../../assets/iso.png";
 import register from "../../assets/d-b-register.png";
 import cloud from "../../assets/google-cloud-partner.png";
 
-import { CardGroup, Container } from "react-bootstrap";
+import { CardGroup, Container, Image } from "react-bootstrap";
 import FooterCard from "../FooterCard";
 import SocialmediaFooter from "./SocialmediaFooter";
+import { SecondaryText } from "../text";
 
 const Footer = () => {
   return (
@@ -39,7 +40,6 @@ const Footer = () => {
               DurationContent1="Part Time"
               DurationContent2="Full Time"
               DurationContent3="Hourly"
-              // Button={ExploreMore1()}
               Bgcolor="#0d6efd"
               btnC
             />
@@ -53,7 +53,6 @@ const Footer = () => {
               DurationContent1="Accessibility"
               DurationContent2="Adaptability"
               DurationContent3="Scability"
-              // Button={ExploreMore2()}
               Bgcolor="transparent"
               CardBorder="#0d6efd"
             />
@@ -61,43 +60,43 @@ const Footer = () => {
         </Container>
         <div className="text-white container mt-5 d-lg-flex">
           <div className="col-lg-6 col-md-12 d-lg-flex align-self-center p-5">
-            <img src={AmpleLogo} alt="" width={"80%"} />
+            <Image src={AmpleLogo} alt="" width={"80%"} />
           </div>
           <div className=" d-flex flex-wrap col-lg-6 col-sm-12 col-md-12 align-self-center justify-content-around">
             <div className="img1 text-center">
-              <img src={iso} alt="" className="img-fluid" />
+              <Image src={iso} alt="" className="img-fluid" />
               <div className="">
-                <span>ISO-27001</span>
+                <span className="text-primary">ISO-27001</span>
               </div>
               <div>
-                <span>Software Security</span>
+                <span className="text-primary">Software Security</span>
               </div>
             </div>
             <div className="img1 text-center ">
-              <img src={register} alt="" className="img-fluid" />
+              <Image src={register} alt="" className="img-fluid" />
               <div className="">
-                <span>Dan & Breadstreet</span>
+                <span className="text-primary">Dan & Breadstreet</span>
               </div>
               <div>
-                <span>Verified</span>
+                <span className="text-primary">Verified</span>
               </div>
             </div>
             <div className="img1 text-center ">
-              <img src={cloud} alt="" className="img-fluid" />
+              <Image src={cloud} alt="" className="img-fluid" />
               <div className="">
-                <span>Google Cloud</span>
+                <span className="text-primary">Google Cloud</span>
               </div>
               <div className="">
-                <span>Partner</span>
+                <span className="text-primary">Partner</span>
               </div>
             </div>
             <div className="img1 text-center ">
-              <img src={aws} alt="" className="img-fluid" />
+              <Image src={aws} alt="" className="img-fluid" />
               <div className="">
-                <span>AWS Consulting</span>
+                <span className="text-primary">AWS Consulting</span>
               </div>
               <div className="">
-                <span>Verified</span>
+                <span className="text-primary">Verified</span>
               </div>
             </div>
           </div>

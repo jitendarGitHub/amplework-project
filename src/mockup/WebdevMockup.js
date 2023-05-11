@@ -8,7 +8,6 @@ export const TechnologyStackMockup = [
       { language: "jQuery" },
     ],
     className: `col-lg-6 col-md-12 tech-box-css first`,
-    btnclass: `backcolor`,
   },
   {
     text: "Development tools an libraries",
@@ -22,7 +21,6 @@ export const TechnologyStackMockup = [
       { language: "NPM" },
     ],
     className: `col-lg-6 col-md-12 tech-box-css third`,
-    btnclass: `backcolor`,
   },
   {
     text: "Back-end framework",
@@ -33,7 +31,6 @@ export const TechnologyStackMockup = [
       { language: "Ruby and Rails" },
     ],
     className: `col-lg-3 col-md-6 tech-box-css third`,
-    btnclass: `backcolor`,
   },
   {
     text: "MERN stack",
@@ -44,7 +41,6 @@ export const TechnologyStackMockup = [
       { language: "Node js" },
     ],
     className: `col-lg-3 col-md-6 tech-box-css four`,
-    btnclass: `backcolor`,
   },
   {
     text: "LAMP stack",
@@ -55,7 +51,6 @@ export const TechnologyStackMockup = [
       { language: "PHP" },
     ],
     className: `col-lg-3 col-md-6 tech-box-css third`,
-    btnclass: `backcolor`,
   },
   {
     text: "Ruby and Rails",
@@ -65,7 +60,6 @@ export const TechnologyStackMockup = [
       { language: "PostgreSQL" },
     ],
     className: `col-lg-3 col-md-6 tech-box-css thid`,
-    btnclass: `backcolor`,
   },
   {
     text: "Front-end frameworks and libraries",
@@ -76,7 +70,6 @@ export const TechnologyStackMockup = [
       { language: "jQuery" },
     ],
     className: `col-lg-6 col-md-12 tech-box-css third`,
-    btnclass: `backcolor`,
   },
   {
     text: "Django stack",
@@ -86,6 +79,5 @@ export const TechnologyStackMockup = [
       { language: "PostgreSQL" },
     ],
     className: `col-lg-6 col-md-12 tech-box-css second`,
-    btnclass: `backcolor`,
   },
 ];

@@ -126,6 +126,10 @@ border-radius: 10px;
     border-top: 50px solid rgb(200 222 255);
     border-left: 50px solid white; 
   }  
+
+ .notched-card:hover:after{
+    border-top: 50px solid rgb(40,116,252); 
+ }
    .rio-heading::after{ 
     content: '';
     margin-top: 3px;

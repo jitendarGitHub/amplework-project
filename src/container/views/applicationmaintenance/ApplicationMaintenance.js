@@ -2,8 +2,8 @@ import "./application.css";
 import { Apps1, Banner } from "../../../assets";
 import {
   ClientAppreciation,
+  CustomWelcomeBlock,
   FullStackDeveloper,
-  WelcomeBlock,
 } from "../../../components";
 import {
   Activity,
@@ -29,7 +29,7 @@ const ApplicationMaintenance = () => {
   return (
     <>
       <div className="page-content">
-        <WelcomeBlock
+        <CustomWelcomeBlock
           image={Banner}
           title="APPLICATION MAINTENANCE AND SUPPORT"
           description="Top class application maintenance and support services for error-free, high performing applications"
@@ -50,9 +50,9 @@ const ApplicationMaintenance = () => {
         <FullStackDeveloper />
         <Developer />
         <section className="bg-light text-center">
-          <div className="container ">
-            <ClientAppreciation />
-          </div>
+          {/* <div className="container "> */}
+          <ClientAppreciation />
+          {/* </div> */}
         </section>
         <PortFolio
           image={Banner}

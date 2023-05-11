@@ -1,4 +1,5 @@
 import { DefaultCard } from "../../../../components";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 import { Facinatingmockup } from "../../../../mockup/Facinatingmockup";
 import "../application.css";
 
@@ -6,15 +7,11 @@ const Facinating = () => {
   return (
     <section className="facinating-section">
       <div className="container text-center  ">
-        <h3>
-          Fascinating Benefits of Application Maintenance and Support Services
-        </h3>
-        <p className="facinatinf-para">
-          Time to empower your mind with the fascinating benefits of application
-          maintenance and support services. So, get
-          <br /> ready to empower your mobile application growth with these
-          foremost benefits.
-        </p>
+        <PrimaryText heading=" Fascinating Benefits of Application Maintenance and Support Services" />
+        <SecondaryText
+          para="Time to empower your mind with the fascinating benefits of application maintenance and support services. So, get ready to empower your mobile application growth with these foremost benefits."
+          className="facinatinf-para"
+        />
 
         <div className="row ">
           {Facinatingmockup.map((items) => {

@@ -1,11 +1,6 @@
-import { Button, CardGroup } from "react-bootstrap";
-import { ApplicationCard, DefaultButton } from "../../../../components";
-import DefaultCard from "../../../../components/card/Index";
-import {
-  Applicationimg1,
-  Applicationimg2,
-  Applicationimg3,
-} from "../../../../assets";
+import { CustomButton, DefaultCard } from "../../../../components";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
+
 import { Applicationmockup } from "../../../../mockup/ApplicationMockup";
 
 const Application = () => {
@@ -13,17 +8,14 @@ const Application = () => {
     <section className="">
       <div className="container ">
         <div className="application text-center align-item-center  ">
-          <h3 className="">
-            Our Advanced Application Support Service - Elevate Your
-            Application's
-            <br />
-            Performance
-          </h3>
-          <h6 className="mb-5">
-            Complex applications which are configured with the latest APIs
-            require the advanced solutions to keep the working mechanism of the
-            <br /> applications in a perfect shape. At Amplework,
-          </h6>
+          <PrimaryText
+            heading="Our Advanced Application Support Service - Elevate Your
+            Application's Application`s."
+          />
+          <SecondaryText
+            para="Complex applications which are configured with the latest APIs require the advanced solutions to keep the working mechanism of the applications in a perfect shape. At Amplework,"
+            className=".h6"
+          />
 
           <div className="row">
             {Applicationmockup.map((items) => {
@@ -45,7 +37,7 @@ const Application = () => {
             })}
           </div>
 
-          <DefaultButton value="GET A FREE QUOTE" btnClass="free-quote mt-4" />
+          <CustomButton value="GET A FREE QUOTE" btnClass="free-quote mt-4" />
         </div>
       </div>
     </section>

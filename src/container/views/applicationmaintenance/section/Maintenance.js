@@ -1,4 +1,5 @@
 import { Dedicated } from "../../../../assets";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 
 const Maintenance = () => {
   return (
@@ -9,26 +10,31 @@ const Maintenance = () => {
             <img src={Dedicated} width={"90%"} />
           </div>
           <div className="col-sm-12 col-lg-7">
-            <h6 className="supporter-title text-primary fw-bold">
-              AMPLEWORK SOFTWARE
-            </h6>
-            <h3 className="supporter-heading">
-              Your dedicated Supporter for App Maintenance Service
-            </h3>
-            <p className="supporter-para mt-4">
-              App maintenance is a critical aspect because it effectively keeps
+            <PrimaryText
+              className="supporter-title text-primary fw-bold"
+              heading="AMPLEWORK SOFTWARE"
+            />
+
+            <PrimaryText
+              heading="Your dedicated Supporter for App Maintenance Service"
+              className="supporter-heading"
+            />
+            <SecondaryText
+              para="App maintenance is a critical aspect because it effectively keeps
               the application functioning in an optimized manner so that it can
               fulfill your audient requirement. At Amplework , we can support
               you in almost everthing from bug fixed to security potches. Our
               prowess developers ensure that the application should stay secure
-              and up-to-date
-            </p>
-            <p className="supporter-para">
-              App maintenance is a critical aspect because it effectively keeps
+              and up-to-date"
+              className="supporter-para mt-4"
+            />
+            <SecondaryText
+              para="    App maintenance is a critical aspect because it effectively keeps
               the application functioning in an optimized manner so that it can
               fulfill your audient requirement. At Amplework , we can support
-              you in almost everthing from bug fixed to security potches.
-            </p>
+              you in almost everthing from bug fixed to security potches."
+              className="supporter-para"
+            />
           </div>
         </div>
       </div>

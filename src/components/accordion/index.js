@@ -1,6 +1,6 @@
 import { Accordion } from "react-bootstrap";
 
-const Accordions = (props) => {
+const CustomAccordion = (props) => {
   const { eventkeys, question, answer } = props;
   return (
     <Accordion.Item eventKey={eventkeys} className="question-box">
@@ -11,4 +11,4 @@ const Accordions = (props) => {
     </Accordion.Item>
   );
 };
-export default Accordions;
+export default CustomAccordion;

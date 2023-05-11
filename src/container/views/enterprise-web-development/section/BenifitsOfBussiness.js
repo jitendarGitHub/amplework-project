@@ -7,19 +7,17 @@ import {
   benifit5,
   benifit6,
 } from "../../../../assets";
-import { DefaultCard } from "../../../../components";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 import "../enterpriseweb.css";
 const BenifitsOfBussiness = () => {
   return (
     <section className="benifit-section">
       <div className="container text-center">
-        <h2>
-          Benefits of Enterprise Web Development Company For Business Success
-        </h2>
-        <p>
-          Through enterprise website development agency, we effectively focus on
-          re-structuring your website’s structure and adding specific features.
-        </p>
+        <PrimaryText heading="Benefits of Enterprise Web Development Company For Business Success" />
+        <SecondaryText
+          para="  Through enterprise website development agency, we effectively focus on
+          re-structuring your website’s structure and adding specific features."
+        />
         <div className="row">
           <div className="col-lg-4">
             <div className="d-flex pt-5 benifit-row-reverse">

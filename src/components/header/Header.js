@@ -2,8 +2,7 @@ import { Button } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useNavigate } from "react-router-dom";
-import { DefaultButton } from "../button/Buttons";
-
+import { CustomButton } from "../index";
 const Header = (props) => {
   const navigate = useNavigate();
   return (
@@ -64,7 +63,7 @@ const Header = (props) => {
                 Contact Us
               </Nav.Link>
 
-              <DefaultButton
+              <CustomButton
                 btnClass="inquire-btn bg-transparent  border-warning"
                 value="INQUIRE NOW"
               />

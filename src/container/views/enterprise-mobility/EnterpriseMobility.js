@@ -6,7 +6,7 @@ import {
   ReasonAmplebg2,
   ReasonAmplebg3,
 } from "../../../assets";
-import { ClientAppreciation, WelcomeBlock } from "../../../components";
+import { ClientAppreciation, CustomWelcomeBlock } from "../../../components";
 import {
   BrandApp,
   BrandCollaborate,
@@ -29,7 +29,7 @@ import {
 const EnterpriseMobility = () => {
   return (
     <div className="">
-      <WelcomeBlock
+      <CustomWelcomeBlock
         title="Advanced Enterprise Mobility Solutions"
         description="Empower Business Operations From Enterprise Mobility Development "
         image={EnterpriseMobilityBG}

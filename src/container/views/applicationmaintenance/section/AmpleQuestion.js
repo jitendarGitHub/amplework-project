@@ -1,17 +1,21 @@
-import { Accordion, Container } from "react-bootstrap";
-import { Accordions } from "../../../../components";
+import { Accordion, Carousel, Container } from "react-bootstrap";
 import { Amplequestionmockup } from "../../../../mockup/Amplequestionmockup";
+import { CustomAccordion } from "../../../../components";
+import { PrimaryText } from "../../../../components/text";
 const AmpleQuestion = () => {
   return (
     <section className="question ">
       <Container className="text-center mt-5 pt-3">
-        <h4 className="fw-bold bg-transparent">Frequently Asked Questions</h4>
+        <PrimaryText
+          heading="Frequently Asked Questions"
+          className="fw-bold bg-transparent"
+        />
         <Accordion>
           <div className="row">
             {Amplequestionmockup.map((items) => {
               return (
                 <div className="col-lg-6 p-2 text-start">
-                  <Accordions
+                  <CustomAccordion
                     eventkeys={items.eventkeys}
                     question={items.question}
                     answer={items.answer}

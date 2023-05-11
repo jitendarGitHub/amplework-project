@@ -9,6 +9,7 @@ import {
   BugActivity8,
 } from "../../../../assets";
 import { BugActivity } from "../../../../components";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 
 const Activity = () => {
   return (
@@ -16,16 +17,15 @@ const Activity = () => {
       <div className=" container  px-4 container">
         <div className="row">
           <div className="col-sm-12 col-lg-6">
-            <h3 className="activity-heading col-sm-9">
-              Amplework's Targeted Activities For Application Maintenance
-              Support Services
-            </h3>
-            <p className="activity-desc col-sm-10 ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s,
-            </p>
-            <ul className="p-2 mx-1   ">
+            <PrimaryText
+              heading="Amplework's Targeted Activities For Application Maintenance Support Services"
+              className="activity-heading col-sm-9"
+            />
+            <SecondaryText
+              para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+              className="activity-desc col-sm-10"
+            />
+            <ul className="p-2 mx-1">
               <li>Amplework offers hire</li>
               <li>dedicated full-stack</li>
               <li>developers who posses</li>

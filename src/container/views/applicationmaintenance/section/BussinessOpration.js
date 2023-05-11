@@ -1,19 +1,19 @@
 import { BussinessTimeCard } from "../../../../components";
-import DefaultCard from "../../../../components/card/Index";
+import DefaultCard from "../../../../components/card";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
 
 const BussinessOpration = () => {
   return (
     <section className=" bussiness">
       <div className="  text-center container">
-        <h3 className="bussiness-heading">
-          Our Numbers Speaks For Our Business Operations
-        </h3>
-        <p className="bussiness-para">
-          We don’t compromise on the quality aspects thus it makes us the
-          leading application development maintenance and
-          <br /> support service provider. We resolve even the most severe
-          incidents in less than 8 hours.
-        </p>
+        <PrimaryText
+          heading=" Our Numbers Speaks For Our Business Operations"
+          className="bussiness-heading"
+        />
+        <SecondaryText
+          para="We don’t compromise on the quality aspects thus it makes us the leading application development maintenance and support service provider. We resolve even the most severe incidents in less than 8 hours."
+          className="bussiness-para"
+        />
 
         <div className="d-lg-flex  justify-content-between">
           <DefaultCard

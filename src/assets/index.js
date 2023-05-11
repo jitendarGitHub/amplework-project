@@ -39,6 +39,8 @@ import hourglass from "../assets/hourglass.png";
 import iso from "../assets/iso.png";
 import maintenance from "../assets/maintenance.png";
 import Namboodiri from "../assets/NAMBOODIRI.png";
+import Ken from "../assets/ken_murai.png";
+import Imo from "../assets/imo_etuk.png";
 import PartTime from "./partTime.png";
 import QuestionBg from "./questionBG.png";
 
@@ -50,6 +52,16 @@ import Scalability from "./Scalability.png";
 import StartupBg from "./startupbg.png";
 import SweatCoinBg from "./sweatCoin_bg.png";
 import SwetCoin from "./swetcoin.png";
+import SweatcoinLogo from "./sweatcoinLogo.png";
+import AlphaLogo from "./alphaLogo.png";
+import AlphaBg from "./alphaBg.png";
+import Alpha from "./alpha.png";
+import SchoolBg from "./schoolBg.png";
+import School from "./school.png";
+import SchoolLogo from "./schoolLogo.png";
+import SofletBg from "./sofletBg.png";
+import Soflet from "./soflet.png";
+import SofletLogo from "./sofleteLogo.png";
 
 import Apps1 from "./Apps1.png";
 import Apps2 from "./Apps2.png";
@@ -242,6 +254,8 @@ export {
   HourlyPlan,
   maintenance,
   Namboodiri,
+  Ken,
+  Imo,
   NovaMam,
   PartTime,
   PrakashSir,
@@ -251,6 +265,16 @@ export {
   StartupBg,
   SwetCoin,
   SweatCoinBg,
+  SweatcoinLogo,
+  AlphaLogo,
+  Alpha,
+  AlphaBg,
+  SchoolLogo,
+  SchoolBg,
+  School,
+  SofletLogo,
+  SofletBg,
+  Soflet,
   Apps1,
   Apps2,
   Apps3,

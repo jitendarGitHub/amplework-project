@@ -1,14 +1,15 @@
-import { Button } from "react-bootstrap";
 import { digitalApp, digitalApp2, digitalApp3 } from "../../../../assets";
-import { DefaultButton, DefaultCard } from "../../../../components";
+import { CustomButton, DefaultCard } from "../../../../components";
+import { PrimaryText } from "../../../../components/text";
 
 const Digitalize = () => {
   return (
     <section className=" bg-white">
       <div className="container">
-        <h3 className="text-center ">
-          Digitalize Your Product Idea - Learn More About MVP
-        </h3>
+        <PrimaryText
+          className="text-center"
+          heading=" Digitalize Your Product Idea - Learn More About MVP"
+        />
 
         <div className=" py-5 row justify-content-between">
           <div className="col-sm-12 col-md-6 col-lg-4">
@@ -49,7 +50,7 @@ const Digitalize = () => {
           </div>
         </div>
         <div className="text-center">
-          <DefaultButton
+          <CustomButton
             btnClass="rounded-pill text-center"
             value="Read all post"
           />
