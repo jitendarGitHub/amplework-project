@@ -1,11 +1,15 @@
 import { Card } from "react-bootstrap";
 import "../enterpriseweb.css";
 import { PrimaryText, SecondaryText } from "../../../../components/text";
+import { DefaultCard } from "../../../../components";
 
 const EnterpriseWebService = () => {
   return (
     <div className="container text-center">
-      <h6 className="supporter-title text-primary fw-bold">OVERVIEW</h6>
+      <PrimaryText
+        className="supporter-title text-primary fw-bold"
+        heading="OVERVIEW"
+      />
 
       <PrimaryText
         heading="Enterprise Web Development Service - Your Digital Success Partner"
@@ -25,28 +29,43 @@ const EnterpriseWebService = () => {
       />
       <div className="row justify-content-center p-4">
         <div className="card-1 col-lg-3 col-md-6 p-2">
-          <Card className="service-card">WEB DEVELOPMENT</Card>
+          <DefaultCard heading="WEB DEVELOPMENT" cardclass="service-card" />
         </div>
         <div className="card-1 col-lg-4 col-md-6 p-2">
-          <Card className="service-card">SOFTWARE DEVELOPMENT</Card>
+          <DefaultCard
+            heading="SOFTWARE DEVELOPMENT"
+            cardclass="service-card"
+          />
         </div>
         <div className="card-1 col-lg-3 col-md-6 p-2">
-          <Card className="service-card">PORTAL DEVELOPMENT</Card>
+          <DefaultCard heading="PORTAL DEVELOPMENT" cardclass="service-card" />
         </div>
         <div className="card-1 col-lg-2 col-md-6 p-2">
-          <Card className="service-card">UI/UX DESIGN</Card>
+          <DefaultCard heading="UI/UX DESIGN" cardclass="service-card" />
         </div>
         <div className="card-1 col-lg-4 col-md-5 p-2">
-          <Card className="service-card">HYBRID WEB APP DEVELOPMENT</Card>
+          <DefaultCard
+            heading="HYBRID WEB APP DEVELOPMENT"
+            cardclass="service-card"
+          />
         </div>
         <div className="card-1 col-lg-4 col-md-6 p-2">
-          <Card className="service-card">E-COMMERCE DEVELOOPMENT</Card>
+          <DefaultCard
+            heading="E-COMMERCE DEVELOPMENT"
+            cardclass="service-card"
+          />
         </div>
         <div className="card-1 col-lg-4 col-md-6 p-2">
-          <Card className="service-card">PAYMENT GATEWAY INTEGRATION</Card>
+          <DefaultCard
+            heading="PAYMENT GATEWAY INTEGRATION"
+            cardclass="service-card"
+          />
         </div>
         <div className="card-1 col-lg-4 col-md-6 p-2">
-          <Card className="service-card">CONTENT MANAGEMENT SOLUTION</Card>
+          <DefaultCard
+            heading="CONTENT MANAGEMENT SOLUTION"
+            cardclass="service-card"
+          />
         </div>
       </div>
     </div>

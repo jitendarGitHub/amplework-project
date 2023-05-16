@@ -1,8 +1,6 @@
-import { enterprise1 } from "../../../../assets";
-import { Cards, DefaultCard } from "../../../../components";
+import { DefaultCard } from "../../../../components";
 import { PrimaryText, SecondaryText } from "../../../../components/text";
 import { Developermockup } from "../../../../mockup/Developermockup";
-
 const Developer = () => {
   return (
     <section className="bg-light">

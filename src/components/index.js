@@ -15,7 +15,6 @@ import FullStackDeveloper from "./FullStackDeveloperCard";
 import DreamModalCard from "./DreamModalCard";
 import PhasesCard from "./CategoryPhase";
 import BrandCard from "./BrandColaborateCard";
-import AccomplishCard from "./AccomplishCard";
 import CapabilityCard from "./CapabilityCard";
 import CustomAccordion from "./accordion/index";
 import DiverseCard from "./DiverseCard";
@@ -43,7 +42,6 @@ export {
   DreamModalCard,
   PhasesCard,
   BrandCard,
-  AccomplishCard,
   CapabilityCard,
   DiverseCard,
   CustomInput,

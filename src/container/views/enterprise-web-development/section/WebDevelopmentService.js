@@ -18,9 +18,10 @@ const WebDevelopment = (props) => {
             <Image src={props.image} width={"100%"} />
           </div>
           <div className="col-lg-5 ">
-            <h3 className=" list-about text-center text-md-start">
-              {props.about}
-            </h3>
+            <PrimaryText
+              heading={props.about}
+              className=" list-about text-center text-md-start"
+            />
             <p className="list-style">
               <Image src={props.listimg} alt="" width={"15px"} />
               &nbsp;&nbsp;{props.list1}

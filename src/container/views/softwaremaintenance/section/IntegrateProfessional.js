@@ -1,15 +1,15 @@
+import { PrimaryText, SecondaryText } from "../../../../components/text";
+
 const IntegrateProfesional = () => {
   return (
     <>
       <div className="container">
-        <h2>
-          Integrate Professional Software Support and Maintenance Services
-        </h2>
-        <p>
-          To support our clients, we provide two budget-friendly service options
+        <PrimaryText heading=" Integrate Professional Software Support and Maintenance Services" />
+        <SecondaryText
+          para="To support our clients, we provide two budget-friendly service options
           for maintenance and support of software units. So, check out our
-          service options.
-        </p>
+          service options."
+        />
       </div>
     </>
   );

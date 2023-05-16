@@ -11,7 +11,7 @@ const EnhanceROIservice = () => {
           <Image src={props.img} /> &nbsp;&nbsp;
           <span className="heading">{props.title}</span>{" "}
         </Card.Title>
-        <Card.Text className="mt-1">{props.text}</Card.Text>
+        <Card.Text className="mt-1">{props.para}</Card.Text>
       </Card>
     );
   };
@@ -30,73 +30,68 @@ const EnhanceROIservice = () => {
           enhance your business growth."
         />
         <div className="row">
-          <div className="col-lg-4 col-md-6">
-            <ROIcard
-              img={EnhanceCertificate}
-              text=" It involves consulting with businesses to understand their mobile
-          needs and developing a mobile."
-              title="Enterprise App Consultation"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <ROIcard
-              img={EnhanceCertificate}
-              text="We offer a user-friendly and visually appealing design that meets the specific needs of businesses."
-              title="Enterprise Solution Designing"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <ROIcard
-              img={EnhanceCertificate}
-              text="We develop mobile applications by utilizing the latest technologies and development frameworks to ensure."
-              title="Enterprise Mobile App Development"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <ROIcard
-              img={EnhanceCertificate}
-              text="This service involves managing mobile devices, applications and data within an enterprise environment."
-              title="Enterprise Management Services"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <ROIcard
-              img={EnhanceCertificate}
-              text="In the final release, we identify and fix any bugs before deployment to make sure that your tech solutions."
-              title="Enterprise App/Web Testing"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <ROIcard
-              img={EnhanceCertificate}
-              text="Enable the use of CMS development solutions to effectively manage and develop new enterprise-enabled."
-              title="Enterprise Maintenance & Support"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <ROIcard
-              img={EnhanceCertificate}
-              text="Enable the use of CMS development solutions to effectively manage and develop new enterprise-enabled."
-              title="Enterprise CMS Development"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <ROIcard
-              img={EnhanceCertificate}
-              text="Enable the use of CMS development solutions to effectively manage and develop new enterprise-enabled."
-              title="Enterprise CMS Development"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <ROIcard
-              img={EnhanceCertificate}
-              text="This service involves managing mobile devices, applications and data within an enterprise environment."
-              title="Enterprise Management Services"
-            />
-          </div>
+          {ROIcardMock.map((items) => {
+            return (
+              <div className="col-lg-4 col-md-6">
+                <ROIcard
+                  img={items.image}
+                  title={items.title}
+                  para={items.para}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     </>
   );
 };
 export default EnhanceROIservice;
+
+export const ROIcardMock = [
+  {
+    image: EnhanceCertificate,
+    para: " It involves consulting with businesses to understand their mobile needs and developing a mobile.",
+    title: "Enterprise App Consultation",
+  },
+  {
+    image: EnhanceCertificate,
+    para: "We offer a user-friendly and visually appealing design that meets the specific needs of businesses.",
+    title: "Enterprise Solution Designing",
+  },
+  {
+    image: EnhanceCertificate,
+    para: "We develop mobile applications by utilizing the latest technologies and development frameworks to ensure.",
+    title: "Enterprise Mobile App Development",
+  },
+  {
+    image: EnhanceCertificate,
+    para: "This service involves managing mobile devices, applications and data within an enterprise environment.",
+    title: "Enterprise Management Services",
+  },
+  {
+    image: EnhanceCertificate,
+    para: "In the final release, we identify and fix any bugs before deployment to make sure that your tech solutions.",
+    title: "Enterprise App/Web Testing",
+  },
+  {
+    image: EnhanceCertificate,
+    para: "Enable the use of CMS development solutions to effectively manage and develop new enterprise-enabled.",
+    title: "Enterprise Maintenance & Support",
+  },
+  {
+    image: EnhanceCertificate,
+    para: "Enable the use of CMS development solutions to effectively manage and develop new enterprise-enabled",
+    title: "Enterprise CMS Development",
+  },
+  {
+    image: EnhanceCertificate,
+    para: "Enable the use of CMS development solutions to effectively manage and develop new enterprise-enabled",
+    title: "Enterprise CMS Development",
+  },
+  {
+    image: EnhanceCertificate,
+    para: "This service involves managing mobile devices, applications and data within an enterprise environment",
+    title: "Enterprise Management Services",
+  },
+];

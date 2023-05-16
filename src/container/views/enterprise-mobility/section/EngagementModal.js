@@ -1,4 +1,4 @@
-import { Button, Card, CardGroup } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { EngagementCheck, Recommended } from "../../../../assets";
 import "../EnterpriseMobility.css";
 import { Engagement1 } from "../../../../assets";
@@ -93,7 +93,7 @@ const EngagementModal = () => {
                 <h4 className="p-2 fs-6 fw-bold ">Monthly Plan</h4>
 
                 <SecondaryText para="8 hours per day with 5 days in a week approach." />
-                <li className="p-1 mt-4 list-style text-light">
+                <li className="p-1 mt-4 list-style text-light ">
                   <img src={EngagementCheck} width={"18px"} />
                   &nbsp; [Billing cycling - Weekly]
                 </li>
