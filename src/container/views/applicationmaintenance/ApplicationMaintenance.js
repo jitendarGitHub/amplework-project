@@ -1,5 +1,5 @@
 import "./application.css";
-import { Apps1, Banner } from "../../../assets";
+import { Banner } from "../../../assets";
 import {
   ClientAppreciation,
   CustomWelcomeBlock,

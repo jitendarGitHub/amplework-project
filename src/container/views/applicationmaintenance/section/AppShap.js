@@ -12,12 +12,10 @@ const AppShap = () => {
           heading="Let's get your app in shape - contact us now and let the maintenance magic begin"
           className="shap-heading"
         />
-
         <SecondaryText
-          para="  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
           className="shap-para mt-3"
         />
-
         <div className="row justify-content-center ">
           {Appshapmockup.map((items) => {
             return (

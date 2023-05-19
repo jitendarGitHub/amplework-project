@@ -6,8 +6,8 @@ import { Applicationmockup } from "../../../../mockup/ApplicationMockup";
 const Application = () => {
   return (
     <section className="">
-      <div className="container ">
-        <div className="application text-center align-item-center  ">
+      <div className="container">
+        <div className="application text-center align-item-center">
           <PrimaryText
             heading="Our Advanced Application Support Service - Elevate Your
             Application's Application`s."
@@ -16,7 +16,6 @@ const Application = () => {
             para="Complex applications which are configured with the latest APIs require the advanced solutions to keep the working mechanism of the applications in a perfect shape. At Amplework,"
             className=".h6"
           />
-
           <div className="row">
             {Applicationmockup.map((items) => {
               return (

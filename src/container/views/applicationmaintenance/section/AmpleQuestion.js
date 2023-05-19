@@ -1,4 +1,4 @@
-import { Accordion, Carousel, Container } from "react-bootstrap";
+import { Accordion, Container } from "react-bootstrap";
 import { Amplequestionmockup } from "../../../../mockup/Amplequestionmockup";
 import { CustomAccordion } from "../../../../components";
 import { PrimaryText } from "../../../../components/text";

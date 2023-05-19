@@ -1,4 +1,3 @@
-//css
 import "./footer.css";
 
 import {
@@ -11,18 +10,16 @@ import {
   Scalability,
   AmpleLogo,
   hourglass,
+  Aws,
+  cloud,
+  iso,
+  register,
 } from "../../assets";
 
-//aws assests
-import aws from "../../assets/aws-consulting-partner.png";
-import iso from "../../assets/iso.png";
-import register from "../../assets/d-b-register.png";
-import cloud from "../../assets/google-cloud-partner.png";
-
 import { CardGroup, Container, Image } from "react-bootstrap";
-import FooterCard from "../FooterCard";
+
 import SocialmediaFooter from "./SocialmediaFooter";
-import { SecondaryText } from "../text";
+import FooterCard from "../FooterCard";
 
 const Footer = () => {
   return (
@@ -91,7 +88,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="img1 text-center ">
-              <Image src={aws} alt="" className="img-fluid" />
+              <Image src={Aws} alt="" className="img-fluid" />
               <div className="">
                 <span className="text-primary">AWS Consulting</span>
               </div>

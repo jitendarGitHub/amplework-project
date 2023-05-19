@@ -15,7 +15,6 @@ const CustomWelcomeBlock = (props) => {
           MozBackgroundSize: "cover",
         }}
       >
-        {/* <Header image={Amplelogo} /> */}
         <div className="container welcome text-center justify-content-center ">
           <h5 className="welcome-title fw-bold">{props.title}</h5>
           <h1 className="welcome-description text-white fw-bold">

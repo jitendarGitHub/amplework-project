@@ -1,4 +1,3 @@
-import { Button } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +17,6 @@ const Header = (props) => {
             id="responsive-navbar-nav"
             className="responsive-navbar-nav "
           >
-            {/* <Nav className="me-auto bg-warning"></Nav> */}
             <Nav className="ms-auto">
               <Nav.Link
                 className="header-item fw-100  text-white"

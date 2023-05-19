@@ -27,48 +27,47 @@ const EnterpriseWebService = () => {
         engagement rate. As, customers also prepare to engage with those web
         applications which provide responses in minimal seconds."
       />
-      <div className="row justify-content-center p-4">
-        <div className="card-1 col-lg-3 col-md-6 p-2">
-          <DefaultCard heading="WEB DEVELOPMENT" cardclass="service-card" />
-        </div>
-        <div className="card-1 col-lg-4 col-md-6 p-2">
-          <DefaultCard
-            heading="SOFTWARE DEVELOPMENT"
-            cardclass="service-card"
-          />
-        </div>
-        <div className="card-1 col-lg-3 col-md-6 p-2">
-          <DefaultCard heading="PORTAL DEVELOPMENT" cardclass="service-card" />
-        </div>
-        <div className="card-1 col-lg-2 col-md-6 p-2">
-          <DefaultCard heading="UI/UX DESIGN" cardclass="service-card" />
-        </div>
-        <div className="card-1 col-lg-4 col-md-5 p-2">
-          <DefaultCard
-            heading="HYBRID WEB APP DEVELOPMENT"
-            cardclass="service-card"
-          />
-        </div>
-        <div className="card-1 col-lg-4 col-md-6 p-2">
-          <DefaultCard
-            heading="E-COMMERCE DEVELOPMENT"
-            cardclass="service-card"
-          />
-        </div>
-        <div className="card-1 col-lg-4 col-md-6 p-2">
-          <DefaultCard
-            heading="PAYMENT GATEWAY INTEGRATION"
-            cardclass="service-card"
-          />
-        </div>
-        <div className="card-1 col-lg-4 col-md-6 p-2">
-          <DefaultCard
-            heading="CONTENT MANAGEMENT SOLUTION"
-            cardclass="service-card"
-          />
-        </div>
+      <div className=" row justify-content-center p-4">
+        {EnterpriseWebServiceMock.map((items) => {
+          return (
+            <div className={items.cardclass}>
+              <DefaultCard heading={items.heading} cardclass="service-card" />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
 };
 export default EnterpriseWebService;
+
+const EnterpriseWebServiceMock = [
+  {
+    heading: "WEB DEVELOPMENT",
+    cardclass: "card-1 col-lg-3 col-md-6 p-2",
+  },
+  {
+    heading: "SOFTWARE DEVELOPMENT",
+    cardclass: "card-1 col-lg-3 col-md-6 p-2",
+  },
+  {
+    heading: "PORTAL DEVELOPEMNT ",
+    cardclass: "card-1 col-lg-3 col-md-6 p-2",
+  },
+  {
+    cardclass: "card-1 col-lg-4 col-md-5 p-2",
+    heading: "HYBRID WEB APP DEVELOPMENT",
+  },
+  {
+    cardclass: "card-1 col-lg-4 col-md-5 p-2",
+    heading: "E-COMMERCE-DEVELOPMENT",
+  },
+  {
+    cardclass: "card-1 col-lg-4 col-md-6 p-2",
+    heading: "PAYMENT GATEWAY INTEGRATION",
+  },
+  {
+    cardclass: "card-1 col-lg-4 col-md-6 p-2",
+    heading: "CONTENT MANAGEMENT DEVELOPMENT",
+  },
+];

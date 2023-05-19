@@ -428,6 +428,7 @@ color: rgb(245 164 3);;
         .card-img2{
             border: none;
             background-color: rgb(124 8 185);
+            
         } 
         .question-box{
             box-shadow: 0 9px 20px 0 rgba(0,0,0,.23);
@@ -598,5 +599,4 @@ margin-top: 10px;
     background-color: #0326c2;
     padding: 8px 15px 10px 10px;
     border-radius: 10px;
-}
- 
+} 

@@ -1,11 +1,7 @@
 import AppContent from "./AppContent";
-import ApplicationCard from "./ApplicationCard";
-import BussinessTimeCard from "./BussinessTimeCard";
 import ClientAppreciation from "./ClientAppreciations";
 import { CustomCarousel, PortfolioCarousel } from "./carousel/index";
 import BugActivity from "./BugActivity";
-import Cards from "./DeveloperInfo";
-import FacinatingCard from "./FacinatingCard";
 import FooterCard from "./FooterCard";
 import Shapcard from "./ShapCard";
 import CustomWelcomeBlock from "./welcomeBlock/index";
@@ -14,8 +10,6 @@ import Header from "./header/Header";
 import FullStackDeveloper from "./FullStackDeveloperCard";
 import DreamModalCard from "./DreamModalCard";
 import PhasesCard from "./CategoryPhase";
-import BrandCard from "./BrandColaborateCard";
-import CapabilityCard from "./CapabilityCard";
 import CustomAccordion from "./accordion/index";
 import DiverseCard from "./DiverseCard";
 import DefaultCard from "./card";
@@ -26,14 +20,10 @@ export {
   DefaultCard,
   Footer,
   AppContent,
-  ApplicationCard,
-  BussinessTimeCard,
   ClientAppreciation,
   CustomCarousel,
   PortfolioCarousel,
   BugActivity,
-  Cards,
-  FacinatingCard,
   FooterCard,
   Shapcard,
   CustomWelcomeBlock,
@@ -41,8 +31,6 @@ export {
   FullStackDeveloper,
   DreamModalCard,
   PhasesCard,
-  BrandCard,
-  CapabilityCard,
   DiverseCard,
   CustomInput,
   CustomButton,

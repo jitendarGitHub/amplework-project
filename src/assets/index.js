@@ -37,6 +37,7 @@ import cloud from "../assets/google-cloud-partner.png";
 import Group13516 from "../assets/Group 13516.png";
 import hourglass from "../assets/hourglass.png";
 import iso from "../assets/iso.png";
+import register from "../assets/d-b-register.png";
 import maintenance from "../assets/maintenance.png";
 import Namboodiri from "../assets/NAMBOODIRI.png";
 import Ken from "../assets/ken_murai.png";
@@ -251,6 +252,7 @@ export {
   Group13516,
   hourglass,
   iso,
+  register,
   HourlyPlan,
   maintenance,
   Namboodiri,

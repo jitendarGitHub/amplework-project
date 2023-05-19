@@ -12,42 +12,22 @@ const Digitalize = () => {
         />
 
         <div className=" py-5 row justify-content-between">
-          <div className="col-sm-12 col-md-6 col-lg-4">
-            <DefaultCard
-              cardclass=""
-              imgdivclass=""
-              imgclass=""
-              cardimage={digitalApp}
-              headingstyle={{ visibility: "hidden" }}
-              heading="Chatbots in Healthcare–Advantages ,Disadvantages Applications & their Future"
-              paraclass="developer-position"
-              headingclass="fs-6"
-            />
-          </div>
-          <div className=" col-sm-12 col-md-6 col-lg-4">
-            <DefaultCard
-              cardclass=""
-              imgdivclass=""
-              imgclass=""
-              cardimage={digitalApp2}
-              headingstyle={{ visibility: "hidden" }}
-              heading="Foldable Smartphone App Development – 5 Dos"
-              paraclass="developer-position"
-              headingclass="fs-6"
-            />
-          </div>
-          <div className=" col-sm-12 col-md-6 col-lg-4">
-            <DefaultCard
-              cardclass=""
-              imgdivclass=""
-              imgclass=""
-              cardimage={digitalApp3}
-              headingstyle={{ visibility: "hidden" }}
-              heading="Mobile DevOps – Advantages & Challenges"
-              paraclass="developer-position"
-              headingclass="fs-6"
-            />
-          </div>
+          {DigitalizeMock.map((items) => {
+            return (
+              <div className="col-sm-12 col-md-6 col-lg-4">
+                <DefaultCard
+                  cardclass=""
+                  imgdivclass=""
+                  imgclass=""
+                  cardimage={items.cardimage}
+                  headingstyle={{ visibility: "hidden" }}
+                  heading="Chatbots in Healthcare–Advantages ,Disadvantages Applications & their Future"
+                  paraclass="developer-position"
+                  headingclass="fs-6"
+                />
+              </div>
+            );
+          })}
         </div>
         <div className="text-center">
           <CustomButton
@@ -60,3 +40,18 @@ const Digitalize = () => {
   );
 };
 export default Digitalize;
+const DigitalizeMock = [
+  {
+    cardimage: digitalApp,
+    heading:
+      "Chatbots in Healthcare–Advantages ,Disadvantages Applications & their Future",
+  },
+  {
+    cardimage: digitalApp2,
+    heading: "Foldable Smartphone App Development – 5 Dos",
+  },
+  {
+    cardimage: digitalApp3,
+    heading: "Mobile DevOps – Advantages & Challenges",
+  },
+];

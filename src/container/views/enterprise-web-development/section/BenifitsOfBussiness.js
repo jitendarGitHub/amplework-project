@@ -21,7 +21,7 @@ const BenifitsOfBussiness = () => {
         <div className="row">
           <div className="col-lg-4">
             <div className="d-flex pt-5 benifit-row-reverse">
-              <div className="text-end  ">
+              <div className="text-end">
                 <h3 className="benifit-type-heading">
                   Higher Scalability & Performance
                 </h3>

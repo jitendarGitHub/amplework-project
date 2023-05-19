@@ -14,7 +14,7 @@ const DiverseCard = (props) => {
   } = props;
   return (
     <Card
-      className={`${cardclass} mt-3 border-3 text-light text-start `}
+      className={`${cardclass} border-3 text-light text-start `}
       style={{
         backgroundImage: `url(${diversecardBG})`,
         backgroundPosition: "center",

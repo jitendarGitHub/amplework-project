@@ -29,39 +29,18 @@ const ReasonAmple = () => {
           </div>
           <div className="col-lg-6 project-section ">
             <div className="row">
-              <DefaultCard
-                cardclass="col-lg-6 px-lg-4 pt-2"
-                heading="350+"
-                headingclass="h2"
-                para="Projects accomplished"
-                paraclass="p"
-              />
-              <DefaultCard
-                cardclass="col-lg-6 px-lg-4 pt-2"
-                heading="50+"
-                headingclass="h2"
-                para="Certified designers & developers"
-                paraclass="p"
-              />
-              <DefaultCard
-                cardclass="col-lg-12 ps-0 pe-0"
-                cardimage={SelectingAmple}
-              />
-
-              <DefaultCard
-                cardclass="col-lg-6 px-lg-4 "
-                heading="50M"
-                headingclass="h2"
-                para="Revenue generated for clients"
-                paraclass="p"
-              />
-              <DefaultCard
-                cardclass="col-lg-6 px-lg-4"
-                heading="5+ Years"
-                headingclass="h2"
-                para="Average experience of our developers"
-                paraclass="p"
-              />
+              {ReasonAmpleMock.map((items) => {
+                return (
+                  <DefaultCard
+                    cardclass={items.cardclass}
+                    heading={items.heading}
+                    headingclass="h2"
+                    para={items.para}
+                    paraclass={items.paraclass}
+                    cardimage={items.cardimage}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
@@ -70,3 +49,30 @@ const ReasonAmple = () => {
   );
 };
 export default ReasonAmple;
+
+const ReasonAmpleMock = [
+  {
+    cardclass: "col-lg-6 px-lg-4 pt-2col-lg-6 px-lg-4 pt-2",
+    heading: "350+",
+    para: "Projects accomplished",
+  },
+  {
+    cardclass: "col-lg-6 px-lg-4 pt-2",
+    heading: "50+",
+    para: "Certified designers & developers",
+  },
+  {
+    cardclass: "col-lg-12 ps-0 pe-0",
+    cardimage: SelectingAmple,
+  },
+  {
+    cardclass: "col-lg-6 px-lg-4 ",
+    heading: "50M+",
+    para: "Revenue generated for clients",
+  },
+  {
+    cardclass: "col-lg-6 px-lg-4",
+    heading: "5+ Years",
+    para: "Average experience of our developers",
+  },
+];

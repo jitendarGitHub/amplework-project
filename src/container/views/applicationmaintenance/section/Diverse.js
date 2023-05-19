@@ -17,54 +17,25 @@ const Diverse = () => {
               className="diverse-para"
             />
           </div>
-          <div className="col-sm-12 col-lg-6  d-lg-flex justify-content-center gap-3">
-            <div className="">
-              <DiverseCard
-                diversecardBG={DiverseCardBg}
-                heading="Level1"
-                about="Covers Basic App Service"
-                list1="Consists of technical informmation"
-                list2="Basic System maintenance"
-                list3="Basic Bug Fixed "
-                list4="Troubleshooting"
-                list5="Basic security maintenance"
-                cardclass="card-img"
-              />
-              <DiverseCard
-                diversecardBG={DiverseCardBg}
-                heading="Level2"
-                about="Comprehensive Maintenance"
-                list1="Basic Documentation"
-                list2="Problem Management"
-                list3="Advance BuG Fixed!"
-                list4="Comprehensive Management"
-                list5="Basic security maintenance"
-                cardclass="card-img1"
-              />
-            </div>
-            <div className="mt-4 ">
-              <DiverseCard
-                diversecardBG={DiverseCardBg}
-                heading="Level3"
-                about="Advanced Support Service"
-                list1="Performing Tuning"
-                list2="Advanced Testing"
-                list3="Advanced Documentation"
-                list4="Release Management"
-                list5="Advanced Bug Fixed"
-                cardclass="card-img2"
-              />
-              <DiverseCard
-                diversecardBG={DiverseCardBg}
-                heading="Level4"
-                about="Specialized Support Analysis"
-                list1="Root Cause Analysis"
-                list2="Database Administration"
-                list3="Architecture Design"
-                list4="Secure Opration"
-                list5="Personalized Solution"
-                cardclass="card-img3"
-              />
+          <div className="col-lg-6 d-lg-flex justify-content-around">
+            <div className="row ">
+              {DiverseMock.map((items) => {
+                return (
+                  <div className={`col-lg-5 col-md-6 mt-2`}>
+                    <DiverseCard
+                      diversecardBG={items.diversecardBG}
+                      heading={items.heading}
+                      about={items.about}
+                      list1={items.list1}
+                      list2={items.list2}
+                      list3={items.list3}
+                      list4={items.list4}
+                      list5={items.list5}
+                      cardclass={items.cardclass}
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -73,3 +44,49 @@ const Diverse = () => {
   );
 };
 export default Diverse;
+const DiverseMock = [
+  {
+    diversecardBG: DiverseCardBg,
+    heading: "Level1",
+    about: "Advanced Support Service",
+    list1: "Performing Tuning",
+    list2: "Advanced Testing",
+    list3: "Advanced Documentation",
+    list4: "Release Management",
+    list5: "Advanced Bug Fixed",
+    cardclass: "card-img2",
+  },
+  {
+    diversecardBG: DiverseCardBg,
+    heading: "Level2",
+    about: "Specialized Support Analysis",
+    list1: "Root Cause Analysis",
+    list2: "Database Administration",
+    list3: "Architecture Design",
+    list4: "Secure Opration",
+    list5: "Personalized Solution",
+    cardclass: "card-img3 mt-lg-3",
+  },
+  {
+    diversecardBG: DiverseCardBg,
+    heading: "Level3",
+    about: "Covers Basic App Service",
+    list1: "Consists of technical informmation",
+    list2: "Basic System maintenance",
+    list3: "Basic Bug Fixed ",
+    list4: "Troubleshooting",
+    list5: "Basic security maintenance",
+    cardclass: "card-img",
+  },
+  {
+    diversecardBG: DiverseCardBg,
+    heading: "Level4",
+    about: "Comprehensive Maintenance",
+    list1: "Basic Documentation information",
+    list2: "Problem Management",
+    list3: "Advance BuG Fixed!",
+    list4: "Comprehensive Management",
+    list5: "Basic security maintenance",
+    cardclass: "card-img1 mt-lg-3",
+  },
+];

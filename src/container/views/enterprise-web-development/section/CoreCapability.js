@@ -22,15 +22,16 @@ const CoreCapability = () => {
           />
         </div>
         <div className="col-lg-6  text-center ">
-          <div className="row pb-3">
-            <div className="col-lg-6 col-md-6">
+          <div className="row pb-3 ">
+            <div className="col-lg-6 col-md-6 ">
               <DefaultCard
-                cardclass=" mt-2 p-3 text-start brand-card  border-0"
+                cardclass="  p-3 text-start brand-card  border-0"
                 imgdivclass=" align-self-center fs-1 card-contents capability-img-block"
                 cardimage={Capabilityimg1}
                 contentclass="change-contents p-3"
                 heading="Enterprise Development Solutions"
                 paraclass="text-white"
+                headingshow
                 parashow
                 para="Our custom enterprise development solutions are designed to streamline workflows & increase efficiency"
               />
@@ -39,9 +40,10 @@ const CoreCapability = () => {
                 imgdivclass="maintain-icon  align-self-center fs-1 card-contents capability-img-block"
                 cardimage={Capabilityimg2}
                 contentclass="change-contents p-3"
-                heading="Developers For Hire"
+                heading="Developers For Hire "
                 paraclass="text-white"
                 parashow
+                headingshow
                 para="Our custom enterprise development solutions are designed to streamline workflows & increase efficiency"
               />
             </div>
@@ -51,9 +53,10 @@ const CoreCapability = () => {
                 imgdivclass="maintain-icon  align-self-center fs-1 card-contents capability-img-block"
                 cardimage={Capabilityimg3}
                 contentclass="change-contents p-3"
-                heading="Developer For Hire"
+                heading="Developer For Hire Dedication"
                 paraclass="text-white"
                 parashow
+                headingshow
                 para="Our on-site developers can tackle even the most complex projects. So, hire our developers with confident."
               />
               <DefaultCard
@@ -64,6 +67,7 @@ const CoreCapability = () => {
                 heading="Mobile Maintenance"
                 paraclass="text-white"
                 parashow
+                headingshow
                 para="We provide ongoing support and maintenance to keep your apps running smoothly and resolving issues that may arise."
               />
             </div>

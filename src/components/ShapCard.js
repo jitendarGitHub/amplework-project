@@ -3,14 +3,14 @@ import { Card, Image } from "react-bootstrap";
 import { Cursor, Target, target2 } from "../assets";
 
 const Shapcard = (props) => {
-  const [over, setOver] = useState(false);
+  const [over, out] = useState(false);
   return (
     <>
       <div
         className="card text-center p-4 mt-3  border-4 border-dashed "
-        onMouseOver={() => setOver(true)}
-        onMouseOut={() => setOver(false)}
-        onClick={() => setOver(true)}
+        onMouseOver={() => out(true)}
+        onMouseOut={() => out(false)}
+        onClick={() => out(true)}
       >
         <Card className="card-content">
           <Card.Body>
