@@ -13,26 +13,14 @@ const DedicatedTechnology = () => {
         <div className="row columnreverse">
           <div className="col-sm-12 col-lg-6 text-start align-self-center">
             <SecondaryText para="Our clients generated more than $50 million in revenues by creating seamless mobile applications that run without any bugs or glitches. Thus, we continue to upgrade our services to support clients in generating higher revenue for operations." />
-            <p>
-              <Image src={HourlyPlan} alt="" width={"10px"} />
-              &nbsp;&nbsp; Personalized business services.
-            </p>
-            <p>
-              <Image src={HourlyPlan} alt="" width={"10px"} />
-              &nbsp;&nbsp; Advanced practices for DevOps.
-            </p>
-            <p>
-              <Image src={HourlyPlan} alt="" width={"10px"} />
-              &nbsp;&nbsp; Proficiency in AI/ML/Blockchain Solutions.
-            </p>
-            <p>
-              <Image src={HourlyPlan} alt="" width={"10px"} />
-              &nbsp;&nbsp; Exclusive support for digital transformation.
-            </p>
-            <p>
-              <Image src={HourlyPlan} alt="" width={"10px"} />
-              &nbsp;&nbsp; Large scale & complex app building.
-            </p>
+            {mockup.map((items) => {
+              return (
+                <p>
+                  <Image src={HourlyPlan} alt="" width={"10px"} />
+                  &nbsp;&nbsp; {items.content}
+                </p>
+              );
+            })}
           </div>
           <div className="col-sm-12 col-lg-6">
             <Image src={Bussiness} width={"90%"} />
@@ -43,3 +31,11 @@ const DedicatedTechnology = () => {
   );
 };
 export default DedicatedTechnology;
+
+const mockup = [
+  { image: HourlyPlan, content: "Personalized business services." },
+  { content: "Advanced practices for DevOps." },
+  { content: "Proficiency in AI/ML/Blockchain Solutions." },
+  { content: " Exclusive support for digital transformation." },
+  { content: " Large scale & complex app building." },
+];

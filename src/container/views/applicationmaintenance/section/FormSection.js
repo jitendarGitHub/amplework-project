@@ -8,9 +8,9 @@ import { RiApps2Line } from "@react-icons/all-files/ri/RiApps2Line";
 import { Col, Form, InputGroup, Row } from "react-bootstrap";
 import { captcha } from "../../../../assets";
 import "../application.css";
-import { CustomInput } from "../../../../components";
 import CustomButtom from "../../../../components/button";
-import { PrimaryText } from "../../../../components/text";
+import { PrimaryText, SecondaryText } from "../../../../components/text";
+import { CustomInput, FormInput } from "../../../../components/formInput/Index";
 
 const FormSection = () => {
   return (
@@ -21,48 +21,20 @@ const FormSection = () => {
       />
       <Form className="container pt-5">
         <Row className="mb-3">
-          <CustomInput
-            logo={<HiOutlineUser />}
-            placeholder="Name* "
-            type="text"
-            size="6"
-          />
-          <CustomInput
-            size="6"
-            logo={<HiOutlineMail />}
-            placeholder="Email* "
-            type="email"
-          />
-          <CustomInput
-            size="6"
-            logo={<IoMdCall />}
-            placeholder="Mobile Number* "
-            type="text"
-          />
-          <CustomInput
-            size="6"
-            logo={<RiApps2Line />}
-            option="Intrested In *"
-            value1="1"
-            value2="2"
-            value3="3"
-            formselect
-          />
-          <CustomInput
-            size="6"
-            logo={<BiMessageAltDetail />}
-            type="number"
-            placeholder="Skype Id/WhatsApp No.*"
-          />
-          <CustomInput
-            size="6"
-            logo={<BiDollar />}
-            option="Select Your Budget*"
-            value1="10$"
-            value2="20$"
-            value3="30$"
-            formselect
-          />
+          {mock.map((items) => {
+            return (
+              <FormInput
+                size={items.size}
+                logo={items.logo}
+                option={items.option}
+                value1={items.value1}
+                value2={items.value2}
+                value3={items.value3}
+                placeholder={items.placeholder}
+                formselect={items.formselect}
+              />
+            );
+          })}{" "}
           <Form.Group
             as={Col}
             md="12"
@@ -79,24 +51,24 @@ const FormSection = () => {
               &nbsp;&nbsp; MESSAGE *
             </InputGroup>
           </Form.Group>
-
           <Form.Group as={Col} md="12">
             <Form.Control as="textarea" rows={2} />
           </Form.Group>
-
           <div className="container mt-3">
             <div className="addFile d-md-flex mt-2 justify-content-between">
-              <div className="text-primary align-self-center col-sm-3">
-                <span> {<IoMdAddCircle />}</span>
-                <span className="px-2 fw-bold">ADD FILE</span>
+              <div className="text-primary align-self-center col-sm-3 d-flex align-self-center">
+                <span className="align-self-center fs-4">
+                  {" "}
+                  {<IoMdAddCircle />}
+                </span>
+                <SecondaryText para="ADD FILE" className="px-2 fw-bold " />
               </div>
-              <div className="align-self-center py-2  col-md-9 text-md-end">
-                <input type="checkbox" className="" />
+              <div className="align-self-center py-2 col-md-9 text-md-end">
+                <CustomInput type="checkbox" />
                 <span className="px-2">Yes, Send me a mutual NDA</span>
               </div>
             </div>
           </div>
-
           <div className="container">
             <div className="row mt-3">
               <div className="first d-flex bg-white col-md-7 justify-content-between align-self-center">
@@ -125,3 +97,31 @@ const FormSection = () => {
   );
 };
 export default FormSection;
+
+const mock = [
+  { logo: <HiOutlineUser />, placeholder: "Name", type: "text", size: "6" },
+  { logo: <HiOutlineMail />, placeholder: "Email", type: "email", size: "6" },
+  { logo: <IoMdCall />, placeholder: "Mobile Number", type: "text", size: "6" },
+  {
+    logo: <RiApps2Line />,
+    option: "Intrested In*",
+    value1: "1",
+    value: "2",
+    value: "3",
+    formselect: true,
+  },
+  {
+    logo: <BiMessageAltDetail />,
+    type: "number",
+    placeholder: "Skype Id/Whatsapp No.",
+    size: "6",
+  },
+  {
+    logo: <BiDollar />,
+    option: "Select Your Budge",
+    value1: "10$",
+    value2: "20$",
+    value3: "30$",
+    formselect: true,
+  },
+];

@@ -24,6 +24,7 @@ import {
   PortFolio,
   AmpleQuestion,
 } from "./section";
+import tw from "tailwind-styled-components/";
 
 const ApplicationMaintenance = () => {
   return (
@@ -36,6 +37,7 @@ const ApplicationMaintenance = () => {
           btn="Schedule btn"
         />
         <Maintenance />
+
         <ExperienceParalleled />
         <MaintenancBox />
         <Application />
@@ -50,9 +52,7 @@ const ApplicationMaintenance = () => {
         <FullStackDeveloper />
         <Developer />
         <section className="bg-light text-center">
-          {/* <div className="container "> */}
           <ClientAppreciation />
-          {/* </div> */}
         </section>
         <PortFolio
           image={Banner}
@@ -75,4 +75,16 @@ const ApplicationMaintenance = () => {
     </>
   );
 };
+
 export default ApplicationMaintenance;
+
+const BadgeVal = tw.span`
+text-[10px]
+unvisible
+rounded-full
+bg-black
+absolute
+top-[-3px]
+w-4
+h-4
+`;

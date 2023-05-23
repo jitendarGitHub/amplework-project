@@ -20,7 +20,7 @@ const BrandCollaborate = () => {
               <div className="col-lg-3 col-md-6 ">
                 <DefaultCard
                   headingshow
-                  cardclass="brand-card card  border-0 mt-2"
+                  cardclass="brand-card card  border-0 mt-3"
                   heading={items.heading}
                   headingclass=" headingc"
                   cardimage={items.cardimage}

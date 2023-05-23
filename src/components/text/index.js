@@ -7,5 +7,9 @@ const SecondaryText = (props) => {
   const { para, className } = props;
   return <p className={`${className}`}>{para}</p>;
 };
+const List = (props) => {
+  const { list, className } = props;
+  return <li className={`${className}`}>{list}</li>;
+};
 
-export { PrimaryText, SecondaryText };
+export { PrimaryText, SecondaryText, List };

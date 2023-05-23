@@ -55,6 +55,7 @@ const Footer = () => {
             />
           </CardGroup>
         </Container>
+
         <div className="text-white container mt-5 d-lg-flex">
           <div className="col-lg-6 col-md-12 d-lg-flex align-self-center p-5">
             <Image src={AmpleLogo} alt="" width={"80%"} />
@@ -100,171 +101,31 @@ const Footer = () => {
         </div>
       </div>
       <div className="ample-footer py-5">
-        <div className="container w-100 ample-hire-list flex-wrap col-md-8 d-lg-flex d-flex justify-content-between">
-          <div className="">
-            <ol>
-              <h5 className="ample-hire">Development Service</h5>
-              <li>
-                <a>Product Design</a>
-              </li>
-              <li>
-                <a>MVP development</a>
-              </li>
-              <li>
-                <a>Continuous Product development</a>
-              </li>
-              <li>
-                <a>DevOps development</a>
-              </li>
-              <li>
-                <a>Architecture Consultant </a>
-              </li>
-              <li>
-                <a>Mobile Application Development</a>
-              </li>
-              <li>
-                <a>Enterprise Web development</a>
-              </li>
-              <li>
-                <a>Vooice App Development</a>
-              </li>
-              <li>
-                <a>IoT App Development</a>
-              </li>
-              <li>
-                <a>Blockchain App Development</a>
-              </li>
-              <li>
-                <a>Ai BOT Development</a>
-              </li>
-              <li>
-                <a>Mobile App Maintenance</a>
-              </li>
-            </ol>
-          </div>
-          <div className="">
-            <ol>
-              <h5 className="ample-hire">Dedicated Resources</h5>
-              <li>
-                <a>Hire Swift Develmwent</a>
-              </li>
-              <li>
-                <a>Hire iOS/iPhone Development</a>
-              </li>
-              <li>
-                <a>Hire Flutter Development</a>
-              </li>
-              <li>
-                <a>Hire React Native Development</a>
-              </li>
-              <li>
-                <a>Hire Android Development</a>
-              </li>
-              <li>
-                <a>Hire Angular Development</a>
-              </li>
-              <li>
-                <a>Hire Node.js Development</a>
-              </li>
-              <li>
-                <a>Hire Vue.js Development</a>
-              </li>
-              <li>
-                <a>Hire React.js Development</a>
-              </li>
-              <li>
-                <a>Hire Larevel Development</a>
-              </li>
-              <li>
-                <a>Hire Golang Development</a>
-              </li>
-              <li>
-                <a>Full Stack Development</a>
-              </li>
-            </ol>
-          </div>
-          <div className="">
-            <ol>
-              <h5 className="ample-hire">Industry Solution</h5>
-              <li>
-                <a>Fitness Sector</a>
-              </li>
-              <li>
-                <a>Wellness Area</a>
-              </li>
-              <li>
-                <a>Health Service</a>
-              </li>
-              <li>
-                <a>Food & Hyperlocal</a>
-              </li>
-              <li>
-                <a>eLearning Solution</a>
-              </li>
-              <li>
-                <a>Social & Local</a>
-              </li>
-              <li>
-                <a>Travel & Holidays</a>
-              </li>
-              <li>
-                <a>Fintech solution</a>
-              </li>
-              <li>
-                <a>Ecomm & Marketplace</a>
-              </li>
-              <li>
-                <a>Jobs & Employment</a>
-              </li>
-              <li>
-                <a>Real Estate Solution</a>
-              </li>
-              <li>
-                <a>Software Maintenence and Support</a>
-              </li>
-            </ol>
-          </div>
-          <div className="">
-            <ol>
-              <h5 className="ample-hire">EnterPrise</h5>
-              <li>
-                <a>On Demand App Development</a>
-              </li>
-              <li>
-                <a>Fiels Sales & Service</a>
-              </li>
-              <li>
-                <a>Document Management</a>
-              </li>
-              <li>
-                <a>Hippa Compiances</a>
-              </li>
-              <li>
-                <a>Software Testing Service</a>
-              </li>
-              <li>
-                <a>Logistics and Distribution</a>
-              </li>
-              <li>
-                <a>Enterprise App Integration</a>
-              </li>
-              <li>
-                <a>Cloud Infrastructure</a>
-              </li>
-              <li>
-                <a>Bussiness Intelligency </a>
-              </li>
-              <li>
-                <a>Enterprise Mobility</a>
-              </li>
-              <li>
-                <a>Staff Argumentation Service</a>
-              </li>
-              <li>
-                <a>Inspection App Development</a>
-              </li>
-            </ol>
-          </div>
+        <div
+          className="container w-100 ample-hire-list flex-wrap col-md-8 d-lg-flex d-flex justify-content-between"
+          style={{ backgroundColor: "#12152c" }}
+        >
+          {FooterMock.map((items) => {
+            return (
+              <div className="col-lg-3">
+                {items?.list?.map((item) => {
+                  return (
+                    <>
+                      <h5 className="text-white ample-hire ">{item.heading}</h5>
+                      <a
+                        href="#"
+                        style={{
+                          textDecoration: "none",
+                        }}
+                      >
+                        <li>{item.lists}</li>
+                      </a>
+                    </>
+                  );
+                })}
+              </div>
+            );
+          })}
         </div>
       </div>
       <SocialmediaFooter />
@@ -272,3 +133,74 @@ const Footer = () => {
   );
 };
 export default Footer;
+
+const FooterMock = [
+  {
+    list: [
+      { heading: "Development Service" },
+      { lists: "Product Design" },
+      { lists: "MVP development" },
+      { lists: "Continuous Product development" },
+      { lists: "DevOps developpment" },
+      { lists: "Architecture Consultant" },
+      { lists: "Mobile Application Development" },
+      { lists: "Enterprise Web development" },
+      { lists: "Vooice App Development" },
+      { lists: "IoT App Develop ment" },
+      { lists: "Blockchain App Development" },
+      { lists: "Ai BOT Development" },
+      { lists: "Mobile App Maintenance" },
+    ],
+  },
+  {
+    list: [
+      { heading: "Dedicated Resources" },
+      { lists: "Hire Swift Develmwent" },
+      { lists: "Hire iOS/iPhone Development" },
+      { lists: "Hire Flutter Development" },
+      { lists: "Hire React Native Development" },
+      { lists: "Hire Android Development" },
+      { lists: "Hire Angular Development" },
+      { lists: "Hire Node.js Development" },
+      { lists: "Hire Vue.js Development" },
+      { lists: "Hire React.js Development" },
+      { lists: "Hire Larevel Development" },
+      { lists: " Hire Golang Development" },
+      { lists: " Full Stack Development" },
+    ],
+  },
+  {
+    list: [
+      { heading: "Industry Solution" },
+      { lists: "Fitness Sector" },
+      { lists: "Wellness Area" },
+      { lists: "Health Service" },
+      { lists: "Food & Hyperlocal" },
+      { lists: "eLearning Solution" },
+      { lists: "Social & Local" },
+      { lists: "Travel & Holidays" },
+      { lists: "Fintech solution" },
+      { lists: "Ecomm & Marketplace" },
+      { lists: "Jobs & Employment" },
+      { lists: "Real Estate Solution" },
+      { lists: "Software Maintenence and Support" },
+    ],
+  },
+  {
+    list: [
+      { heading: "EnterPrise" },
+      { lists: "On Demand App Development" },
+      { lists: "Fiels Sales & Service" },
+      { lists: "Document Management" },
+      { lists: "Hippa Compiances" },
+      { lists: "Software Testing Service" },
+      { lists: "Logistics and Distribution" },
+      { lists: "Enterprise App Integration" },
+      { lists: "Cloud Infrastructure" },
+      { lists: "Bussiness Intelligency" },
+      { lists: "Enterprise Mobility" },
+      { lists: "Staff Argumentation Service" },
+      { lists: "Inspection App Development" },
+    ],
+  },
+];

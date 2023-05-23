@@ -13,7 +13,7 @@
     font-family: Poppins,sans-serif;
 }
 .ample-hire-list li{
-    opacity: 0.7;
+    opacity: 0.7; 
     color: #fff; 
     list-style: none;
     font-family: Poppins,sans-serif;
@@ -40,11 +40,12 @@ text-decoration: none
     font-family: Poppins,sans-serif;
   }
   .about-gallary li a:hover{
-    color: #f5a403;
+    color: #f5a403; 
     background-color: rgba(0,0,0,.05);
   }
-  ol li:hover{
-    color: #f5a403;
+  li:hover{
+    color: #fcb900;
+    font-weight: 400;
   }
   .about-gallary li{
     list-style: none;

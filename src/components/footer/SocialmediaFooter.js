@@ -12,8 +12,8 @@ const SocialmediaFooter = () => {
     <>
       <div className="social-media-footer ">
         <div className="d-lg-flex d-md-flex d-sm-block justify-content-between container ">
-          <div className=" col-sm-6 col-md-6 about-gallary align-self-center">
-            <ul className=" d-flex flex-wrap text-center justify-content-between align-self-center">
+          <div className=" col-sm-6 col-md-6 about-gallary align-self-center pt-3">
+            <ul className=" d-flex flex-wrap text-center justify-content-between align-self-center ">
               <li>
                 <a href="">About Us</a>
               </li>
@@ -39,16 +39,16 @@ const SocialmediaFooter = () => {
           </div>
           <div className="col-sm-3 col-lg-2 social-icon fs-4">
             <ul className="d-flex justify-content-around align-self-center mb-0 pb-2">
-              <li>
+              <li className="fs-5 p-3">
                 <FiFacebook />
               </li>
-              <li>
+              <li className="fs-5 p-3">
                 <GrLinkedinOption />
               </li>
-              <li>
+              <li className="fs-5 p-3">
                 <FiTwitter />
               </li>
-              <li>
+              <li className="fs-5 p-3">
                 <FaInstagram />
               </li>
             </ul>

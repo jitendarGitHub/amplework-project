@@ -34,7 +34,6 @@ const DefaultCard = (props) => {
           ) : (
             ""
           )}
-          {parashow ? <p>{para}</p> : ""}
         </div>
         <div className={contentclass}>
           <h5 className={headingclass}>{heading}</h5>

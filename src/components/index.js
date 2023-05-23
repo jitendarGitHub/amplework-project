@@ -13,7 +13,6 @@ import PhasesCard from "./CategoryPhase";
 import CustomAccordion from "./accordion/index";
 import DiverseCard from "./DiverseCard";
 import DefaultCard from "./card";
-import CustomInput from "./formInput/Index";
 import CustomButton from "./button/index";
 
 export {
@@ -32,7 +31,6 @@ export {
   DreamModalCard,
   PhasesCard,
   DiverseCard,
-  CustomInput,
   CustomButton,
   CustomAccordion,
 };

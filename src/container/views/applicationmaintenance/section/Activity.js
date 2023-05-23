@@ -1,5 +1,5 @@
 import { BugActivity } from "../../../../components";
-import { PrimaryText, SecondaryText } from "../../../../components/text";
+import { List, PrimaryText, SecondaryText } from "../../../../components/text";
 import { BugActivityMock } from "../../../../mockup/ActivityMock";
 
 const Activity = () => {
@@ -17,9 +17,9 @@ const Activity = () => {
               className="activity-desc col-sm-10"
             />
             <ul className="p-2 mx-1">
-              <li>Amplework offers hire</li>
-              <li>dedicated full-stack</li>
-              <li>developers who posses</li>
+              <List list="Amplework offers hire" />
+              <List list="dedicated full-stack" />
+              <List list="developers who posses" />
             </ul>
           </div>
           <div className="row col-sm-12 col-md-6 ">
@@ -42,4 +42,5 @@ const Activity = () => {
     </section>
   );
 };
+
 export default Activity;

@@ -1,7 +1,6 @@
-import { useState } from "react";
 import { Col, Form, InputGroup } from "react-bootstrap";
 
-const CustomInput = (props) => {
+const FormInput = (props) => {
   const {
     logo,
     type,
@@ -55,4 +54,8 @@ const CustomInput = (props) => {
     </Form.Group>
   );
 };
-export default CustomInput;
+
+const CustomInput = (props) => {
+  return <input type={props.type} />;
+};
+export { FormInput, CustomInput };

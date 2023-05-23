@@ -39,7 +39,6 @@ const Digitalize = () => {
     </section>
   );
 };
-export default Digitalize;
 const DigitalizeMock = [
   {
     cardimage: digitalApp,
@@ -55,3 +54,5 @@ const DigitalizeMock = [
     heading: "Mobile DevOps – Advantages & Challenges",
   },
 ];
+
+export default Digitalize;
