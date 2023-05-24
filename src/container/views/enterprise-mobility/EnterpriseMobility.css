@@ -131,18 +131,17 @@ border-radius: 10px;
     border-top: 50px solid rgb(40,116,252); 
  }
    .rio-heading::after{ 
-    content: '';
+    content: ' ';
     margin-top: 3px; 
     width: 0;
     height: 3px;
     background: rgb(0, 152, 249);
     transition: width 1s;
-   }
+   } 
    .rio-heading:hover::after{
     width: 35%;
-    color: rgb(29 115 248);
-   }
-
+    color: rgb(29 115 248,);
+   }  
   .notched-card:hover::after{
     background-color: red;
   }

@@ -22,7 +22,7 @@ const DefaultCard = (props) => {
       <div className={cardclass} style={cardstyle}>
         <div className={imgdivclass}>
           <Image
-            src={cardimage}
+            src={cardimage} 
             className={`${imgclass} img-fluid`}
             style={imgstyle}
           />

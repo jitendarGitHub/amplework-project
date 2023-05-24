@@ -65,4 +65,4 @@ const BrandAppMock = [
   { image: BrandApp14 },
   { image: BrandApp15 },
 ];
-console.log("Image:---->,", BrandAppMock);
+// console.log("Image:---->,", BrandAppMock);
