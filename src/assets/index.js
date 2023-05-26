@@ -200,6 +200,8 @@ import Accomplishimg5 from "./accomplishimg5.png";
 import Accomplishimg6 from "./accomplishimg6.png";
 import TechnicalExpertimg from "./technicalexpert.png";
 
+import LoginBg from "./loginbg.png";
+
 export {
   Banner,
   Accessibility,
@@ -389,4 +391,5 @@ export {
   Accomplishimg5,
   Accomplishimg6,
   TechnicalExpertimg,
+  LoginBg,
 };

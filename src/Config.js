@@ -1,11 +1,14 @@
-const SERVER_HOST = "https://dummyjson.com";
-const LOGIN_HOST = process.env.LOGIN_HOST;
+const LOGIN_API = process.env.REACT_APP_API_URL;
+const SIGNUP_API = process.env.REACT_APP_SIGNUP_API_URL;
+// const LOGIN_API = process.env.REACT_APP_SIGNUP_API_URL;
 
 // authantication
-const LOGIN = `${SERVER_HOST}/users`;
-const HOST = `${LOGIN_HOST}api/users/login`;
+const LOGIN = `${LOGIN_API}api/users/login`;
+const SIGNUP = `${SIGNUP_API}api/users/signup`;
 
-export const Config = {
+const Config = {
   LOGIN,
-  HOST,
+  SIGNUP,
 };
+
+export default Config;

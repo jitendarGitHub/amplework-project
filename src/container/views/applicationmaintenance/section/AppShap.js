@@ -7,6 +7,7 @@ import "../application.css";
 
 const AppShap = () => {
   const { cart } = useSelector((state) => state);
+  console.log("actions---------->", cart.value);
   return (
     <section className="app-shap-section">
       <div className=" app-shap text-center container">
@@ -14,8 +15,7 @@ const AppShap = () => {
           heading="Let's get your app in shape - contact us now and let the maintenance magic begin"
           className="shap-heading"
         />
-        <h1>{cart.fname}</h1>
-        {console.log("initialstate------>", cart.fname)}
+        {console.log("initialstate------>", cart.value)}
         <SecondaryText
           para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
           className="shap-para mt-3"
