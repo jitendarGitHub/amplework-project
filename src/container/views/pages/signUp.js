@@ -65,7 +65,7 @@ const SignUp = () => {
         .then((res) => {
           console.log("signup", res);
           if (res.data.success) {
-            navigate("/api/users/login");
+            navigate("/");
           }
         })
         .catch((err) => {
@@ -81,8 +81,10 @@ const SignUp = () => {
 
     API.sendOtp(data)
       .then((response) => {
-        navigate({ pathname: "/verification", search: `?phone=${phone}` });
-        console.log(":::::response---", response);
+        if (phone.length == 13) {
+          navigate({ pathname: "/verification", search: `?phone=${phone}` });
+          console.log(":::::response---", response);
+        }
       })
       .catch((error) => {
         console.log("::::error----", error);
@@ -155,33 +157,18 @@ const SignUp = () => {
                         />
                       </CCol>
                     </CRow>
-                    {phone.length == 13 ? (
-                      <div
-                        className="w-100 p-0 justify-content-end d-flex"
-                        onClick={validate()}
-                      >
-                        <span> verify</span>
-                        <img
-                          src={Check}
-                          width={"25px"}
-                          height={"25px"}
-                          className="align-self-center"
-                        />
-                      </div>
-                    ) : (
-                      <div
-                        className="w-100 p-0 justify-content-end d-flex"
-                        style={{ visibility: "hidden" }}
-                      >
-                        <span> verify</span>
-                        <img
-                          src={Check}
-                          width={"25px"}
-                          height={"25px"}
-                          className="align-self-center"
-                        />
-                      </div>
-                    )}
+                    <div
+                      className="w-100 p-0 justify-content-end d-flex"
+                      onClick={validate}
+                    >
+                      <span> verify</span>
+                      <img
+                        src={Check}
+                        width={"25px"}
+                        height={"25px"}
+                        className="align-self-center"
+                      />
+                    </div>
 
                     <CRow className="mb-3">
                       <CCol sm={12}>
@@ -225,7 +212,7 @@ const SignUp = () => {
                     <p className="text-center">
                       Already a member?{" "}
                       <a
-                        href="/api/users/login"
+                        href="/"
                         className="fs-5 "
                         style={{ textDecoration: "none", color: "#080a50" }}
                       >
