@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import { routes } from "../routes/Index";
+import { useEffect } from "react";
 
 const AppContent = () => {
   return (

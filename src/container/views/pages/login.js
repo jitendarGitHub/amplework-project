@@ -26,35 +26,33 @@ const Login = () => {
   const dispatch = useDispatch();
 
   const [state, setState] = useState({
-    phone: "",
+    email: "",
     password: "",
-    role: "admin",
+    role: "user",
   });
 
-  const { phone, password, role } = state;
+  const { email, password, role } = state;
 
   console.log("state", state);
 
   const validate = (e) => {
     e.preventDefault();
-    if (phone.length == 0) {
-      toast.error("Enter Phone number!");
-    } else if (phone.length < 6 || phone.length > 14) {
-      toast.error("Enter valid Phone number!");
-    } else if (password.length == 0) {
+    if (password.length == 0) {
       toast.error("Password must be Required");
     } else if (password.length < 8 || password.length > 14) {
       toast.error("password length must be 8 to 14");
     } else {
       const data = {
-        phone: phone,
+        email: email,
         password: password,
-        role: "admin",
+        role: role,
       };
       API.login(data).then((res) => {
-        console.log("ressssssss---", res);
-        if (res.data.success) {
-          navigate("/");
+        console.log("response of data-----", res?.data);
+        const { accessToken } = res.data.data;
+        localStorage.setItem("token", accessToken);
+        if (res?.data?.success) {
+          navigate("/who-we-are");
         } else {
           toast.error("Check your Credential.....");
         }
@@ -87,7 +85,7 @@ const Login = () => {
                   <CForm onSubmit={validate}>
                     <h1>Login</h1>
                     <p className="text-medium-emphasis">
-                      Sign In to your account
+                      Sign In to your accounts
                     </p>
 
                     <CInputGroup className="mb-3 mt-3">
@@ -95,13 +93,13 @@ const Login = () => {
                         <CIcon icon={cilPhone} size="8xl" />
                       </CInputGroupText>
                       <input
-                        placeholder="Enter phone number"
-                        name="phone"
+                        placeholder="Enter Your Email"
+                        name="email"
                         className="form-control"
-                        value={phone}
+                        value={email}
                         onChange={handleChange}
-                        maxLength={12}
-                        type="number"
+                        // maxLength={12}
+                        type="email"
                       />
                     </CInputGroup>
                     <CInputGroup className="mb-3 mt-3">

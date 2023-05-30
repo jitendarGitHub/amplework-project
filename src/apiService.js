@@ -23,6 +23,7 @@ export const API = {
     return instance
       .post(Config.LOGIN, payload)
       .then((res) => {
+        console.log("response----------", res);
         return res;
       })
       .catch((err) => {
@@ -32,12 +33,32 @@ export const API = {
   },
   signup: (payload) => {
     return instance
-      .post("http://34.244.255.218/api/users/signup", payload)
+      .post(Config.SIGNUP, payload)
       .then((res) => {
         return res;
       })
       .catch((err) => {
         console.log("api ERROR :", err);
+      });
+  },
+  sendOtp: (payload) => {
+    return instance
+      .post(Config.SEND_OTP, payload)
+      .then((response) => {
+        return response;
+      })
+      .catch((error) => {
+        console.log("send OTP err---", error);
+      });
+  },
+  verifyOtp: (payload) => {
+    return instance
+      .post(Config.VERIFY_OTP, payload)
+      .then((response) => {
+        return response;
+      })
+      .catch((err) => {
+        return err;
       });
   },
 };

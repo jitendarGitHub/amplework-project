@@ -8,15 +8,11 @@ import {
   CCol,
   CContainer,
   CForm,
-  CFormInput,
-  CFormLabel,
-  CInputGroup,
-  CInputGroupText,
   CRow,
 } from "@coreui/react";
 import { ToastContainer, toast, Flip } from "react-toastify";
 import { API } from "../../../apiService";
-import { LoginBg } from "../../../assets";
+import { Check, LoginBg } from "../../../assets";
 
 const SignUp = () => {
   const [state, setState] = useState({
@@ -25,7 +21,7 @@ const SignUp = () => {
     dob: "",
     referral_code: "",
     password: "",
-    phone: "",
+    phone: "+91",
     last_name: "",
     role: "user",
   });
@@ -40,11 +36,15 @@ const SignUp = () => {
     dob,
     referral_code,
   } = state;
+
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (password.length < 8) {
+    if (phone.length == 0) {
+      toast.error("Enter Phone number!");
+    } else if (phone.length < 6 || phone.length > 14) {
+      toast.error("Enter Valid Phone Number");
+    } else if (password.length < 8) {
       toast.error("password length must be 8 to 14");
     } else if (password.length > 14) {
       toast.error("password length must be 8 to 14");
@@ -52,7 +52,7 @@ const SignUp = () => {
       toast.error("Enter valid Phone number!");
     } else {
       const data = {
-        email: "jitenda@amplew.com",
+        email: email,
         phone: phone,
         first_name: first_name,
         dob: "2002-05-09",
@@ -61,14 +61,32 @@ const SignUp = () => {
         last_name: last_name,
         role: "user",
       };
-      API.signup(data).then((res) => {
-        if (res.data.success) {
-          navigate("/api/users/login");
-        } else {
-          toast.error("filll out formality");
-        }
-      });
+      API.signup(data)
+        .then((res) => {
+          console.log("signup", res);
+          if (res.data.success) {
+            navigate("/api/users/login");
+          }
+        })
+        .catch((err) => {
+          toast.error("phone or password already Exist");
+        });
     }
+  };
+  const validate = (e) => {
+    const data = {
+      phone: phone,
+      role: "user",
+    };
+
+    API.sendOtp(data)
+      .then((response) => {
+        navigate({ pathname: "/verification", search: `?phone=${phone}` });
+        console.log(":::::response---", response);
+      })
+      .catch((error) => {
+        console.log("::::error----", error);
+      });
   };
   console.log("state----", state);
 
@@ -101,10 +119,6 @@ const SignUp = () => {
         transition={Flip}
       />
       <CContainer>
-        {/* <p className=" text-center fs-4" onClick={() => navigate("")}>
-          <CIcon icon={cilArrowLeft} className="mx-2" width={"40px"} />
-          Back to Login
-        </p> */}
         <CRow className="justify-content-center">
           <CCol md={5}>
             <CCardGroup>
@@ -128,7 +142,7 @@ const SignUp = () => {
                         />
                       </CCol>
                     </CRow>
-                    <CRow className="mb-3">
+                    <CRow className="">
                       <CCol sm={12}>
                         <input
                           type="text"
@@ -141,6 +155,34 @@ const SignUp = () => {
                         />
                       </CCol>
                     </CRow>
+                    {phone.length == 13 ? (
+                      <div
+                        className="w-100 p-0 justify-content-end d-flex"
+                        onClick={validate()}
+                      >
+                        <span> verify</span>
+                        <img
+                          src={Check}
+                          width={"25px"}
+                          height={"25px"}
+                          className="align-self-center"
+                        />
+                      </div>
+                    ) : (
+                      <div
+                        className="w-100 p-0 justify-content-end d-flex"
+                        style={{ visibility: "hidden" }}
+                      >
+                        <span> verify</span>
+                        <img
+                          src={Check}
+                          width={"25px"}
+                          height={"25px"}
+                          className="align-self-center"
+                        />
+                      </div>
+                    )}
+
                     <CRow className="mb-3">
                       <CCol sm={12}>
                         <input
@@ -148,6 +190,19 @@ const SignUp = () => {
                           value={phone}
                           name="phone"
                           placeholder="Mobile"
+                          className="form-control border-3 border-top-0 border-start-0 border-end-0"
+                          onChange={handleChange}
+                          required
+                        />
+                      </CCol>
+                    </CRow>
+                    <CRow className="mb-3">
+                      <CCol sm={12}>
+                        <input
+                          type="email"
+                          value={email}
+                          name="email"
+                          placeholder="Email"
                           className="form-control border-3 border-top-0 border-start-0 border-end-0"
                           onChange={handleChange}
                           required
@@ -177,7 +232,6 @@ const SignUp = () => {
                         LogIn
                       </a>
                     </p>
-
                     <CRow className="">
                       <CButton
                         type="submit"

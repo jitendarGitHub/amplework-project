@@ -201,6 +201,7 @@ import Accomplishimg6 from "./accomplishimg6.png";
 import TechnicalExpertimg from "./technicalexpert.png";
 
 import LoginBg from "./loginbg.png";
+import Check from "./check.png";
 
 export {
   Banner,
@@ -392,4 +393,5 @@ export {
   Accomplishimg6,
   TechnicalExpertimg,
   LoginBg,
+  Check,
 };
