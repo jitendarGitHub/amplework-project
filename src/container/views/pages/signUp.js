@@ -21,7 +21,7 @@ const SignUp = () => {
     dob: "",
     referral_code: "",
     password: "",
-    phone: "+91",
+    phone: "",
     last_name: "",
     role: "user",
   });
@@ -78,11 +78,13 @@ const SignUp = () => {
       phone: phone,
       role: "user",
     };
-
     API.sendOtp(data)
       .then((response) => {
         if (phone.length == 13) {
-          navigate({ pathname: "/verification", search: `?phone=${phone}` });
+          toast.success("SMS Send Successfull");
+          setTimeout(() => {
+            navigate({ pathname: "/verification", search: `?phone=${phone}` });
+          }, 2000);
           console.log(":::::response---", response);
         }
       })

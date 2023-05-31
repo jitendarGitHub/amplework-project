@@ -7,6 +7,7 @@ import {
   SoftwareMaintenance,
 } from "../container/Index";
 import VerifyOtp from "../container/views/pages/VerifyOtp";
+import ForgetPassword from "../container/views/pages/forgetPassword";
 import Login from "../container/views/pages/login";
 import SignUp from "../container/views/pages/signUp";
 
@@ -58,6 +59,12 @@ export const pageRoute = [
     exact: true,
     name: "verification",
     element: VerifyOtp,
+  },
+  {
+    path: "/forget-password",
+    exact: true,
+    name: "forget password",
+    element: ForgetPassword,
   },
   {
     path: "/500",

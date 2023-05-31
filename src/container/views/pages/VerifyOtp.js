@@ -20,7 +20,7 @@ export default function VerifyOtp(props) {
   });
   const { otp, role } = state;
   const handleChange = (enteredOtp) => {
-    setState({ otp: enteredOtp });
+    setState({ ...state, otp: enteredOtp });
     console.log("onchange-----", enteredOtp);
     console.log("otp---", state);
   };
@@ -29,6 +29,7 @@ export default function VerifyOtp(props) {
   const params = new URLSearchParams(search);
   const phone = params.get("phone");
   const countryCode = "+";
+  const contact = countryCode + phone;
 
   const [seconds, setSeconds] = useState(30);
   useEffect(() => {
@@ -42,10 +43,13 @@ export default function VerifyOtp(props) {
     };
   }, [seconds]);
   const resendOTP = () => {
+    const contact = phone.trim();
+    const mobile = countryCode + contact;
     const data = {
-      phone: countryCode + phone,
+      phone: mobile,
       role: "user",
     };
+    console.log("resend otp---", data);
     API.sendOtp(data)
       .then((res) => {
         toast.success("SMS send Successful");
@@ -59,34 +63,37 @@ export default function VerifyOtp(props) {
       });
   };
 
-  const validate = (e) => {
+  const verification = (e) => {
     e.preventDefault();
+    const contact = phone.trim();
+
+    const mobile = countryCode + contact;
     const data = {
       otp: otp,
-      phone: phone,
+      phone: mobile,
       role: "user",
     };
-    console.log("phone----", data);
+    console.log("phone number------", data);
     API.verifyOtp(data)
       .then((response) => {
-        console.log("response---ddssddss", response.success);
-        if (response) {
-          SweetAlert();
+        if (response.data.success) {
           navigate("/sign-up");
-          console.log(":::::response---", response);
+          SweetAlert();
         } else {
-          console.log("error message ----");
+          console.log("please correct your OTP");
         }
       })
       .catch((error) => {
+        toast.error("Enter correct OTP!");
         console.log("::::error----", error);
+        return error;
       });
   };
 
   return (
     <div className="text-center mt-5">
       <span className="text-center">
-        Enter 4 digit code sent to your phone Number<br></br> {phone}{" "}
+        Enter 4 digit code sent to your phone Number<br></br> {contact}{" "}
       </span>
       <ToastContainer
         position="top-center"
@@ -102,7 +109,7 @@ export default function VerifyOtp(props) {
         limit={1}
         transition={Flip}
       />
-      <form onSubmit={validate}>
+      <form onSubmit={verification}>
         {" "}
         <div
           id="form1"

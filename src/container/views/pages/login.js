@@ -115,9 +115,15 @@ const Login = () => {
                         onChange={handleChange}
                       />
                     </CInputGroup>
-                    <CRow>
+                    <CRow className="text-end justify-content-end">
+                      <span style={{ marginTop: "-10px" }}>
+                        {" "}
+                        forget password?
+                      </span>
+                    </CRow>
+                    <CRow className="mt-4">
                       <CCol xs={6}>
-                        <CButton type="submit" color="warning" className="px-4">
+                        <CButton type="submit" color="warning" className="">
                           Login
                         </CButton>
                         <ToastContainer
@@ -128,16 +134,15 @@ const Login = () => {
                           closeOnClick
                           rtl={false}
                           pauseOnFocusLoss
-                          draggable
+                          draggables
                           pauseOnHove
                           theme="dark"
                           limit={1}
                           transition={Flip}
                         />
                       </CCol>
-                      <CCol xs={6} className="text-right">
+                      <CCol xs={6} className="text-end">
                         <CButton
-                          // color="light"
                           className="px-0"
                           onClick={() => navigate("/sign-up")}
                         >
