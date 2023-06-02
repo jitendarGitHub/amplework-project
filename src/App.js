@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React, { Suspense } from "react";
 import DefaultLayout from "./layout/DefaultLayout";
 import { Page404, Page500 } from "./container/Index";
-import { ReduxExercise } from "./reduxExercise";
 import Login from "./container/views/pages/login";
 import SignUp from "./container/views/pages/signUp";
 import VerifyOtp from "./container/views/pages/VerifyOtp";
@@ -33,7 +32,6 @@ const App = () => {
               )
             );
           })}
-
           <Route path="*" name="Home" element={<DefaultLayout />} />
         </Routes>
       </Suspense>

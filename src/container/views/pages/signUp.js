@@ -83,9 +83,14 @@ const SignUp = () => {
         if (phone.length == 13) {
           toast.success("SMS Send Successfull");
           setTimeout(() => {
-            navigate({ pathname: "/verification", search: `?phone=${phone}` });
+            navigate({
+              pathname: "/phone-verification",
+              search: `?phone=${phone}`,
+            });
           }, 2000);
-          console.log(":::::response---", response);
+          console.log("--Send OTP Response", response);
+        } else {
+          toast.error("Enter Validate Phone Number");
         }
       })
       .catch((error) => {
@@ -178,7 +183,7 @@ const SignUp = () => {
                           type="tel"
                           value={phone}
                           name="phone"
-                          placeholder="Mobile"
+                          placeholder="+91 Mobile"
                           className="form-control border-3 border-top-0 border-start-0 border-end-0"
                           onChange={handleChange}
                           required

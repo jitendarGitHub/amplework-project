@@ -16,14 +16,12 @@ import {
   CRow,
 } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
-import { useDispatch } from "react-redux";
 import { API } from "../../../apiService";
 import { AmpleLogo, LoginBg } from "../../../assets";
 import { cilLockLocked, cilPhone } from "@coreui/icons";
 
 const Login = () => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
 
   const [state, setState] = useState({
     email: "",
@@ -48,7 +46,7 @@ const Login = () => {
         role: role,
       };
       API.login(data).then((res) => {
-        console.log("response of data-----", res?.data);
+        console.log("Login Response-----", res?.data);
         const { accessToken } = res.data.data;
         localStorage.setItem("token", accessToken);
         if (res?.data?.success) {
@@ -63,6 +61,7 @@ const Login = () => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
+  /*-----------------------------*/
   return (
     <div
       className="bg-light min-vh-100 d-flex flex-row align-items-center"
@@ -116,7 +115,10 @@ const Login = () => {
                       />
                     </CInputGroup>
                     <CRow className="text-end justify-content-end">
-                      <span style={{ marginTop: "-10px" }}>
+                      <span
+                        style={{ marginTop: "-10px" }}
+                        onClick={() => navigate("forget-password")}
+                      >
                         {" "}
                         forget password?
                       </span>

@@ -6,9 +6,11 @@ import {
   Page500,
   SoftwareMaintenance,
 } from "../container/Index";
+import VerifyEmailOtp from "../container/views/pages/VerifyEmailOTP";
 import VerifyOtp from "../container/views/pages/VerifyOtp";
 import ForgetPassword from "../container/views/pages/forgetPassword";
 import Login from "../container/views/pages/login";
+import ResetPassword from "../container/views/pages/resetPassword";
 import SignUp from "../container/views/pages/signUp";
 
 export const routes = [
@@ -55,16 +57,28 @@ export const pageRoute = [
     element: SignUp,
   },
   {
-    path: "/verification",
+    path: "/phone-verification",
     exact: true,
     name: "verification",
     element: VerifyOtp,
+  },
+  {
+    path: "email-verification",
+    exact: true,
+    name: "EmailVerification",
+    element: VerifyEmailOtp,
   },
   {
     path: "/forget-password",
     exact: true,
     name: "forget password",
     element: ForgetPassword,
+  },
+  {
+    path: "/reset-password",
+    exact: true,
+    name: "forget Password",
+    element: ResetPassword,
   },
   {
     path: "/500",

@@ -61,4 +61,34 @@ export const API = {
         return err;
       });
   },
+  forgetPassword: (payload) => {
+    return instance
+      .post(Config.FORGET_PASSWORD, payload)
+      .then((response) => {
+        return response;
+      })
+      .catch((err) => {
+        return err;
+      });
+  },
+  verifyEmailOtp: (payload) => {
+    return instance
+      .post(Config.VERIFY_EMAIL_OTP, payload)
+      .then((response) => {
+        return response;
+      })
+      .catch((err) => {
+        return err;
+      });
+  },
+  changePassword: (payload) => {
+    return instance
+      .post(Config.CHANGE_PASSWORD, payload)
+      .then((response) => {
+        return response;
+      })
+      .catch((error) => {
+        return error;
+      });
+  },
 };

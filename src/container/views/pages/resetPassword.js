@@ -12,61 +12,46 @@ import {
   CContainer,
   CForm,
   CInputGroup,
+  CInputGroupText,
   CRow,
 } from "@coreui/react";
-import { LoginBg } from "../../../assets";
 import { API } from "../../../apiService";
 
-const ForgetPassword = () => {
+const ResetPassword = () => {
   const navigate = useNavigate();
 
   const [state, setState] = useState({
-    email: "",
-    role: "",
+    password: "",
+    cpassword: "",
   });
-
-  const { email, role } = state;
+  const { password, cpassword } = state;
 
   const onSubmit = (e) => {
     const data = {
-      email: email,
-      role: "user",
+      ["current-password"]: password,
+      ["new-password"]: cpassword,
     };
-    console.log("data", data);
     e.preventDefault();
-    API.forgetPassword(data)
-      .then((response) => {
-        console.log("res", response);
-        if (response.data.success) {
-          navigate({
-            pathname: "/email-verification",
-            search: `?email=${email}`,
-          });
-        } else {
-          toast.error("Check your Email!");
-        }
-        return response;
-      })
-      .catch((err) => {
-        console.log("forgetpass------err", err);
-        return err;
-      });
+    if (password != cpassword) {
+      toast.error("Check Your Confirm Password");
+    } else {
+      API.changePassword(data)
+        .then((response) => {
+          console.log("response", response);
+        })
+        .catch((error) => {
+          console.log("error", error);
+        });
+    }
   };
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
+  /*-----------------------------*/
   return (
-    <div
-      className="bg-light min-vh-100 d-flex flex-row align-items-center"
-      style={{
-        backgroundImage: `url(${LoginBg})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
       <CContainer>
         <CRow className="justify-content-center">
           <CCol md={8}>
@@ -77,29 +62,37 @@ const ForgetPassword = () => {
               >
                 <CCardBody>
                   <CForm onSubmit={onSubmit}>
-                    <h1>Forget Password</h1>
-                    <p className="text-light" style={{ fontSize: "14px" }}>
-                      Enter your Email for the Verification process,we will send
-                      4 digit code on Your email.
+                    <h1>Reset Your Password</h1>
+                    <p className="text-medium-emphasis mb-4">
+                      Create New Password your accounts
                     </p>
-                    <CInputGroup className="mb-3 mt-3">
+                    <span>New Password</span>
+                    <CInputGroup className="mb-3">
                       <input
-                        className="form-control "
-                        type="email"
-                        name="email"
-                        value={email}
-                        placeholder="email"
+                        placeholder="New Password"
+                        name="password"
+                        className="form-control"
+                        value={password}
                         onChange={handleChange}
+                        type="text"
                       />
                     </CInputGroup>
-                    <CRow className="mt-4  justify-content-center text-center">
-                      <CCol xs={12}>
-                        <CButton
-                          type="submit"
-                          color="success"
-                          className="w-100"
-                        >
-                          Send
+                    <span className="mt-3">Confirm Password</span>
+                    <CInputGroup className="mb-3">
+                      <input
+                        placeholder="Confirm Password"
+                        name="cpassword"
+                        className="form-control"
+                        value={cpassword}
+                        onChange={handleChange}
+                        type="text"
+                      />
+                    </CInputGroup>
+
+                    <CRow className="mt-4">
+                      <CCol xs={6}>
+                        <CButton type="submit" color="warning" className="">
+                          Reset
                         </CButton>
                         <ToastContainer
                           position="top-center"
@@ -128,4 +121,4 @@ const ForgetPassword = () => {
   );
 };
 
-export default ForgetPassword;
+export default ResetPassword;
