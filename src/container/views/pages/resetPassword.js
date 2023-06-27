@@ -12,14 +12,15 @@ import {
   CContainer,
   CForm,
   CInputGroup,
-  CInputGroupText,
   CRow,
 } from "@coreui/react";
 import { API } from "../../../apiService";
+import { useDispatch } from "react-redux";
+import { fetchUserResetPasswordData } from "../../../redux/slice/Action";
 
 const ResetPassword = () => {
   const navigate = useNavigate();
-
+  const dispatch = useDispatch();
   const [state, setState] = useState({
     password: "",
     cpassword: "",
@@ -42,6 +43,14 @@ const ResetPassword = () => {
         .catch((error) => {
           console.log("error", error);
         });
+
+      // dispatch(fetchUserChangePasswordData(data))
+      //   .then((response) => {
+      //     console.log("response", response);
+      //   })
+      //   .catch((error) => {
+      //     console.log("error", error);
+      //   });
     }
   };
 

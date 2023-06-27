@@ -13,6 +13,11 @@ import {
 import { ToastContainer, toast, Flip } from "react-toastify";
 import { API } from "../../../apiService";
 import { Check, LoginBg } from "../../../assets";
+import { useDispatch } from "react-redux";
+import {
+  fetchUserSendOtpData,
+  fetchUserSignUpData,
+} from "../../../redux/slice/Action";
 
 const SignUp = () => {
   const [state, setState] = useState({
@@ -38,6 +43,7 @@ const SignUp = () => {
   } = state;
 
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const handleSubmit = (e) => {
     e.preventDefault();
     if (phone.length == 0) {
@@ -72,6 +78,16 @@ const SignUp = () => {
           toast.error("phone or password already Exist");
         });
     }
+    // dispatch(fetchUserSignUpData(data))
+    //   .then((response) => {
+    //     console.log("signup", response);
+    //     if (response.data.success) {
+    //       navigate("/");
+    //     }
+    //   })
+    //   .catch((err) => {
+    //     toast.error("phone or password already Exist");
+    //   });
   };
   const validate = (e) => {
     const data = {
@@ -97,7 +113,24 @@ const SignUp = () => {
         console.log("::::error----", error);
       });
   };
-  console.log("state----", state);
+  //   dispatch(fetchUserSendOtpData(data))
+  //     .then((response) => {
+  //       if (phone.length == 13) {
+  //         toast.success("SMS Send Successfull");
+  //         setTimeout(() => {
+  //           navigate({
+  //             pathname: "/phone-verification",
+  //             search: `?phone=${phone}`,
+  //           });
+  //         }, 2000);
+  //         console.log("--Send OTP Response", response);
+  //       } else {
+  //         toast.error("Enter Validate Phone Number");
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.log("::::error----", error);
+  //     });
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });

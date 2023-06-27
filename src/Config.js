@@ -18,5 +18,6 @@ const Config = {
   VERIFY_EMAIL_OTP,
   CHANGE_PASSWORD,
 };
+console.log("maple------->", SIGNUP);
 
 export default Config;

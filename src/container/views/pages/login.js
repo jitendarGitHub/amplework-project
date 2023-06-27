@@ -19,10 +19,15 @@ import CIcon from "@coreui/icons-react";
 import { API } from "../../../apiService";
 import { AmpleLogo, LoginBg } from "../../../assets";
 import { cilLockLocked, cilPhone } from "@coreui/icons";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchUserLoginData } from "../../../redux/slice/Action";
+import { store } from "../../../redux/Store";
+import { extra } from "../../../redux/slice/cartSlice";
 
 const Login = () => {
   const navigate = useNavigate();
-
+  const cart = useSelector((state) => state.cart.count);
+  const dispatch = useDispatch();
   const [state, setState] = useState({
     email: "",
     password: "",
@@ -40,11 +45,22 @@ const Login = () => {
     } else if (password.length < 8 || password.length > 14) {
       toast.error("password length must be 8 to 14");
     } else {
-      const data = {
+      let data = {
         email: email,
         password: password,
         role: role,
       };
+      // dispatch(fetchUserLoginData(data)).then((res) => {
+      //   console.log("Login Response-----", res);
+      //   const { accessToken } = res.data.data;
+      //   localStorage.setItem("token", accessToken);
+      //   if (res?.data?.success) {
+      //     navigate("/who-we-are");
+      //   } else {
+      //     toast.error("Check your Credential.....");
+      //   }
+      // });
+
       API.login(data).then((res) => {
         console.log("Login Response-----", res?.data);
         const { accessToken } = res.data.data;

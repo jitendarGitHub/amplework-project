@@ -16,10 +16,12 @@ import {
 } from "@coreui/react";
 import { LoginBg } from "../../../assets";
 import { API } from "../../../apiService";
+import { useDispatch } from "react-redux";
+import { fetchUserForgetPasswordData } from "../../../redux/slice/Action";
 
 const ForgetPassword = () => {
   const navigate = useNavigate();
-
+  const dispatch = useDispatch();
   const [state, setState] = useState({
     email: "",
     role: "",
@@ -34,6 +36,7 @@ const ForgetPassword = () => {
     };
     console.log("data", data);
     e.preventDefault();
+
     API.forgetPassword(data)
       .then((response) => {
         console.log("res", response);
@@ -52,6 +55,24 @@ const ForgetPassword = () => {
         return err;
       });
   };
+
+  // dispatch(fetchUserForgetPasswordData(data))
+  // .then((response) => {
+  //   console.log("res", response);
+  //   if (response.data.success) {
+  //     navigate({
+  //       pathname: "/email-verification",
+  //       search: `?email=${email}`,
+  //     });
+  //   } else {
+  //     toast.error("Check your Email!");
+  //   }
+  //   return response;
+  // })
+  // .catch((err) => {
+  //   console.log("forgetpass------err", err);
+  //   return err;
+  // });
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
@@ -88,7 +109,7 @@ const ForgetPassword = () => {
                         type="email"
                         name="email"
                         value={email}
-                        placeholder="email"
+                        placeholder="jitendra@amplework.com"
                         onChange={handleChange}
                       />
                     </CInputGroup>

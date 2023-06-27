@@ -7,6 +7,8 @@ import Login from "./container/views/pages/login";
 import SignUp from "./container/views/pages/signUp";
 import VerifyOtp from "./container/views/pages/VerifyOtp";
 import { pageRoute } from "./routes/Index";
+import Redux from "./reduxExercise";
+import ReduxData from "./reduxData";
 
 const loading = (
   <div className="pt-3 text-center">
@@ -32,6 +34,8 @@ const App = () => {
               )
             );
           })}
+          <Route path="/random" name="Random" element={<Redux />} />
+          <Route path="/redux-data" name="Redux" element={<ReduxData />} />
           <Route path="*" name="Home" element={<DefaultLayout />} />
         </Routes>
       </Suspense>

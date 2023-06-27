@@ -2,16 +2,16 @@ import {
   ApplicationMaintenance,
   EnterpriseMobility,
   EnterpriseWebDevelopment,
+  ForgetPassword,
+  Login,
   Page404,
   Page500,
+  ResetPassword,
+  SignUp,
   SoftwareMaintenance,
+  VerifyEmailOtp,
+  VerifyOtp,
 } from "../container/Index";
-import VerifyEmailOtp from "../container/views/pages/VerifyEmailOTP";
-import VerifyOtp from "../container/views/pages/VerifyOtp";
-import ForgetPassword from "../container/views/pages/forgetPassword";
-import Login from "../container/views/pages/login";
-import ResetPassword from "../container/views/pages/resetPassword";
-import SignUp from "../container/views/pages/signUp";
 
 export const routes = [
   {
@@ -21,21 +21,18 @@ export const routes = [
     element: ApplicationMaintenance,
   },
   {
-    // path: "/enterprise-web-development",
     path: "/what-we-do",
     exact: true,
     name: "Enterprise Web",
     element: EnterpriseWebDevelopment,
   },
   {
-    // path: "/enterprise-mobility",
     path: "/our-culture",
     exact: true,
     name: "Enterprise Mobility",
     element: EnterpriseMobility,
   },
   {
-    // path: "/software-maintenance-support",
     path: "/work-with-us",
     exact: true,
     name: "Software Maintenance",
